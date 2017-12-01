@@ -1,1 +1,1 @@
-Sitemap: /10web_docs/sitemap.xml
+Sitemap: /sitemap.xml
