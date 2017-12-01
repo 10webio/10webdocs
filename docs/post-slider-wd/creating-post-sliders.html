@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+<meta name="description" content="Instructions to create Dynamic and Static post sliders with Post Slider WD plugin"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Creating Posts Sliders · 10web</title>
+<link rel="icon" type="image/x-icon" href="/10web_docs/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/10web_docs/assets/css/minima.css">
+<link rel="stylesheet" href="/10web_docs/assets/css/style-10web.css">
+<script src="/10web_docs/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/10web_docs/assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo"  href="/10web_docs/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/10web_docs/" >Docs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/10web_docs/docs/tenweb-tutorial">Tutorial</a>
+		  </li>
+		  <li class="nav-item">
+			<a href="http://dev.10web.io" class="login_but btn">Login</a>
+		  </li>
+		</ul>
+		
+	</div>
+</nav>
+	
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap toc_doc">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">Post Slider</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">Post Slider</h4><div class="clear bd-toc-item active">
+      <a class="bd-toc-link" href="/10web_docs/docs/post-slider-wd/creating-post-sliders">
+        <span class="parent-title">Creating Post Sliders </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/post-slider-wd/adding-layers">
+        <span class="parent-title">Adding Layers </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/post-slider-wd/post-slider-settings">
+        <span class="parent-title">Post Slider WD Settings </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/post-slider-wd/publishing-post-slider">
+        <span class="parent-title">Publishing Post Slider WD </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+          <h1 class="bd-title" id="content">Creating Posts Sliders</h1>
+          <p class="bd-lead">Instructions to create Dynamic and Static post sliders with Post Slider WD plugin</p>
+          <h2 id="general">General</h2>
+
+<p>Go to <strong>Post Slider WordPress&gt;Sliders&gt;Add New.</strong> Fill in <strong>Slider</strong> title and choose the type of slider you want to create: <strong>Dynamic Post Slider</strong> or <strong>Static Posts Slider.</strong></p>
+
+<p>On the right upper corner you will see the following buttons:</p>
+
+<p><strong>Save.</strong> This will save the changes applied to the slider and redirect you to the list of all created slides.</p>
+
+<p><strong>Apply.</strong> This will save the changes applied to the slider and keep you on the same page in admin panel.</p>
+
+<p><strong>Save as Copy.</strong> Using this option you can edit post slider and save it as a copy instead of replacing the original post slider.</p>
+
+<p><strong>Cancel.</strong> You can cancel any changes made to slider hitting the button.</p>
+
+<h2 id="dynamic-post-sliders">Dynamic Post Sliders</h2>
+
+<p>Dynamic Post slider is designed to display posts which fulfill requirements set by filters. The slider posts will be updated when new posts corresponding to filters are added to your site, e.g. if you choose to display posts corresponding to Latest Posts category, newly added posts will be displayed within the post slider.</p>
+
+<p>The list of filters is the following:</p>
+
+<p><strong>Period of posts to display.</strong> Set the time for the posts, e.g. if set it to 24 hours it will display the posts added within the last 24 hours.</p>
+
+<p><strong>Number of posts.</strong> Set the number of posts which will be displayed as slides. If set to 0 or left empty it will display all posts.</p>
+
+<p><strong>Choose post type.</strong> Select the type for the dynamic posts, e.g. native or custom post types.</p>
+
+<p><strong>Author.</strong> Select the author whose posts will be displayed within the slider.</p>
+
+<p><strong>Sort posts by.</strong> Select the option which will be used as a sorting basis while displaying posts.</p>
+
+<p><strong>Order posts by.</strong> Set the ordering sequence for the posts- ascending or descending.</p>
+
+<p><strong>Post taxonomies.</strong> Here all available taxonomies will be displayed relevant for that specific type of posts. You can use drop-downs to narrow the selection.</p>
+
+<h2 id="static-post-sliders">Static Post Sliders</h2>
+
+<p>Press <strong>Add Posts</strong> button. New window opens displaying Search, post type and category drop-downs.</p>
+
+<p><strong>Search.</strong> Here you can input a title (full or partial) to search for relevant posts. Using follow-up select field you can narrow your search to specific post type.</p>
+
+<p><strong>Post Type.</strong> Here you will see the list of WordPress native posts and custom posts created by other plugins,e.g. Calendar plugins, Ecommerce plugins and etc. After selecting a type the list of relevant taxonomies will appear, which can be used for browsing posts, e.g. for WordPress native type posts you will see Category as taxonomy.</p>
+
+<p>Full list of the posts corresponding to filters will be visible below. You can select the posts you prefer to add to slider using the checkbox next to their title.</p>
+
+<p>As a final step press <strong>Add to Slider</strong> button.</p>
+
+<p>Posts will be added and displayed with their custom images below Slides section. You can change the sequence of the posts using drag and drop (4-pointed arrow). Additionally you can provide titles to slides by clicking on Slide N, which is slide sequential number and providing a title.</p>
+
+<p>Hovering over the images you will see a set of three buttons: Edit Post, Duplicate Slide, Delete.</p>
+
+<p><strong>Edit Slide.</strong> Pressing the button you can replace the original post with another one.</p>
+
+<p><strong>Duplicate Slide.</strong> Pressing the button you will not only duplicate the slider but its layers. You can further edit and replace the slide keeping all of its layers.</p>
+
+<p><strong>Delete.</strong> Using the button you can remove the slide.</p>
+
+        </main>
+		
+		
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#general">General</a></li>
+<li class="toc-entry toc-h2"><a href="#dynamic-post-sliders">Dynamic Post Sliders</a></li>
+<li class="toc-entry toc-h2"><a href="#static-post-sliders">Static Post Sliders</a></li>
+</ul>
+          </div>
+        
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="http://10web.io/about-us/">About</a></li>
+			  <li><a href="http://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="http://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="http://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2017 10Web, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>

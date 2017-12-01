@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+<meta name="description" content="Guide to create and modify event categories, organizers, tags and venues"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Categories, Organizers, Tags And Venues · 10web</title>
+<link rel="icon" type="image/x-icon" href="/10web_docs/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/10web_docs/assets/css/minima.css">
+<link rel="stylesheet" href="/10web_docs/assets/css/style-10web.css">
+<script src="/10web_docs/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/10web_docs/assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo"  href="/10web_docs/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/10web_docs/" >Docs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/10web_docs/docs/tenweb-tutorial">Tutorial</a>
+		  </li>
+		  <li class="nav-item">
+			<a href="http://dev.10web.io" class="login_but btn">Login</a>
+		  </li>
+		</ul>
+		
+	</div>
+</nav>
+	
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap toc_doc">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">Event Calendar WD</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">Event Calendar WD</h4><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/event-calendar-wd/creating-events">
+        <span class="parent-title">Creating Events </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item active">
+      <a class="bd-toc-link" href="/10web_docs/docs/event-calendar-wd/calendar-attributes">
+        <span class="parent-title">Categories, Organizers, Tags And Venues </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/event-calendar-wd/creating-calendars">
+        <span class="parent-title">Creating Calendars </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/event-calendar-wd/publishing-calendar">
+        <span class="parent-title">Publishing The Created Calendar </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/event-calendar-wd/settings-themes">
+        <span class="parent-title">Calendar Settings And Themes </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item has_child">
+      <a class="bd-toc-link" href="/10web_docs/docs/event-calendar-wd/add-ons">
+        <span class="parent-title">Event Calendar WD Add-ons </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/10web_docs/docs/event-calendar-wd/add-ons/frontend-event-management.html">
+              Frontend Event Management
+            </a></li><li>
+            <a href="/10web_docs/docs/event-calendar-wd/add-ons/subscribe.html">
+              Subscribe
+            </a></li><li>
+            <a href="/10web_docs/docs/event-calendar-wd/add-ons/other-management-addons.html">
+              Other Management Add-ons
+            </a></li><li>
+            <a href="/10web_docs/docs/event-calendar-wd/add-ons/event-grouping-addons.html">
+              Event Grouping Add-ons
+            </a></li><li>
+            <a href="/10web_docs/docs/event-calendar-wd/add-ons/integration-addons.html">
+              Integration Add-ons
+            </a></li></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+          <h1 class="bd-title" id="content">Categories, Organizers, Tags And Venues</h1>
+          <p class="bd-lead">Guide to create and modify event categories, organizers, tags and venues</p>
+          <h3 id="creating-event-categories">Creating Event Categories</h3>
+
+<p>In this section you can add a new event category by entering the category name, slug and description, as well as choose a parent category from the existing ones, add an image and/or specify a category color. There are also search and bulk action options on the left.</p>
+
+<p><strong>Name.</strong> Set a descriptive name for the category.</p>
+
+<p><strong>Slug.</strong> Set a slug using which all of the events using the category will be displayed.</p>
+
+<p><strong>Parent.</strong> Specify a parent category for the event category.</p>
+
+<p><strong>Description.</strong> Provide a short description for the category. This is used for back end only.</p>
+
+<p><strong>Image</strong> Set an image for the category page.</p>
+
+<p><strong>Category Color.</strong> Set a color for the category. The events of the category will be highlighted with the selected color. Keep this in mind when setting the color to make it a fit with the0 <a href="calendar-themes">calendar theme</a>.</p>
+
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-02.PNG" alt="Creating Event Categories" /></p>
+
+<h3 id="creating-event-organizers">Creating Event Organizers</h3>
+
+<p>Here you can find the list of all created organizers. You can <strong>add new organizers</strong>, edit, quick edit, preview or delete them, as well as take bulk actions and/or apply filtering to simplify the search. You can also create new organizers by specifying such details, as:</p>
+
+<p><strong>Title.</strong> Set a name for the event organizer/group of organizers</p>
+
+<p><strong>Content.</strong> Provide details about specific organizers</p>
+
+<p><strong>Phone.</strong> Fill in the phone number of the organizer</p>
+
+<p><strong>Website.</strong> Enter the web-address of the organizer</p>
+
+<p><strong>Featured image.</strong> Set an image from the side-bar to be associated with the specific event organizer.</p>
+
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-04.PNG" alt="Creating Event Organizers" /></p>
+
+<h3 id="creating-event-tags">Creating Event Tags</h3>
+
+<p>In this section you can add a new event tag by entering the tag name, slug and description. There are also search and bulk action options on the left.</p>
+
+<p><strong>Name.</strong> Set a name for the tag.</p>
+
+<p><strong>Slug.</strong> Set a slug which will be used for displaying the events using the stated tag.</p>
+
+<p><strong>Description.</strong> Provide a short description for the tag, which will help to differentiate the tags.</p>
+
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-03-1.PNG" alt="Creating Event Tags" /></p>
+
+<h3 id="creating-event-venues">Creating Event Venues</h3>
+
+<p>Here you can find the list of all created venues. You can add new venues, edit, quick edit, preview or delete them, as well as take bulk actions and/or apply filtering to simplify the search. Click the <strong>‘Add new’</strong> button to create a new venue.</p>
+
+<p>You can create new venues by specifying such details, as:</p>
+
+<p><strong>Title.</strong> Set a title for the venue.</p>
+
+<p><strong>Content.</strong> Provide details about the specific venue if necessary.</p>
+
+<p><strong>Address.</strong> Fill in the address of the venue or show the venue location on Google Maps by checking the ‘Show Google Maps’ option. You can drag and drop the Google Maps marker to the location, which will then be displayed with the event. Please note that you need to get a Google Maps key from <strong><a href="https://console.developers.google.com/apis">Google APIs</a></strong> first to be able to configure the maps features and styles in the plugin <strong><a href="settings-themes">Settings</a></strong>.</p>
+
+<p><strong>Phone.</strong> Fill in the phone number of the venue.</p>
+
+<p><strong>Website.</strong> Enter the web-address of the venue.</p>
+
+<p><strong>Featured image.</strong> Set an image to be associated with the specific venue.</p>
+
+        </main>
+		
+		
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h3"><a href="#creating-event-categories">Creating Event Categories</a></li>
+<li class="toc-entry toc-h3"><a href="#creating-event-organizers">Creating Event Organizers</a></li>
+<li class="toc-entry toc-h3"><a href="#creating-event-tags">Creating Event Tags</a></li>
+<li class="toc-entry toc-h3"><a href="#creating-event-venues">Creating Event Venues</a></li>
+</ul>
+          </div>
+        
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="http://10web.io/about-us/">About</a></li>
+			  <li><a href="http://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="http://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="http://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2017 10Web, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+<meta name="description" content="Guide to configure Google Analytics alerts and Pushover notifications"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Alerts and Pushover · 10web</title>
+<link rel="icon" type="image/x-icon" href="/10web_docs/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/10web_docs/assets/css/minima.css">
+<link rel="stylesheet" href="/10web_docs/assets/css/style-10web.css">
+<script src="/10web_docs/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/10web_docs/assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo"  href="/10web_docs/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/10web_docs/" >Docs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/10web_docs/docs/tenweb-tutorial">Tutorial</a>
+		  </li>
+		  <li class="nav-item">
+			<a href="http://dev.10web.io" class="login_but btn">Login</a>
+		  </li>
+		</ul>
+		
+	</div>
+</nav>
+	
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">Google Analytics WD</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">Google Analytics WD</h4><div class="clear bd-toc-item has_child">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-analytics/quick-start">
+        <span class="parent-title">Quick Start </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/10web_docs/docs/wd-google-analytics/quick-start/authentication.html">
+              Authentication
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-analytics/quick-start/overview.html">
+              Overview
+            </a></li></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-analytics/report-types">
+        <span class="parent-title">Report Types </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item has_child">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-analytics/global-description">
+        <span class="parent-title">Global Description </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/10web_docs/docs/wd-google-analytics/global-description/metrics.html">
+              Metrics
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-analytics/global-description/charts.html">
+              Charts
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-analytics/global-description/date-range.html">
+              Date range
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-analytics/global-description/compare-date.html">
+              Compare Date
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-analytics/global-description/export-and-email.html">
+              Export and Email
+            </a></li></ul>
+    </div><div class="clear bd-toc-item active has_child">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-analytics/settings">
+        <span class="parent-title">Settings </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/10web_docs/docs/wd-google-analytics/settings/authenticate.html">
+              Authenticate
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-analytics/settings/use-your-own-project.html">
+              Use your own project
+            </a></li><li class="active bd-sidenav-active">
+            <a href="/10web_docs/docs/wd-google-analytics/settings/alerts-pushover.html">
+              Alerts and Pushover
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-analytics/settings/filters.html">
+              Filters
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-analytics/settings/emails.html">
+              Emails
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-analytics/settings/advanced.html">
+              Advanced
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-analytics/settings/adsense-adwords-account-linking.html">
+              AdSense and AdWords account linking
+            </a></li></ul>
+    </div><div class="clear bd-toc-item has_child">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-analytics/tracking">
+        <span class="parent-title">Tracking </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/10web_docs/docs/wd-google-analytics/tracking/tracking-options.html">
+              Tracking Options
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-analytics/tracking/custom-dimensions.html">
+              Custom Dimensions
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-analytics/tracking/exclude.html">
+              Exclude
+            </a></li></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-analytics/goal-management">
+        <span class="parent-title">Goal Management </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-analytics/custom-reports">
+        <span class="parent-title">Custom Reports </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+          <h1 class="bd-title" id="content">Alerts and Pushover</h1>
+          <p class="bd-lead">Guide to configure Google Analytics alerts and Pushover notifications</p>
+          <p><strong>Alert</strong> and <strong>Pushover</strong> notifications will keep you posted about highest or lowest number of <strong>Sessions, Users, Bounces</strong> or <strong>Session Durations</strong> on your website.</p>
+
+<p>The notifications can be sent <strong>daily, weekly</strong> or <strong>monthly,</strong> based on the conditions you select. Make sure to provide an email address, in case you are setting up Alerts, or your User Key, if you’d like the notifications to be sent via Pushover.</p>
+
+<p>Pushover is an Android, iOS and Desktop application, which lets you set simple notifications on your smartphone or tablet. Download the application, create a user and copy the User Key of your account to [Google Analytics WD settings]. You will be receiving notifications accordingly.</p>
+
+<p>Pushover for:</p>
+
+<ul>
+  <li><a href="https://play.google.com/store/apps/details?id=net.superblock.pushover&amp;hl=en">Android</a></li>
+  <li><a href="https://itunes.apple.com/en/app/pushover-notifications/id506088175?mt=8">iOS</a></li>
+  <li><a href="https://pushover.net/clients/desktop">Desktop</a></li>
+</ul>
+
+<p>The following conditions can be set for Alert and Pushover Notifications:</p>
+
+<p><strong>When:</strong> Sessions, Users, Bounces or Session Durations</p>
+
+<p><strong>Condition:</strong> Is less than, Is greater than</p>
+
+<p>For example, if would like to get notified, when to <strong>Users</strong> are less than 50, you need to select these options:</p>
+
+<p>When: <strong>Users</strong></p>
+
+<p>Condition: <strong>Is less than</strong></p>
+
+<p>Value: <strong>50</strong></p>
+
+        </main>
+		
+		
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="http://10web.io/about-us/">About</a></li>
+			  <li><a href="http://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="http://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="http://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2017 10Web, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>

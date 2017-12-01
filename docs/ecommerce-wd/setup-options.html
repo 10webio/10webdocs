@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+<meta name="description" content="Description of Setup and Options of Ecommerce WD plugin"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Setup and Options · 10web</title>
+<link rel="icon" type="image/x-icon" href="/10web_docs/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/10web_docs/assets/css/minima.css">
+<link rel="stylesheet" href="/10web_docs/assets/css/style-10web.css">
+<script src="/10web_docs/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/10web_docs/assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo"  href="/10web_docs/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/10web_docs/" >Docs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/10web_docs/docs/tenweb-tutorial">Tutorial</a>
+		  </li>
+		  <li class="nav-item">
+			<a href="http://dev.10web.io" class="login_but btn">Login</a>
+		  </li>
+		</ul>
+		
+	</div>
+</nav>
+	
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap toc_doc">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">Ecommerce WD</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">Ecommerce WD</h4><div class="clear bd-toc-item active">
+      <a class="bd-toc-link" href="/10web_docs/docs/ecommerce-wd/setup-options">
+        <span class="parent-title">Setup and Options </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/ecommerce-wd/adding-product">
+        <span class="parent-title">Adding A Product </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/ecommerce-wd/discounts-tax-shipping">
+        <span class="parent-title">Discounts, Tax and Shipping </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/ecommerce-wd/themes-publishing">
+        <span class="parent-title">Themes and Publishing </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/ecommerce-wd/ratings-tracking">
+        <span class="parent-title">Ratings and Tracking </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/ecommerce-wd/eccomerce-addons">
+        <span class="parent-title">Ecommerce WD Add-ons </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+          <h1 class="bd-title" id="content">Setup and Options</h1>
+          <p class="bd-lead">Description of Setup and Options of Ecommerce WD plugin</p>
+          <h2 id="setup">Setup</h2>
+
+<p>After installation of the Ecommerce plugin you will have an option to run <strong>Installation Wizard.</strong> If you skip this step, but want to use this option afterwards go to <strong>Options &gt; Global &gt; General &gt; Setup Wizard.</strong></p>
+
+<p>As a result of installation three menu sections will be added to your WordPress Dashboard <strong>Ecommerce WD, Products</strong> and <strong>Ecommerce Pages.</strong></p>
+
+<h2 id="options">Options</h2>
+
+<p>Options menu is the first step while creating an online store: here you set up general and payment options. Options contain Global, Products, Checkout, Additional charges and discounts, Users, Email options, Standard pages tabs.</p>
+
+<h3 id="global-options">Global options</h3>
+
+<p>Global Options allow changing the base location of the store, date format of the online store, enabling decimals and changing the lists for countries, currencies, order status types and running the setup wizard again. You can enable/disable search, filtering and sorting bases.</p>
+
+<p>By default Ecommerce WD uses its own template for product, manufacturer and category pages, but you can make necessary changes in <strong>Manage Templates.</strong></p>
+
+<p><strong>General Templates</strong> button uses website active theme and generates the pages using design of the theme. This works for most of the themes written strictly in WordPress standard. Otherwise you can manually add the PHP code to the template using <strong>Import from Theme template</strong> option instead. To reset the changes press <strong>Custom Template.</strong> which is the ecommerce default design.</p>
+
+<h3 id="checkout">Checkout</h3>
+
+<p>Here you can enable checkout, allow guest checkout (for non- registered users), redirect to cart after adding an item and enable/disable payment gateways and configure the options using <strong>Payment systems</strong> button for the all list or click on a payment gateways for a single one.</p>
+
+<p><strong>Without online payment.</strong> This option allows check out the product and receive money afterward.</p>
+
+<p><strong>PayPal Standard.</strong> In case of PayPal standard you are required to enter only the PayPal address which receives the payment and choose the checkout mode- sandbox (for testing) or production (for actual payment).</p>
+
+<p><strong>PayPal Express.</strong> For PayPal Express you need to choose the checkout mode- sandbox (for testing) or production (for actual payment). Then you need to create API signature:</p>
+
+<ol>
+  <li>Login to your PayPal (www.paypal.com) account. Make sure that the account is business one. Hit the profile icon on upper right corner, choose Profile and Settings from Business Profile menu.</li>
+  <li>On the right-hand menu hit My Selling Tools and in Selling Online click on Update hyperlink for API access.</li>
+  <li>Go to Option 2 and Request API Credentials on the API Access.</li>
+  <li>Request API signature and click Agree and Submit to generate the API signature.</li>
+</ol>
+
+<p>You should be able to get a similar result:</p>
+
+<p>Copy the generated username, password and signature and fill them in corresponding input fields.</p>
+
+<h3 id="tax-discount-and-shipping">Tax, discount and shipping</h3>
+
+<p>Here you can choose whether to include discounts and taxes in the final price of the product or not, e.g. you have tax of 10% and discount of 30% for 30USD item. When both options are enabled you will see 23.1 USD.</p>
+
+<p>You can also display tax in price during checkout and in shopping cart or skip that to final step.</p>
+
+<p>Since the tax comes as percentage you can choose to round it per item (line) or subtotal. The tax calculation can be based on customer shipping/billing address or the store location.</p>
+
+<p>Price suffix will allow adding price description, e.g. Price_including_tax or Taxed_price_excluding_shipment</p>
+
+<p>When you have multiple taxes applied to the item, you can separate them using itemized option or have an overall subtotal, e.g. 100 USD item is due to 5% and 3% taxes. Those taxed additions can be itemized as Tax: 5USD and Tax: 3 USD for itemized set up or Tax: 8USD as subtotal.</p>
+
+<p>There are a few parameters for shipping. You can hide/display shipping methods for items before entering shipping address. This address can be taken as either billing or shipping address, or you can force it to billing address (allowing your user to have only one address filled in).</p>
+
+<p>Here you can also set shipping calculation- per group (in case of identical shipping methods the bundle will be considered as a single unit, whereas in case of different methods for included items the shipping will be calculated for each product separately) of per unit (each unit will have its own shipping charge).</p>
+
+<h3 id="users">Users</h3>
+
+<p>Here you can enable/disable details necessary for the checkout. You can set the input fields to required as well.</p>
+
+<h3 id="email-options">Email Options</h3>
+
+<p>First specify the general email settings- Administrator email, Email from (to user) and From Name (Administrator username) and choose mailing type- php or smtp depending on your preference.</p>
+
+<p><strong>Email to Administrator</strong> tab defines the condition when to send an email, email subject, email mode and email body using custom HTML and placeholders.</p>
+
+<p><strong>Email to User</strong> tab defines the condition when to send an email, email subject, email mode and email body using custom HTML and placeholders.</p>
+
+<p><strong>Customer note</strong> tab defines whether to send email, email subject, mode and and email body using custom HTML and placeholders. Note that this email is sent when administrator changes the status of the order.</p>
+
+<p>In <strong>Failed, Pending, Completed and Refunded</strong> tabs choose whether to send email to Administrator and User, define subject, mode and email body using custom HTML and placeholders for each case.</p>
+
+<p><strong>Customer invoice</strong> is email manually sent to customers containing their order information and seller information. Define its subject, mode and email body using custom HTML and placeholders.</p>
+
+<h3 id="standard-pages">Standard Pages</h3>
+
+<p>Here you can specify permalink structures as well as path component for action page, e.g. Compare or List of license pages.</p>
+
+        </main>
+		
+		
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#setup">Setup</a></li>
+<li class="toc-entry toc-h2"><a href="#options">Options</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#global-options">Global options</a></li>
+<li class="toc-entry toc-h3"><a href="#checkout">Checkout</a></li>
+<li class="toc-entry toc-h3"><a href="#tax-discount-and-shipping">Tax, discount and shipping</a></li>
+<li class="toc-entry toc-h3"><a href="#users">Users</a></li>
+<li class="toc-entry toc-h3"><a href="#email-options">Email Options</a></li>
+<li class="toc-entry toc-h3"><a href="#standard-pages">Standard Pages</a></li>
+</ul>
+</li>
+</ul>
+          </div>
+        
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="http://10web.io/about-us/">About</a></li>
+			  <li><a href="http://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="http://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="http://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2017 10Web, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>

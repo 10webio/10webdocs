@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+<meta name="description" content="Description of Conditional Filters settings in Instagram Feed WD plugin"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Conditional Filters · 10web</title>
+<link rel="icon" type="image/x-icon" href="/10web_docs/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/10web_docs/assets/css/minima.css">
+<link rel="stylesheet" href="/10web_docs/assets/css/style-10web.css">
+<script src="/10web_docs/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/10web_docs/assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo"  href="/10web_docs/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/10web_docs/" >Docs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/10web_docs/docs/tenweb-tutorial">Tutorial</a>
+		  </li>
+		  <li class="nav-item">
+			<a href="http://dev.10web.io" class="login_but btn">Login</a>
+		  </li>
+		</ul>
+		
+	</div>
+</nav>
+	
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">Instagram Feed WD</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">Instagram Feed WD</h4><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-instagram-feed/installing-instagram-feed">
+        <span class="parent-title">Installing Instagram Feed WD </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item active has_child">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-instagram-feed/creating-feed">
+        <span class="parent-title">Creating an Instagram Feed </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/10web_docs/docs/wd-instagram-feed/creating-feed/thumbnails-masonry.html">
+              Thumbnails and Masonry Layouts
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-instagram-feed/creating-feed/blog-style.html">
+              Blog Style
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-instagram-feed/creating-feed/image-browser.html">
+              Image Browser
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-instagram-feed/creating-feed/lightbox-settings.html">
+              Lightbox Settings
+            </a></li><li class="active bd-sidenav-active">
+            <a href="/10web_docs/docs/wd-instagram-feed/creating-feed/conditional-filters.html">
+              Conditional Filters
+            </a></li></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-instagram-feed/publishing-instagram-feed">
+        <span class="parent-title">Publishing Instagram Feed </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-instagram-feed/styling-with-themes">
+        <span class="parent-title">Styling with Themes </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-instagram-feed/advanced-options">
+        <span class="parent-title">Advanced Customizing Options </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+          <h1 class="bd-title" id="content">Conditional Filters</h1>
+          <p class="bd-lead">Description of Conditional Filters settings in Instagram Feed WD plugin</p>
+          <p>Conditional filters are used in cases if you want to insert filtered feeds of certain user(s) or hashtag(s). Conditional filters can be used for both displaying or skipping certain images. Filters are also applicable to mixed feeds.</p>
+
+<p><strong>Enable Conditional Filters.</strong> Enabling the option you will be able to add condition to the feed.</p>
+
+<p><strong>Source of filtering.</strong> When creating a feed you provide username(s) and/or hashtag(s). All provided usernames and/or hashtags will be used as initial source. Filters will be applied to feed generated on this selection.</p>
+
+<p><strong>Filter Logic.</strong> Filter logic allows displaying one of the options:</p>
+
+<ul>
+  <li><strong>And</strong> - Displays Instagram posts which correspond to all filters.</li>
+  <li><strong>Or</strong> - Displays Instagram posts which correspond to at least one of the filters.</li>
+  <li><strong>Nor</strong> - Hides Instagram posts which correspond to at least one of the filters.</li>
+</ul>
+
+<p><strong>Add Condition.</strong> Write your condition, select condition type and click on Add New Condition. You can add as many conditions as you want repeating the process. You can add different condition types mixed together as well. Condition might be username (use @ before the username), hashtag (use # before the keyword), text or link (provide full URL) depending on condition type. Let’s discuss each condition type separately:</p>
+
+<ul>
+  <li><strong>Username.</strong> Useful when you have a feed based on hashtags. It will allow displaying feeds of only certain accounts using that hashtag. Let’s consider you have #panda and #animal hashtags, you can set @natgeo and @instapandacool to display images from these two accounts.</li>
+  <li><strong>Hashtag.</strong> Useful when you have a feed based on usernames. It will allow displaying feeds using only certain hashtag, e.g. if you have @bmw and @instacars as users and want to display only posts containing #bmw hashtag.</li>
+  <li><strong>Mention.</strong> This can be used both in cases of hashtag and usernames, e.g. displaying posts where @moby is mentioned.</li>
+  <li><strong>Description.</strong> This can be used both with hashtags and usernames. This can be a single keyword or word combination which should be used within the Instagram post description.</li>
+  <li><strong>Instagram Media Link.</strong> This is the shareable link of the Instagram post. The entire URL should be used for serving as a filter.</li>
+</ul>
+
+<p><strong>Result.</strong> Here you will see all of the added filters which will be applied to your feed.</p>
+
+        </main>
+		
+		
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="http://10web.io/about-us/">About</a></li>
+			  <li><a href="http://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="http://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="http://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2017 10Web, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>

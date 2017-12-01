@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+<meta name="description" content="Instruction to add Discounts, Tax and Shipping with Ecommerce WD plugin"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Discounts, Tax and Shipping · 10web</title>
+<link rel="icon" type="image/x-icon" href="/10web_docs/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/10web_docs/assets/css/minima.css">
+<link rel="stylesheet" href="/10web_docs/assets/css/style-10web.css">
+<script src="/10web_docs/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/10web_docs/assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo"  href="/10web_docs/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/10web_docs/" >Docs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/10web_docs/docs/tenweb-tutorial">Tutorial</a>
+		  </li>
+		  <li class="nav-item">
+			<a href="http://dev.10web.io" class="login_but btn">Login</a>
+		  </li>
+		</ul>
+		
+	</div>
+</nav>
+	
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap toc_doc">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">Ecommerce WD</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">Ecommerce WD</h4><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/ecommerce-wd/setup-options">
+        <span class="parent-title">Setup and Options </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/ecommerce-wd/adding-product">
+        <span class="parent-title">Adding A Product </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item active">
+      <a class="bd-toc-link" href="/10web_docs/docs/ecommerce-wd/discounts-tax-shipping">
+        <span class="parent-title">Discounts, Tax and Shipping </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/ecommerce-wd/themes-publishing">
+        <span class="parent-title">Themes and Publishing </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/ecommerce-wd/ratings-tracking">
+        <span class="parent-title">Ratings and Tracking </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/ecommerce-wd/eccomerce-addons">
+        <span class="parent-title">Ecommerce WD Add-ons </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+          <h1 class="bd-title" id="content">Discounts, Tax and Shipping</h1>
+          <p class="bd-lead">Instruction to add Discounts, Tax and Shipping with Ecommerce WD plugin</p>
+          <h2 id="adding-discount">Adding Discount</h2>
+
+<p>To create discounts for grouped or single items go to <strong>Ecommerce &gt; Discounts.</strong> Fill in its title, slug, add description, rate in percentage, start and finish dates. Then press <strong>Add new discount</strong> button.</p>
+
+<h2 id="adding-tax-classes">Adding Tax Classes</h2>
+
+<p>To create tax classes for grouped or single items go to <strong>Ecommerce &gt; Tax Classes.</strong> Fill in its title, slug, description and add tax rates.</p>
+
+<p>The tax rate might vary based on the address. For each country, zip code or area code you can have separate tax pressing Insert Row.</p>
+
+<p>Here you can set the country, rate, name the tax and set its priority.</p>
+
+<p><strong>Priority.</strong> If you have only specific countries, you can add separate rows for those and have the rest set to All Country. In this case it will be important to have the same priority to have only one of them applied:</p>
+
+<p>E.g. Canada 3%, All Countries 5%, will help to apply only 3% if Canada has higher rank in ordering. If those two have different priorities both of the taxes will apply regardless of ranking.</p>
+
+<p>In addition to country there are a few other variables can be set for tax. To see the full list, you should first save the tax pressing <strong>Add new tax</strong> button, then from the list press <strong>Edit</strong> button (available below the title on hover).</p>
+
+<p>Here you will see a few more rows: State, ZIP/Postcode, City, Compound and Shipping Rate.</p>
+
+<p>In state, zip/postcode and city rows you need to manually add the list of codes/names and separate them with semicolon to apply different tax rates based on filled in data. Plus you can have separate Shipping rate for the provided data.</p>
+
+<p>The taxes use various attributes to define which tax should be applied to the product and in what order.</p>
+
+<p><strong>Ordering.</strong> If you have set the tax priority, then only one of the same priority tax will be applied to the product. And that’s the tax class which has higher ranking.</p>
+
+<p>E.g. if you are purchasing item for Australia</p>
+
+<ul>
+  <li>Australia with Priority 1</li>
+  <li>All Countries with Priority 1</li>
+</ul>
+
+<p>Set up will have only Australia-relevant tax applies to the product.</p>
+
+<ul>
+  <li>Australia with Priority 1</li>
+  <li>All Countries with Priority 2</li>
+</ul>
+
+<p>Set up will have both Australia and All Countries tax applied to the product.</p>
+
+<p><strong>Compound Tax.</strong> This applies in cases when you have more than one tax applied to the product. If checked it will apply the second and consequential taxes to already taxed price of the product. If unchecked, the tax will be applied not over, but to the original price of the product before taxes.</p>
+
+<p>E.g. Product is priced 100USD before taxes.</p>
+
+<p>We have Australia with Priority 1 and Tax percentage 10% All Countries with Priority 2 and Tax percentage 30% Compound</p>
+
+<p>In this case first Australian tax will be applied and then All Country. The calculation will be the following: 100+100x10%= 110 USD, then 110+110x30%=143 USD, which will be the final price. In case of non-compound for both cases, we will end up with 140USD.</p>
+
+<h2 id="adding-shipping">Adding Shipping</h2>
+
+<p>To set up shipping options go to <strong>Ecommerce WD &gt; Shippings.</strong></p>
+
+<p>Here you will find tabbed menu for <strong>Shipping Zones</strong> and <strong>Shipping Classes.</strong></p>
+
+<h3 id="shipping-zones">Shipping Zones</h3>
+
+<p>The destination, where the products are shipped to is called Shipping Zone. Geographically it can be as large as a group of countries/continent or small as area with specific postcodes. Depending on needs and your client location base you can create multiple shipping services for specific locations, e.g. offer free shipping for US with exclusion of Alaska and Hawaii, where you can offer flat shipping rate.</p>
+
+<p>Zones can be based on:</p>
+
+<ul>
+  <li><strong>Group of Countries</strong> ( US and Canada)</li>
+  <li><strong>Country</strong> (United States)</li>
+  <li><strong>State/Province</strong> (California, United States or Cambridgeshire, United Kingdom) based on Zip Code ranges</li>
+  <li><strong>Individual Zip Codes</strong> (10001, 11102 and etc.)</li>
+  <li><strong>Rest of the World</strong> - Default value for options not falling into any of the rules.</li>
+</ul>
+
+<p>To create New shipping zone, press Add New button. Name the zone, select the country/ies, specify area like state/city with a specific set of zip/postcodes, a range of postcodes (e.g. 10001…11102 for New York City.), or use wildcards (e.g. CB23x).</p>
+
+<p>Choose whether to have paid or free shipping for created zone, general pricing ( applicable before class shipping price), free shipping for certain price and higher purchases if applicable and shipping rate calculation. The latter has two options- per bundle (in case of identical shipping methods the bundle will be considered as a single unit, whereas in case of different methods for included items the shipping will be calculated for each product separately) or per unit (each unit will have its own shipping charge).</p>
+
+<p>As a final step you can fill in prices for each Shipping Class e.g. have 4 USD for 3-5 business-day shipment by plane and 8 USD for single business-day express shipment. All Shipping Classes which are not applicable to the zone should be left with existing N/A value.</p>
+
+<h3 id="shipping-classes">Shipping Classes</h3>
+
+<p>Shipping class determines the shipping charge paid for the product delivery and can take multiple forms․ It’s can be used as shipping type or method.</p>
+
+<p>In case of type you can determine different shipping classes for product groups based on various characteristics:</p>
+
+<ul>
+  <li><strong>Product weight,</strong> e.g. lightweight items such as clothes and heavy items such as kitchen furniture</li>
+  <li><strong>Product dimensions</strong> (separate price for items larger than certain dimension)</li>
+  <li><strong>Product care</strong> (separate price for fragile items due to packaging) and etc.</li>
+</ul>
+
+<p>When dealing with shipping method, those can vary depending on store actual location. Most of the common options are:</p>
+
+<ul>
+  <li><strong>Flat Rate</strong> for the entire region, e.g 5 USD for United States regardless of state.</li>
+  <li><strong>Custom Carrier shipment,</strong> including USPS, UPS, FedEx or any other delivery services with corresponding time ranges, e.g. FedEx Standard Overnight or UPS 3-5 business-day home delivery</li>
+  <li><strong>Special/local store delivery options,</strong> e.g. Express delivery (1-2 days), Standard delivery (5-10 days)</li>
+</ul>
+
+<p>Note that you can add shipping classes pressing Insert New Row button. Then fill in the name of the shipping class and its slug. Since depending on final destination cost will be different for the same shipping method, you need to provide prices for individual methods within individual shipping zones.</p>
+
+<p>Note that single product can have multiple shipping classes. Those should be set when creating individual products in Shipping tab.</p>
+
+        </main>
+		
+		
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#adding-discount">Adding Discount</a></li>
+<li class="toc-entry toc-h2"><a href="#adding-tax-classes">Adding Tax Classes</a></li>
+<li class="toc-entry toc-h2"><a href="#adding-shipping">Adding Shipping</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#shipping-zones">Shipping Zones</a></li>
+<li class="toc-entry toc-h3"><a href="#shipping-classes">Shipping Classes</a></li>
+</ul>
+</li>
+</ul>
+          </div>
+        
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="http://10web.io/about-us/">About</a></li>
+			  <li><a href="http://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="http://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="http://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2017 10Web, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>

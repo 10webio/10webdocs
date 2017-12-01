@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+<meta name="description" content="Google Maps WD Marker Listing Settings"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Marker Listing · 10web</title>
+<link rel="icon" type="image/x-icon" href="/10web_docs/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/10web_docs/assets/css/minima.css">
+<link rel="stylesheet" href="/10web_docs/assets/css/style-10web.css">
+<script src="/10web_docs/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/10web_docs/assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo"  href="/10web_docs/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/10web_docs/" >Docs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/10web_docs/docs/tenweb-tutorial">Tutorial</a>
+		  </li>
+		  <li class="nav-item">
+			<a href="http://dev.10web.io" class="login_but btn">Login</a>
+		  </li>
+		</ul>
+		
+	</div>
+</nav>
+	
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">Google Maps WD</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">Google Maps WD</h4><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/api-configuration">
+        <span class="parent-title">Configuring Google Maps API </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/creating-map">
+        <span class="parent-title">Creating Map </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item active has_child">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/settings">
+        <span class="parent-title">Settings </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/10web_docs/docs/wd-google-maps/settings/general.html">
+              General
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/settings/controls.html">
+              Controls
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/settings/layers.html">
+              Layers
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/settings/directions.html">
+              Directions
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/settings/store-locator.html">
+              Store Locator
+            </a></li><li class="active bd-sidenav-active">
+            <a href="/10web_docs/docs/wd-google-maps/settings/marker-listing.html">
+              Marker Listing
+            </a></li></ul>
+    </div><div class="clear bd-toc-item has_child">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/map">
+        <span class="parent-title">Map </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/10web_docs/docs/wd-google-maps/map/adding-map-attributes.html">
+              Adding Map Attributes
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/map/adding-marker.html">
+              Adding Marker
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/map/adding-circle.html">
+              Adding Circle
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/map/adding-rectangle.html">
+              Adding Rectangle
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/map/adding-polygon.html">
+              Adding Polygon
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/map/adding-polylines.html">
+              Adding Polylines
+            </a></li></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/preview-themes">
+        <span class="parent-title">Preview/Themes </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/creating-marker-categories">
+        <span class="parent-title">Creating Marker Categories </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/publishing-created-map">
+        <span class="parent-title">Publishing Created Map </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/marker-clustering">
+        <span class="parent-title">Marker Clustering Add-on </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+          <h1 class="bd-title" id="content">Marker Listing</h1>
+          <p class="bd-lead">Google Maps WD Marker Listing Settings</p>
+          <p>In this section you will learn how to edit the Marker Listing settings of the WordPress Google Maps plugin.</p>
+
+<p>Markers used on the map can be listed with different view options, helping out the users to find locations based on marker categories. To create marker categories navigate to <strong>Google Maps WD &gt; Marker Category</strong> section.</p>
+
+<p>When filter is enabled you can choose the categories to display markers for:</p>
+
+<p><img src="http://docscdn.10web.io/wd-google-maps/map-05.png" alt="Google Maps WD Marker Category" /></p>
+
+<p><strong>List Type.</strong> The markers can be listed in one of the following view option:</p>
+
+<p><strong>Basic:</strong> Displays the category, marker location, get directions(if directions are enabled) and marker image if available.</p>
+
+<p><img src="http://docscdn.10web.io/wd-google-maps/map-06.png" alt="Google Maps WD Markers" /></p>
+
+<p><strong>Advanced Table:</strong> Displays marker title, category, address and description with search possibility as well as ordering (changes direction for ascending to descending when hitting the title, category, address or description).</p>
+
+<p><img src="http://docscdn.10web.io/wd-google-maps/map-07.png" alt="Google Maps WD Markers Category Search" /></p>
+
+<p><strong>Carousel:</strong> Lists the markers in a slideshow. When hitting the slide the marker will be displayed on the map</p>
+
+<p><img src="http://docscdn.10web.io/wd-google-maps/map-08.png" alt="Google Maps WD Markers Carousel" /></p>
+
+<p><strong>Enable Category Filter.</strong> When enabled the user will be able to filter markers to certain categories.</p>
+
+<p><strong>Move List Inside Map.</strong> Markers can also be included in a map similar to map legends.</p>
+
+<p><strong>Marker List position.</strong> Choose the location where markers will be listed among possible options.</p>
+
+        </main>
+		
+		
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="http://10web.io/about-us/">About</a></li>
+			  <li><a href="http://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="http://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="http://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2017 10Web, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>

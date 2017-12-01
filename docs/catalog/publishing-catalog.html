@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+<meta name="description" content="Instructions to publish WordPress catalog"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Publishing The Created Catalog · 10web</title>
+<link rel="icon" type="image/x-icon" href="/10web_docs/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/10web_docs/assets/css/minima.css">
+<link rel="stylesheet" href="/10web_docs/assets/css/style-10web.css">
+<script src="/10web_docs/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/10web_docs/assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo"  href="/10web_docs/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/10web_docs/" >Docs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/10web_docs/docs/tenweb-tutorial">Tutorial</a>
+		  </li>
+		  <li class="nav-item">
+			<a href="http://dev.10web.io" class="login_but btn">Login</a>
+		  </li>
+		</ul>
+		
+	</div>
+</nav>
+	
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">Spider Catalog</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">Spider Catalog</h4><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/catalog/creating-catalog">
+        <span class="parent-title">Creating A Catalog </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/catalog/global-options">
+        <span class="parent-title">Catalog Global Options </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/catalog/cells-options">
+        <span class="parent-title">Catalog Cells Page Options </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/catalog/cells-options">
+        <span class="parent-title">Catalog List, Thumbnails and Product Page Options </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item active">
+      <a class="bd-toc-link" href="/10web_docs/docs/catalog/publishing-catalog">
+        <span class="parent-title">Publishing The Created Catalog </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+          <h1 class="bd-title" id="content">Publishing The Created Catalog</h1>
+          <p class="bd-lead">Instructions to publish WordPress catalog</p>
+          <h3 id="to-insert-a-catalog-into-a-page-or-a-post">To insert a catalog into a Page or a Post.</h3>
+
+<p>Press the button named <strong>Insert Spider Catalog</strong> in a post or a page you want to show the catalog.</p>
+
+<p><img src="http://docscdn.10web.io/catalog/Catalog_1.png" alt="Publishing Catalog" /></p>
+
+<h4 id="single-product">Single Product</h4>
+
+<p><strong>Select Product.</strong> Select a product from the given list.</p>
+
+<h4 id="products-list">Products List</h4>
+
+<p><strong>Select Category.</strong> Select a category from the given list.</p>
+
+<p><strong>Show Category Details.</strong> Choose whether to show the category details.</p>
+
+<p><strong>Product Display Type.</strong> Choose the display option of the product.</p>
+
+<p><strong>Show Subcategories.</strong> Choose whether to also display the subcategories of the chosen category or not.</p>
+
+<p><strong>Show Subcategory Products.</strong> Choose whether to display the subcategory products.</p>
+
+<ul>
+  <li><strong>All.</strong> Shows all subcategory products.</li>
+  <li><strong>No.</strong> Does not show subcategory products.</li>
+  <li><strong>Chosen.</strong> Shows only the products for which the **Show in Parent **option has been enabled.</li>
+</ul>
+
+<p><strong>Show Products.</strong> Choose whether to show the products of the chose category or not.</p>
+
+<p><img src="http://docscdn.10web.io/catalog/Catalog_2.png" alt="Publishing Catalog" /></p>
+
+<p><em>If there is any problem with editor, you can manually add the short code to the pages or posts.</em></p>
+
+<h3 id="shortcode">Shortcode</h3>
+
+<h4 id="single-product-1">Single product</h4>
+
+<p>Add the short code <strong>[Spider_Catalog_Product id=”my id”]</strong> to the pages or posts and change the following point.</p>
+
+<ul>
+  <li><strong>ID.</strong> Add the ID (Spider Catalog&gt;Products&gt;ID) of the single product to the appropriate place <strong>(my id)</strong> in the shortcode.</li>
+</ul>
+
+<h4 id="products-list-1">Products list</h4>
+
+<p>Add  the short code <em>[Spider_Catalog_Category id=” CategoryID” details=”1” type=”” showsub=”1” showsubprod=”2” showprod=”1”]</em> to the pages or posts and change the following points.</p>
+
+<ul>
+  <li><strong>ID.</strong> Add the ID <strong>(Spider Catalog &gt; Category &gt; ID)</strong> of the category which you want to show to the appropriate place <strong>(my id)</strong> in the shortcode. If the value of the <strong>ID</strong> is <strong>All_CAT,</strong> the all categories will be shown.</li>
+  <li><strong>Details.</strong> If the value of the details is <strong>1,</strong> the information about category won’t be shown. For showing the information change the value of the details to <strong>0.</strong></li>
+  <li>
+    <p><strong>Type.</strong> If the value of the type is empty (“”), the products list will be shown with cells (Cells 1 view). For the other views please use the following values:</p>
+
+    <ul>
+      <li>List view - <strong>list</strong></li>
+      <li>Cells 2 - <strong>cells2</strong></li>
+      <li>Wide Cells - <strong>wcells</strong></li>
+      <li>Thumbnails - <strong>thumb</strong></li>
+      <li>Cells 3 - <strong>cells3</strong></li>
+    </ul>
+  </li>
+  <li><strong>Showsub.</strong> Specify the value as “1” if you want the subcategories to be displayed. Specify the value as “0” if you do not want them to be displayed.</li>
+  <li><strong>Showsubprod.</strong> All: <strong>Value=”1”;</strong> No: <strong>Value=”0”;</strong> Chosen: <strong>Value=”2”.</strong></li>
+  <li><strong>Showprod.</strong> Specify the value as “1” if you want the products to be displayed. Specify the value as “0” if you do not want them to be displayed.</li>
+</ul>
+
+        </main>
+		
+		
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="http://10web.io/about-us/">About</a></li>
+			  <li><a href="http://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="http://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="http://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2017 10Web, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>

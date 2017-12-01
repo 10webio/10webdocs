@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+<meta name="description" content="Guide to create child themes"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Creating Child Themes · 10web</title>
+<link rel="icon" type="image/x-icon" href="/10web_docs/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/10web_docs/assets/css/minima.css">
+<link rel="stylesheet" href="/10web_docs/assets/css/style-10web.css">
+<script src="/10web_docs/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/10web_docs/assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo"  href="/10web_docs/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/10web_docs/" >Docs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/10web_docs/docs/tenweb-tutorial">Tutorial</a>
+		  </li>
+		  <li class="nav-item">
+			<a href="http://dev.10web.io" class="login_but btn">Login</a>
+		  </li>
+		</ul>
+		
+	</div>
+</nav>
+	
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">Themes</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">Themes</h4><div class="clear bd-toc-item has_child">
+      <a class="bd-toc-link" href="/10web_docs/docs/themes/configuring-wordpress">
+        <span class="parent-title">Configuring WordPress </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/10web_docs/docs/themes/configuring-wordpress/general-settings.html">
+              General Settings
+            </a></li><li>
+            <a href="/10web_docs/docs/themes/configuring-wordpress/other-settings.html">
+              Other Settings
+            </a></li></ul>
+    </div><div class="clear bd-toc-item has_child">
+      <a class="bd-toc-link" href="/10web_docs/docs/themes/adding-content">
+        <span class="parent-title">Adding Content </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/10web_docs/docs/themes/adding-content/creating-pages.html">
+              Creating Pages
+            </a></li><li>
+            <a href="/10web_docs/docs/themes/adding-content/creating-menus.html">
+              Creating Menus
+            </a></li><li>
+            <a href="/10web_docs/docs/themes/adding-content/creating-posts.html">
+              Creating Posts
+            </a></li><li>
+            <a href="/10web_docs/docs/themes/adding-content/adding-media.html">
+              Adding Media
+            </a></li><li>
+            <a href="/10web_docs/docs/themes/adding-content/adding-comments.html">
+              Adding Comments
+            </a></li></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/themes/installing-theme">
+        <span class="parent-title">Installing the Theme </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item has_child">
+      <a class="bd-toc-link" href="/10web_docs/docs/themes/appearance">
+        <span class="parent-title">Appearance </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/10web_docs/docs/themes/appearance/configuring-appearance.html">
+              Configuring Appearance
+            </a></li><li>
+            <a href="/10web_docs/docs/themes/appearance/adding-favicon.html">
+              Adding Favicon
+            </a></li><li>
+            <a href="/10web_docs/docs/themes/appearance/selecting-layout.html">
+              Selecting Layout
+            </a></li><li>
+            <a href="/10web_docs/docs/themes/appearance/look-and-feel.html">
+              Configuring General Look-and-feel
+            </a></li><li>
+            <a href="/10web_docs/docs/themes/appearance/configuring-homepage.html">
+              Configuring Homepage
+            </a></li><li>
+            <a href="/10web_docs/docs/themes/appearance/homepage-appearance.html">
+              Configure the Appearance of Homepage
+            </a></li><li>
+            <a href="/10web_docs/docs/themes/appearance/configuring-slider.html">
+              Configuring Slider
+            </a></li><li>
+            <a href="/10web_docs/docs/themes/appearance/page-templates.html">
+              Configuring Page Templates
+            </a></li></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/themes/configuring-seo">
+        <span class="parent-title">Configuring SEO </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/themes/advanced-configuration">
+        <span class="parent-title">Advanced Configuration </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/themes/adding-widgets">
+        <span class="parent-title">Adding Widgets </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item active has_child">
+      <a class="bd-toc-link" href="/10web_docs/docs/themes/maintenance">
+        <span class="parent-title">Theme Maintenance </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/10web_docs/docs/themes/maintenance/theme-updates.html">
+              Theme Updates
+            </a></li><li>
+            <a href="/10web_docs/docs/themes/maintenance/backup-restore.html">
+              Backup and Restore
+            </a></li><li class="active bd-sidenav-active">
+            <a href="/10web_docs/docs/themes/maintenance/child-themes.html">
+              Configuring Child Themes
+            </a></li></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+          <h1 class="bd-title" id="content">Creating Child Themes</h1>
+          <p class="bd-lead">Guide to create child themes</p>
+          <p>Consider creating a child theme if you want to modify your WordPress theme significantly: rebuild theme CSS and extend the functions.php file. Child theme is a good solution to keep your changes even if you update the parent theme.</p>
+
+<p>To create a child WordPress theme, in admin panel:</p>
+<ul>
+  <li>Go to <strong>Plugins &gt; Add New.</strong></li>
+  <li>In the Search Plugins text box, type in <strong>Child Theme Configurator</strong> and hit enter.
+<img src="http://docscdn.10web.io/themes/118.png" alt="Child themes" /></li>
+  <li>Click <strong>Install Now</strong> in the plugin’s combo box.</li>
+  <li>Once the plugin installs, click <strong>Activate Plugin.</strong>
+<img src="http://docscdn.10web.io/themes/119.png" alt="Child Themes" /></li>
+  <li>Go to <strong>Tools &gt; Child Themes.</strong></li>
+  <li>Select a <strong>Parent Theme</strong> from the list, and click <strong>Analyze.</strong></li>
+  <li>Once the theme is successfully analyzed, specify the <strong>name of the new theme directory.</strong></li>
+  <li>Select where to save new styles:
+    <ul>
+      <li><strong>Primary Stylesheet (style.css)</strong> - save new custom styles directly to the Child Theme primary stylesheet, replacing existing values. The primary stylesheet will load in the order set by the theme.</li>
+      <li><strong>Separate Stylesheet</strong> - save new custom styles to a separate stylesheet and use any existing child theme styles as a baseline. Select this option if you want to preserve the original child theme styles instead of overwriting them. This option also allows you to customize stylesheets that load after the primary stylesheet.</li>
+    </ul>
+  </li>
+  <li>Select Parent Theme stylesheet handling:
+    <ul>
+      <li><strong>Use the WordPress style queue</strong> - let the Configurator determine the appropriate actions and dependencies and update the functions file automatically.</li>
+      <li><strong>Use @import in the child theme stylesheet</strong> - only use this option if the parent stylesheet cannot be loaded using the WordPress style queue. Using @import is not recommended.</li>
+      <li><strong>Do not add any parent stylesheet handling</strong> - select this option if this theme already handles the parent theme stylesheet or if the parent theme’s style.css file is not used for its appearance.</li>
+    </ul>
+  </li>
+  <li>Customize the Child Theme Name, Description, Author, Version, etc. (Click to toggle form).</li>
+  <li>Copy Parent Theme Menus, Widgets and other Customizer Settings to Child Theme. <strong>NOTE:</strong> This will overwrite any child theme options you may have already set.</li>
+  <li>Click the <strong>Create New Child Theme</strong> button to run the Configurator. Once the child theme’s created, you can:
+    <ul>
+      <li><strong>CONFIGURE an existing Child Theme</strong> - set up a previously installed child theme for use with the Configurator or to modify current settings.</li>
+      <li><strong>DUPLICATE an existing Child Theme</strong> - make a complete copy of an existing Child Theme in a new directory, including any menus, widgets and other Customizer settings. The option to copy the Parent Theme settings is disabled with this action.</li>
+      <li><strong>RESET an existing Child Theme</strong> (this will destroy any work you have done in the Configurator) - revert the Child theme stylesheet and functions files to their state before the initial configuration or last reset.</li>
+    </ul>
+  </li>
+</ul>
+
+        </main>
+		
+		
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="http://10web.io/about-us/">About</a></li>
+			  <li><a href="http://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="http://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="http://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2017 10Web, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>

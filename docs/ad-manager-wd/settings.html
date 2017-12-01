@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+<meta name="description" content="Description of WordPressAd Manager WD settings"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Settings · 10web</title>
+<link rel="icon" type="image/x-icon" href="/10web_docs/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/10web_docs/assets/css/minima.css">
+<link rel="stylesheet" href="/10web_docs/assets/css/style-10web.css">
+<script src="/10web_docs/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/10web_docs/assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo"  href="/10web_docs/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/10web_docs/" >Docs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/10web_docs/docs/tenweb-tutorial">Tutorial</a>
+		  </li>
+		  <li class="nav-item">
+			<a href="http://dev.10web.io" class="login_but btn">Login</a>
+		  </li>
+		</ul>
+		
+	</div>
+</nav>
+	
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap toc_doc">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">Ad Manager WD</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">Ad Manager WD</h4><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/ad-manager-wd/creating-ads">
+        <span class="parent-title">Creating Ads </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/ad-manager-wd/groups">
+        <span class="parent-title">Ad Groups </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/ad-manager-wd/schedules">
+        <span class="parent-title">Schedules </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item active">
+      <a class="bd-toc-link" href="/10web_docs/docs/ad-manager-wd/settings">
+        <span class="parent-title">Settings </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+          <h1 class="bd-title" id="content">Settings</h1>
+          <p class="bd-lead">Description of WordPressAd Manager WD settings</p>
+          <h3 id="managing-all-adverts">Managing All Adverts</h3>
+
+<p>When you create a few advertisement entries, they all will be available under Ad Manager WD page. This section also provides a set of useful tools, which will come handy for you. Let’s go through each of them and discuss thoroughly.</p>
+
+<p>As with regular WordPress posts, you can <strong>search</strong> your adverts from this page. Enter their title (partially or fully) in corresponding input on top right corner, then click <strong>Search.</strong></p>
+
+<p><strong>Bulk Actions</strong> dropdown of this page comes with the following settings. Choose the one you need to use and hit <strong>Apply.</strong></p>
+
+<ul>
+  <li><strong>Edit</strong> lets you make quick modifications on more than one adverts.</li>
+  <li><strong>Move</strong> to Trash helps you delete several advertisement entries at once.</li>
+  <li><strong>Duplicate</strong> will create copies of all selected adverts.</li>
+  <li><strong>Deactivate</strong> allows you to unpublish chosen advertisements from frontend of your site.</li>
+  <li><strong>Reset stats</strong> will clear out all clicks and impressions statistics for selected adverts.</li>
+  <li><strong>Export to JSON</strong> option will let you export chosen entries as a JSON file and import on another website, where you have Ad Manager WD plugin.</li>
+  <li><strong>Renew</strong> lets you re-publish expired adverts for the following periods:
+    <ul>
+      <li>For 1 year</li>
+      <li>For 180 days</li>
+      <li>For 30 days</li>
+      <li>For 7 days</li>
+    </ul>
+  </li>
+</ul>
+
+<p>You can also <strong>filter</strong> advertisements on All Adverts page using the dropdown menus from the top. They can be filtered by the <strong>dates</strong> they were <strong>published, groups, schedules,</strong> as well as their <strong>expiration status</strong> (active/expired/soon to expire). Choose the necessary values for each select box and click <strong>Filter.</strong></p>
+
+<h3 id="settings">Settings</h3>
+
+<p>Ad Manager WD provides various useful settings, which makes the functionality of the adverts more flexible. You can configure alert messages, geo targeting options, administrative roles and much more. Navigate to <strong>Ad Manager WD &gt; Settings</strong> and let’s go through each section and options one by one.</p>
+
+<h3 id="general">General</h3>
+
+<p><strong>Ad Block Detection</strong> can be enabled to have a message in case Ad blocker extensions are enabled on user’s browser. The message will appear as an overlay on your website frontend. With <strong>Show message for</strong> setting you can select the interval (in seconds) during which this message will be displayed. Furthermore, set the message content for Adblock detection using <strong>Message to show</strong> option.</p>
+
+<p><strong>Bot Filter</strong> option lets you provide list of bots, which will otherwise interact with your adverts. We provide a predefined list, which you can keep for this setting. <strong>Send Notification When</strong> lets you enable <strong>email</strong> or <strong>Pushover</strong> notifications to keep track of changes among your adverts. These alert messages can be sent for the following two cases:</p>
+
+<ul>
+  <li>Any advertiser saves an advert in your moderation queue.</li>
+  <li>A moderator approved an advert from the moderation queue.</li>
+</ul>
+
+<p>Mark <strong>Email Message</strong> option as checked to configure email notifications. Afterwards provide the list of recipient email addresses, separated by commas.</p>
+
+<p><strong>Push Notifications to Your Smartphone</strong> option turns on notifications, which you will receive directly to your smartphone. This is done through <strong>Pushover</strong> application.</p>
+
+<p>You can download and install Pushover on your devices from the following links:</p>
+
+<ul>
+  <li><a href="https://play.google.com/store/apps/details?id=net.superblock.pushover&amp;hl=en">Android</a></li>
+  <li><a href="https://itunes.apple.com/us/app/pushover-notifications/id506088175?mt=8">iOS</a></li>
+  <li><a href="https://pushover.net/clients/desktop">Desktop</a></li>
+</ul>
+
+<p>There’s one last step necessary to complete, if you wish to get notified via Pushover application. Make user to create a new user for yourself, then copy <strong>User Key</strong> and <strong>API Token</strong> of your account to corresponding options of Ad Manager WD.</p>
+
+<h3 id="statistics">Statistics</h3>
+
+<p>This section lets you configure tracking settings for checking the statistics of your adverts created with WordPress Ad Manager WD plugin. Three options of tracking tools are available:</p>
+
+<ul>
+  <li><strong>Internal Tracker</strong></li>
+  <li><strong>Piwik Analytics</strong></li>
+  <li><strong>Google Analytics</strong></li>
+</ul>
+
+<p><strong>Internal Tracker</strong> is the tracking tool which runs in Ad Manager WD plugin itself. You can check the statistics of each advertisement from <strong>All Adverts</strong> page. Click <strong>Statistics</strong> link to open the details.</p>
+
+<p>Alternatively, the plugin can also be integrated with <strong>Piwik Analytics</strong> and <strong>Google Analytics</strong>. However, in this case you need to include their tracking code to <strong>header.php</strong> or <strong>footer.php</strong> files of your website theme.</p>
+
+<p>The following settings are available for configuration of Internal Tracker:</p>
+
+<ul>
+  <li><strong>Logged in impressions</strong> can be enabled to track impressions from logged in users.</li>
+  <li><strong>Logged in clicks</strong> lets you track clicks from logged in users.</li>
+  <li><strong>Impression timer</strong> is used to specifying timer for impressions. This setting will not track sequential impressions during this period. For example, let’s say you have set it to 5, and an impression is recorded. Impressions for this add will not be counted, if they occur during the next 5 seconds.</li>
+  <li><strong>Click timer</strong> sets the timer for tracking clicks. This setting will not track sequential clicks during this period. For example, let’s say you have set it to 5, and a click is recorded. Clicks for this add will not be counted, if they occur during the next 5 seconds.</li>
+</ul>
+
+<h3 id="import">Import</h3>
+
+<p>WordPress Ad Manager WD plugin lets you export created adverts from one website, and import to another one with its Import feature. Firstly go to <strong>Ad Manager WD &gt; All Adverts</strong> page to export the entries. Select the necessary items, choose <strong>Export JSON</strong> option from <strong>Bulk Action,</strong> then click <strong>Export.</strong></p>
+
+<p>Afterwards navigate to <strong>Ad Manager WD &gt; Import</strong> page, where you will find import settings. Click on <strong>Choose File</strong> button and select the exported JSON file and press <strong>Import.</strong></p>
+
+        </main>
+		
+		
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h3"><a href="#managing-all-adverts">Managing All Adverts</a></li>
+<li class="toc-entry toc-h3"><a href="#settings">Settings</a></li>
+<li class="toc-entry toc-h3"><a href="#general">General</a></li>
+<li class="toc-entry toc-h3"><a href="#statistics">Statistics</a></li>
+<li class="toc-entry toc-h3"><a href="#import">Import</a></li>
+</ul>
+          </div>
+        
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="http://10web.io/about-us/">About</a></li>
+			  <li><a href="http://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="http://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="http://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2017 10Web, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>

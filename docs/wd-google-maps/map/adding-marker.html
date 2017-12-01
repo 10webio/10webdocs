@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+<meta name="description" content="Adding Markers to WordPress Google Map WD"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Adding Markers · 10web</title>
+<link rel="icon" type="image/x-icon" href="/10web_docs/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/10web_docs/assets/css/minima.css">
+<link rel="stylesheet" href="/10web_docs/assets/css/style-10web.css">
+<script src="/10web_docs/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/10web_docs/assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo"  href="/10web_docs/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/10web_docs/" >Docs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/10web_docs/docs/tenweb-tutorial">Tutorial</a>
+		  </li>
+		  <li class="nav-item">
+			<a href="http://dev.10web.io" class="login_but btn">Login</a>
+		  </li>
+		</ul>
+		
+	</div>
+</nav>
+	
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">Google Maps WD</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">Google Maps WD</h4><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/api-configuration">
+        <span class="parent-title">Configuring Google Maps API </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/creating-map">
+        <span class="parent-title">Creating Map </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item has_child">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/settings">
+        <span class="parent-title">Settings </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/10web_docs/docs/wd-google-maps/settings/general.html">
+              General
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/settings/controls.html">
+              Controls
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/settings/layers.html">
+              Layers
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/settings/directions.html">
+              Directions
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/settings/store-locator.html">
+              Store Locator
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/settings/marker-listing.html">
+              Marker Listing
+            </a></li></ul>
+    </div><div class="clear bd-toc-item active has_child">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/map">
+        <span class="parent-title">Map </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/10web_docs/docs/wd-google-maps/map/adding-map-attributes.html">
+              Adding Map Attributes
+            </a></li><li class="active bd-sidenav-active">
+            <a href="/10web_docs/docs/wd-google-maps/map/adding-marker.html">
+              Adding Marker
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/map/adding-circle.html">
+              Adding Circle
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/map/adding-rectangle.html">
+              Adding Rectangle
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/map/adding-polygon.html">
+              Adding Polygon
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/map/adding-polylines.html">
+              Adding Polylines
+            </a></li></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/preview-themes">
+        <span class="parent-title">Preview/Themes </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/creating-marker-categories">
+        <span class="parent-title">Creating Marker Categories </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/publishing-created-map">
+        <span class="parent-title">Publishing Created Map </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/marker-clustering">
+        <span class="parent-title">Marker Clustering Add-on </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+          <h1 class="bd-title" id="content">Adding Markers</h1>
+          <p class="bd-lead">Adding Markers to WordPress Google Map WD</p>
+          <p>In this section you will learn how to add markers to your WordPress Google Map.</p>
+
+<p>Markers are used for indicating specific location on a map. The icon of the marker appears as an overlay of the map and may give some additional information.
+Note that all changes made here will be previewed on small map sample on the right side of the screen.</p>
+
+<p><strong>Title.</strong> You can provide a title for the marker. The title will be included in Information window of the marker.</p>
+
+<p><strong>Link URL.</strong> You can link Marker to any URL, so that when site visitor hits the marker they will be redirected to mentioned URL. The link will be opened in a new window.</p>
+
+<p><strong>Address.</strong> There are three ways of adding the marker location- providing address, filling in longitude and latitude or right-clicking on the location on the map.</p>
+
+<p><strong>Description.</strong> Description of the marker will be displayed alongside its title within Information window.</p>
+
+<p><strong>Marker Description Image.</strong> The marker information window can also contain an image. Here you can upload the images to be used.</p>
+
+<p><strong>Category.</strong> Here you can specify the marker category. More about marker categories can be found at Marker Category section.</p>
+
+<p><strong>Animation.</strong> By default the marker will be automatically displayed with the map, but if you want to have an effect for adding marker overlay, you can choose the animation from the list.</p>
+
+<p><strong>nable Info Window.</strong> Choose whether to have information window with markers or not.</p>
+
+<p><strong>Open Info Window by Default.</strong> Choose whether to display information window of the marker by default or when user presses the marker icon.</p>
+
+<p><strong>Icon.</strong> You can choose from existing icons or upload your own. Plugin includes different categories of icons.You can also create your own icons filling marker and icon colors. Your created icons will be saved in Added markers category.</p>
+
+<p><strong>Custom Icon size.</strong> Here you can define the dimensions of the icon.</p>
+
+<p><strong>Published.</strong> Choose whether to publish the marker or leave it for the further publishing.
+When all settings are set up, press <strong>Add Marker</strong> button.</p>
+
+<p>The created marker will appear below the map within <strong>Markers</strong> tab: here you will have the option to filter, duplicate, edit and delete markers.</p>
+
+<p><img src="http://docscdn.10web.io/wd-google-maps/map-10.png" alt="Adding Google Maps WD Markers" /></p>
+
+        </main>
+		
+		
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="http://10web.io/about-us/">About</a></li>
+			  <li><a href="http://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="http://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="http://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2017 10Web, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>

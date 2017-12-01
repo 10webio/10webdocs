@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+<meta name="description" content="Configuring Advanced Mode of optimization with Image Optimizer WD plugin"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Advanced Mode of Optimization · 10web</title>
+<link rel="icon" type="image/x-icon" href="/10web_docs/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/10web_docs/assets/css/minima.css">
+<link rel="stylesheet" href="/10web_docs/assets/css/style-10web.css">
+<script src="/10web_docs/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/10web_docs/assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo"  href="/10web_docs/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/10web_docs/" >Docs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/10web_docs/docs/tenweb-tutorial">Tutorial</a>
+		  </li>
+		  <li class="nav-item">
+			<a href="http://dev.10web.io" class="login_but btn">Login</a>
+		  </li>
+		</ul>
+		
+	</div>
+</nav>
+	
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap toc_doc">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">Image Optimizer</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">Image Optimizer</h4><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/image-optimizer-wd/easy-mode">
+        <span class="parent-title">Easy Mode of Optimization </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item active">
+      <a class="bd-toc-link" href="/10web_docs/docs/image-optimizer-wd/advanced-mode">
+        <span class="parent-title">Advanced Mode of Optimization </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/image-optimizer-wd/statistics-report">
+        <span class="parent-title">Statistics and Report </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+          <h1 class="bd-title" id="content">Advanced Mode of Optimization</h1>
+          <p class="bd-lead">Configuring Advanced Mode of optimization with Image Optimizer WD plugin</p>
+          <h3 id="advanced-mode-of-optimization">Advanced Mode of Optimization</h3>
+
+<p>With its Advanced optimization settings, the plugin lets you configure image optimization and set up what best fits your website. Press <strong>Image Optimizer</strong> link from left menu, then click on <strong>Advanced</strong> tab to access its option.</p>
+
+<p>As with Easy Mode, the plugin lets you activate <strong>Auto Optimize</strong> option for newly uploaded images. Don’t forget to hit <strong>Save Settings</strong> after you make changes in the plugin configuration.</p>
+
+<h3 id="general">General</h3>
+
+<p><strong>Keep EXIF data</strong></p>
+
+<p>This setting lets you keep or remove EXIF data of the images. This information is the date photo was taken, exposure, camera lense, shutter speed, etc. It makes the images larger, but in case you are a photographer, it would be best to keep it.</p>
+
+<p><strong>Exclude full-size images from EXIF data removal</strong></p>
+
+<p>In case <strong>Keep EXIF data</strong> option is set to <strong>No</strong>, you are able to enable this option to prevent EXIF data removal from full-size images.</p>
+
+<p><strong>Keep originals</strong></p>
+
+<p>In case this option is enabled, Image Optimizer plugin will create a directory titled <strong>/.iowd_orig</strong>, where it will store the original versions of optimized images.</p>
+
+<p><strong>JPG Optimization Level and PNG Optimization Level</strong></p>
+
+<p>Select the optimization level for JPG and PNG images. You can choose one of the following:</p>
+
+<ul>
+  <li>No Compression</li>
+  <li>Lossless Compression</li>
+  <li>Lossy Compression</li>
+  <li>Maximum Lossy Compression</li>
+</ul>
+
+<p><strong>GIF Optimization Level and PDF Optimization Level</strong></p>
+
+<p>Select the optimization level for GIF images and PDF files. You can choose one of the following:</p>
+
+<ul>
+  <li>No Compression</li>
+  <li>Lossless Compression</li>
+</ul>
+
+<h3 id="conversion">Conversion</h3>
+
+<p><strong>Warning!</strong></p>
+
+<p>In case the images are used in other plugins, problems may occur after converting them, if these plugins use the absolute URLs of the images. There will be no issues in case they use the media IDs of the pictures.</p>
+
+<p><strong>Enable conversion</strong></p>
+
+<p>Turn on this setting in case you wish to convert the format of your website images, to make the site faster.</p>
+
+<p><strong>JPG to PNG conversion</strong></p>
+
+<p>PNG uses lossless compression. It is recommended to use for logos, and other pictures with transparent backgrounds. This option removes image metadata and increases CPU usage.</p>
+
+<p><strong>JPG to WebP conversion</strong></p>
+
+<p>WebP lets you have 25-34% smaller images and speed up your website. JPG to WebP conversion is lossy, but it will not affect the image quality significantly.</p>
+
+<p><strong>PNG to JPG conversion</strong></p>
+
+<p>JPG format is recommended to use for photographs and similar high-resolution images. Since it uses lossy compression, some of the image data is lost when the image is compressed.</p>
+
+<p><strong>PNG to WebP conversion</strong></p>
+
+<p>PNG to WebP conversion is lossless. WebP images are 26% smaller in size, than their PNGs. This lets you make your website faster.</p>
+
+<p><strong>GIF to PNG conversion</strong></p>
+
+<p>PNG uses lossless compression. It is recommended for logos and pictures with transparent backgrounds. Note, that animated GIFs cannot be converted.</p>
+
+<h3 id="other">Other</h3>
+
+<p><strong>Scheduled optimization</strong></p>
+
+<p>Enable this setting to automatically optimize new images based on the value of <strong>Optimization frequency</strong> setting. It can be set to one of the following options:</p>
+
+<ul>
+  <li>Hourly</li>
+  <li>Twice a day</li>
+  <li>Daily</li>
+</ul>
+
+<p><strong>Exclude full-size images from optimization</strong></p>
+
+<p>Enable this setting, in case you don’t want to optimize full-size images of your website.</p>
+
+<p><strong>Resize media full-size images</strong></p>
+
+<p>If <strong>Exclude full-size images from optimization</strong> is disabled, you are able to activate resizing for full-size images in WordPress Media Library.</p>
+
+<p><strong>Resize other directory images</strong></p>
+
+<p>Activate this option to resize the images of other directories, when optimizing them.</p>
+
+<p><strong>Other directory images dimensions</strong></p>
+
+<p>In case you choose to resize the image of other directories, use this setting to provide the dimensions, to which they are going to be resized to.</p>
+
+<p><strong>Optimize these sizes</strong></p>
+
+<p>This setting lets you select which image sizes to optimize, for instance, medium or large pictures.</p>
+
+<p><strong>Don’t optimize images smaller than</strong></p>
+
+<p>Use this option to define the <strong>lower limit</strong> of image size, which will be optimized with Image Optimizer plugin.</p>
+
+<p><strong>Don’t optimize images larger than</strong></p>
+
+<p>Use this option to define the <strong>upper limit</strong> of image size, which will be optimized with Image Optimizer plugin.</p>
+
+<p><strong>Optimize again, if optimization level has changed</strong></p>
+
+<p>If this option is enabled, the plugin will optimize the images again, in case optimization level has been changed in Image Optimizer settings.</p>
+
+        </main>
+		
+		
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h3"><a href="#advanced-mode-of-optimization">Advanced Mode of Optimization</a></li>
+<li class="toc-entry toc-h3"><a href="#general">General</a></li>
+<li class="toc-entry toc-h3"><a href="#conversion">Conversion</a></li>
+<li class="toc-entry toc-h3"><a href="#other">Other</a></li>
+</ul>
+          </div>
+        
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="http://10web.io/about-us/">About</a></li>
+			  <li><a href="http://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="http://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="http://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2017 10Web, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>

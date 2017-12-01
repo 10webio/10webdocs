@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+<meta name="description" content="Installation wizard of Google Maps WD plugin, API configuration."/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Installation Wizard and API Configuration · 10web</title>
+<link rel="icon" type="image/x-icon" href="/10web_docs/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/10web_docs/assets/css/minima.css">
+<link rel="stylesheet" href="/10web_docs/assets/css/style-10web.css">
+<script src="/10web_docs/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/10web_docs/assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo"  href="/10web_docs/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/10web_docs/" >Docs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/10web_docs/docs/tenweb-tutorial">Tutorial</a>
+		  </li>
+		  <li class="nav-item">
+			<a href="http://dev.10web.io" class="login_but btn">Login</a>
+		  </li>
+		</ul>
+		
+	</div>
+</nav>
+	
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">Google Maps WD</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">Google Maps WD</h4><div class="clear bd-toc-item active">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/api-configuration">
+        <span class="parent-title">Configuring Google Maps API </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/creating-map">
+        <span class="parent-title">Creating Map </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item has_child">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/settings">
+        <span class="parent-title">Settings </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/10web_docs/docs/wd-google-maps/settings/general.html">
+              General
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/settings/controls.html">
+              Controls
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/settings/layers.html">
+              Layers
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/settings/directions.html">
+              Directions
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/settings/store-locator.html">
+              Store Locator
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/settings/marker-listing.html">
+              Marker Listing
+            </a></li></ul>
+    </div><div class="clear bd-toc-item has_child">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/map">
+        <span class="parent-title">Map </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/10web_docs/docs/wd-google-maps/map/adding-map-attributes.html">
+              Adding Map Attributes
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/map/adding-marker.html">
+              Adding Marker
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/map/adding-circle.html">
+              Adding Circle
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/map/adding-rectangle.html">
+              Adding Rectangle
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/map/adding-polygon.html">
+              Adding Polygon
+            </a></li><li>
+            <a href="/10web_docs/docs/wd-google-maps/map/adding-polylines.html">
+              Adding Polylines
+            </a></li></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/preview-themes">
+        <span class="parent-title">Preview/Themes </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/creating-marker-categories">
+        <span class="parent-title">Creating Marker Categories </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/publishing-created-map">
+        <span class="parent-title">Publishing Created Map </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/wd-google-maps/marker-clustering">
+        <span class="parent-title">Marker Clustering Add-on </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+          <h1 class="bd-title" id="content">Installation Wizard and API Configuration</h1>
+          <p class="bd-lead">Installation wizard of Google Maps WD plugin, API configuration.</p>
+          <p>After activation of Google Maps WD, the setup wizard will be automatically launched. You can press Skip the wizard and relaunch it later or configure the options in <strong>Google Maps &gt; Options</strong> submenu.</p>
+
+<p>At first step you choose the language for the maps either the language will be determined based on location of the visitor.</p>
+
+<p><strong>Center address.</strong> Center address of the map can be determined automatically based on your current location either you can fill it with autocomplete feature.</p>
+
+<p><strong>Latitude+Longitude․</strong> Provide more precise values for your center address.</p>
+
+<p><strong>Zoom Level.</strong> Google Maps has an integer ‘zoom level’ which is the resolution of the current view. Zoom levels are between 0 (the entire world can be seen on one map) and 21+.</p>
+
+<p><strong>Wheel Scrolling.</strong> Allow zooming in and out using mouse scroll or not.</p>
+
+<p><strong>Map Draggable.</strong> Allow using mouse for dragging map up/down or not.</p>
+
+<p>Afterward you can go on to <strong>your first map creation.</strong></p>
+
+<p>Starting June 22, 2016 Google Maps API requires API keys for functioning. It currently allows to have up to 25 000 request/day free of charge. For further requests you will be charged.</p>
+
+<p>To create an API key login to Google API Console following this <a href="https://console.developers.google.com/flows/enableapi?apiid=maps_backend&amp;keyType=CLIENT_SIDE&amp;reusekey=true&amp;pli=1">link</a>.</p>
+
+<p>If you are a new user you will be required to start a project. For this press <strong>Create project</strong> button or choose one of the existing projects.</p>
+
+<p><img src="http://docscdn.10web.io/wd-google-maps/map-20.png" alt="Creating Google Map API key" /></p>
+
+<p>Press Continue button. A new page will be opened. Fill in the name and domain(s) using the following format <em>.example.com/</em> and press <strong>Create</strong> button. It creation process will take up to a few minutes.</p>
+
+<p><img src="http://docscdn.10web.io/wd-google-maps/map-21.png" alt="Creating Google Map API key" /></p>
+
+<p>Copy the API key and fill them in <strong>Google Maps WD &gt; Options</strong> page.</p>
+
+<p><img src="http://docscdn.10web.io/wd-google-maps/map-22.png" alt="Creating Google Map API key" /></p>
+
+        </main>
+		
+		
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="http://10web.io/about-us/">About</a></li>
+			  <li><a href="http://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="http://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="http://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2017 10Web, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>

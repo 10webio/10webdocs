@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+<meta name="description" content="Adding Twitter social plugins to the website"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Adding Twitter social plugins · 10web</title>
+<link rel="icon" type="image/x-icon" href="/10web_docs/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/10web_docs/assets/css/minima.css">
+<link rel="stylesheet" href="/10web_docs/assets/css/style-10web.css">
+<script src="/10web_docs/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/10web_docs/assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo"  href="/10web_docs/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/10web_docs/" >Docs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/10web_docs/docs/tenweb-tutorial">Tutorial</a>
+		  </li>
+		  <li class="nav-item">
+			<a href="http://dev.10web.io" class="login_but btn">Login</a>
+		  </li>
+		</ul>
+		
+	</div>
+</nav>
+	
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap toc_doc">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">Widget Twitter</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">Widget Twitter</h4><div class="clear bd-toc-item active">
+      <a class="bd-toc-link" href="/10web_docs/docs/widget-twitter/adding-twitter">
+        <span class="parent-title">Adding Twitter social plugins </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/widget-twitter/publishing-twitter">
+        <span class="parent-title">Publishing Twitter social plugins </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+          <h1 class="bd-title" id="content">Adding Twitter social plugins</h1>
+          <p class="bd-lead">Adding Twitter social plugins to the website</p>
+          <p>This section allows adding Twitter buttons, timelines and etc. Below you will find the list of possible buttons and timelines with detailed description.</p>
+
+<p>From the navigation bar on the top select <strong>Plugins &gt; Widget Twitter.</strong>
+On the upper right hand of the screen click on the <strong>Add New</strong> button.</p>
+
+<h3 id="adding-a-tweet-button">Adding a Tweet Button</h3>
+
+<p><strong>Title.</strong> Specify a title for the plugin for identifying the plugin in the back-end.</p>
+
+<p><strong>Published.</strong> Choose whether to publish the plugin or not.</p>
+
+<p><strong>Via User.</strong> Specify the screen name of the user to which the tweet will be attributed to.</p>
+
+<p><strong>Tweet Text.</strong> Type in the tweet text. If you leave it blank, it will automatically use the page title.</p>
+
+<p><strong>Type of URL.</strong> Choose the URL of the page to share. You can either choose to leave the current URL or provide another URL.</p>
+
+<p><strong>URL to Tweet</strong>. Provide the URL to share with the tweet.</p>
+
+<p><strong>URL to which your shared URL resolves.</strong> Specify the URL of the page which will be associated with the tweet. It will not be visible as a link but will be counted with the help of count box and will return all the tweets when the link is searched. E.g. you can provide a link to the homepage of your website to be visible with the count box.</p>
+
+<p><strong>Hashtag.</strong> Specify hashtags for your tweet. You can use multiple hashtags separating them with commas.</p>
+
+<p><strong>Button Size.</strong> Choose the button size from the provided default options.</p>
+
+<p><strong>Count Box Position.</strong> Choose whether to use a count box next to the Tweet button as well as its positioning between horizontal and vertical options. Count Box states the amount of the mentions for the resolved URL.</p>
+
+<p><strong>Opt Out.</strong> Check this option to avoid Twitter from content tailoring and making suggestions for you and your followers based on the data.</p>
+
+<p><strong>Language Preference.</strong></p>
+
+<ul>
+  <li><strong>Current.</strong> Leave to the language of the website.</li>
+  <li><strong>Custom.</strong> Select the plugin language.</li>
+</ul>
+
+<p><strong>All Posts.</strong> Check the option to add the plugin to all the posts on the website.</p>
+
+<p><strong>Posts.</strong> Choose the posts to which you want to add the plugin.</p>
+
+<p><strong>Vertical Position.</strong> Choose whether to place the plugin at the top or at the bottom of the article.</p>
+
+<p><strong>All Pages.</strong> Adds the plugin to all the pages on the website.</p>
+
+<p><strong>Pages.</strong> Choose pages to which you want to add the plugin.</p>
+
+<p><strong>Vertical Position.</strong> Choose whether to place the plugin at the top or at the bottom of the article.</p>
+
+<p><strong>Style.</strong> Here you can customize certain style options. Simply change the values of the parameters that are listed in the box.</p>
+
+<h3 id="adding-a-follow-button">Adding a Follow Button</h3>
+
+<p><strong>Title.</strong> Specify a title for the plugin for identifying the plugin in the back-end.</p>
+
+<p><strong>Published.</strong> Choose whether to publish the plugin or not.</p>
+
+<p><strong>User to follow.</strong> Define the user screen name to follow, when pressing the button. By default the screen name will be visible when hovering.</p>
+
+<p><strong>Button Size.</strong> Choose the button size from the provided default options.</p>
+
+<p><strong>Followers count display.</strong> Choose whether to display the number of the followers in the box or not.</p>
+
+<p><strong>Width.</strong> Define the width of the Follow button. The height of the button is set by default.</p>
+
+<p><strong>Alignment.</strong> Choose the alignment of the button.</p>
+
+<p><strong>Show Screen Name.</strong> Check the box if you want the screen name to be visible on the button.</p>
+
+<p><strong>Opt Out.</strong> Check this option to avoid Twitter from content tailoring and making suggestions for you and your followers based on the data.</p>
+
+<p><strong>Language Preference.</strong></p>
+
+<ul>
+  <li><strong>Current.</strong> Adjusts to the language of the website.</li>
+  <li><strong>Custom.</strong> Select the plugin language.</li>
+</ul>
+
+<p><strong>All Posts.</strong> Adds the plugin to all the posts on the website.</p>
+
+<p><strong>Posts.</strong> Choose the posts to which you want to add the plugin.</p>
+
+<p><strong>Vertical Position.</strong> Choose whether to place the plugin at the top or at the bottom of the article.</p>
+
+<p><strong>All Pages.</strong> Adds the plugin to all pages on the website.</p>
+
+<p><strong>Pages.</strong> Choose pages to which you want to add the plugin.</p>
+
+<p><strong>Vertical Position.</strong> Choose whether to place the plugin at the top or at the bottom.</p>
+
+<p><strong>Style.</strong> Here you can customize certain style options. Simply change the values of the parameters that are listed in the box.</p>
+
+<h3 id="adding-a-timeline-box">Adding a Timeline Box</h3>
+
+<p><strong>Choose a timeline source.</strong> Choose the timeline source from the provided 4 options.</p>
+
+<p><strong>User Timeline.</strong> You can choose to create a timeline based on public data of a specific user. The header of the timeline will display a follow button to follow the user, while the footer will allow sending a message to the user without leaving the page.</p>
+
+<p><strong>Favorites.</strong> You can create a timeline based on the favorite tweets of a specific user.</p>
+
+<p><strong>List.</strong> You can create a timeline based on a list of specific users. The header of the timeline will include the list name, its description, as well as the screen name of the user, who created the list.</p>
+
+<p><strong>Search.</strong> You can create a timeline based on a certain hashtag. The timeline will display the search results based on it. The hashtag will be displayed on the header of the timeline, while the footer will allow contributing to the list making a tweet with the hashtag. The list of the search results can be refined to the safe mode, avoiding the display of certain results.</p>
+
+<p><strong>Title.</strong> Specify a title for the plugin for identifying the plugin in the back-end.</p>
+
+<p><strong>Published.</strong> Choose whether to publish the plugin or not.</p>
+
+<p><strong>Widget ID.</strong> To create a widget ID, first login to your Twitter account, then you should go to widget settings page, click on edit button for the specified widget and copy the number code, which appears in the URL on the top.</p>
+
+<p><strong>Width.</strong> Define the width of the button in pixels.</p>
+
+<p><strong>Height.</strong> Define the height of the button in pixels.</p>
+
+<p><strong>Tweet Limit.</strong> Specify the number of tweets to be displayed with the timeline. This option will remove the sidebar and cannot be used with defined height.</p>
+
+<p><strong>Opt Out.</strong> Check this option to avoid Twitter from content tailoring and making suggestions for you and your followers based on the data.</p>
+
+<p><strong>Theme.</strong> Choose between dark and light default theme options.</p>
+
+<p><strong>Link Color.</strong> You can customize the color of the links that appear in the timeline to match the overall theme used on the page.</p>
+
+<p><strong>Border Color.</strong> You can customize the border color of the displayed timeline.</p>
+
+<p><strong>Chrome.</strong> Use a space-separated set of the following options:</p>
+
+<ul>
+  <li><strong>No header.</strong> Hides the timeline header.</li>
+  <li><strong>No footer.</strong> Hides the timeline footer and Tweet box, if included.</li>
+  <li><strong>No borders:</strong> Removes all borders within the widget (between Tweets, around the widget.)</li>
+  <li><strong>No scrollbar:</strong> Crops and hides the main timeline scrollbar, if visible.</li>
+  <li><strong>Transparent:</strong> Removes the background color.</li>
+</ul>
+
+<p><strong>ARIA politeness.</strong> By default the ARIA politeness is set to polite, but you can make it assertive.</p>
+
+<p><strong>Show Replies.</strong> The option is available with User timeline and allows to add the replies to the tweets in the timeline.</p>
+
+<p><strong>Language Preference.</strong></p>
+
+<ul>
+  <li><strong>Current.</strong> Adjusts to the language of the website.</li>
+  <li><strong>Custom.</strong> Select the plugin language.</li>
+</ul>
+
+<p><strong>All Posts.</strong> Adds the plugin to all the posts on the website.</p>
+
+<p><strong>Posts.</strong> Choose the posts to which you want to add the plugin.</p>
+
+<p><strong>Vertical Position.</strong> Choose whether to place the plugin at the top or at the bottom of the article.</p>
+
+<p><strong>All Pages.</strong> Adds the plugin to all the pages on the website.</p>
+
+<p><strong>Pages.</strong> Choose pages to which you want to add the plugin.</p>
+
+<p><strong>Vertical Position.</strong> Choose whether to place the plugin at the top or at the bottom.</p>
+
+<p><strong>Style.</strong> Here you can customize certain style options. Simply change the values of the parameters that are listed in the box.</p>
+
+<h3 id="adding-a-mention-button">Adding a Mention Button</h3>
+
+<p><strong>Title.</strong> Specify a title for the plugin for identifying the plugin in the back-end.</p>
+
+<p><strong>Publish.</strong> Choose whether to publish the plugin or not.</p>
+
+<p><strong>Tweet to.</strong> Define the screen name of the user to attribute tweets to.</p>
+
+<p><strong>Tweet text.</strong> Type in the tweet text. If you leave it blank, it will automatically use the page title.</p>
+
+<p><strong>Username to Recommend.</strong> Define the user screen name to recommend to follow for the user using the Mention button.</p>
+
+<p><strong>Username2 to Recommend.</strong> Define the user screen name to recommend to follow for the user using the Mention button.</p>
+
+<p><strong>Type of URL.</strong> Choose the URL of the page to share. You can either choose to leave the current URL or provide another URL.</p>
+
+<p><strong>URL to Tweet.</strong> Provide the URL to share with the tweet.</p>
+
+<p><strong>Opt Out.</strong> Check this option to avoid Twitter from content tailoring and making suggestions for you and your followers based on the data.</p>
+
+<p><strong>Language Preference.</strong></p>
+
+<ul>
+  <li><strong>Current.</strong> Adjusts to the language of the website.</li>
+  <li><strong>Custom.</strong> Select the plugin language.</li>
+</ul>
+
+<p><strong>All Posts.</strong> Adds the plugin to all the posts on the website.</p>
+
+<p><strong>Posts.</strong> Choose the posts to which you want to add the plugin.</p>
+
+<p><strong>Vertical Position.</strong> Choose whether to place the plugin at the top or at the bottom of the article.</p>
+
+<p><strong>All Pages.</strong> Adds the plugin to all the pages on the website.</p>
+
+<p><strong>Pages.</strong> Choose pages to which you want to add the plugin.</p>
+
+<p><strong>Vertical Position.</strong> Choose whether to place the plugin at the top or at the bottom.</p>
+
+<p><strong>Style.</strong> Here you can customize certain style options. Simply change the values of the parameters that are listed in the box.</p>
+
+<h3 id="adding-a-hashtag-button">Adding a Hashtag Button</h3>
+
+<p><strong>Title.</strong> Specify a title for the plugin for identifying the plugin in the back-end.</p>
+
+<p><strong>Published.</strong> Choose whether to publish the plugin or not.</p>
+
+<p><strong>Tweeter Stories.</strong> This refers to a single hashtag. It will return all the stories accompanied by the hashtag when the item is searched. It will be visible on the button.</p>
+
+<p><strong>Tweet text.</strong> Type in the tweet text. If you leave it blank, it will automatically use the page title.</p>
+
+<p><strong>Username to Recommend.</strong> Define the user screen name to recommend to follow for the user using the Hash Tag button.</p>
+
+<p><strong>Username2 to Recommend.</strong> Define the user screen name to recommend to follow for the user using the Mention button.</p>
+
+<p><strong>Type of URL.</strong> Choose the URL of the page to share. You can either choose to leave the current URL or provide another URL.</p>
+
+<p><strong>URL to Tweet.</strong> Provide the URL to share with the tweet.</p>
+
+<p><strong>Opt Out.</strong> Check this option to avoid Twitter from content tailoring and making suggestions for you and your followers based on the data.</p>
+
+<p><strong>Language Preference.</strong></p>
+
+<ul>
+  <li><strong>Current.</strong> Adjusts to the language of the website.</li>
+  <li><strong>Custom.</strong> Select the plugin language.</li>
+</ul>
+
+<p><strong>All Posts.</strong> Adds the plugin to all the posts on the website.</p>
+
+<p><strong>Posts.</strong> Choose the posts to which you want to add the plugin.</p>
+
+<p><strong>Vertical Position.</strong> Choose whether to place the plugin at the top or at the bottom of the article.</p>
+
+<p><strong>All Pages.</strong> Adds the plugin to all the pages on the website.</p>
+
+<p><strong>Pages.</strong> Choose pages to which you want to add the plugin.</p>
+
+<p><strong>Vertical Position.</strong> Choose whether to place the plugin at the top or at the bottom.</p>
+
+<p><strong>Style.</strong> Here you can customize certain style options. Simply change the values of the parameters that are listed in the box.</p>
+
+
+        </main>
+		
+		
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h3"><a href="#adding-a-tweet-button">Adding a Tweet Button</a></li>
+<li class="toc-entry toc-h3"><a href="#adding-a-follow-button">Adding a Follow Button</a></li>
+<li class="toc-entry toc-h3"><a href="#adding-a-timeline-box">Adding a Timeline Box</a></li>
+<li class="toc-entry toc-h3"><a href="#adding-a-mention-button">Adding a Mention Button</a></li>
+<li class="toc-entry toc-h3"><a href="#adding-a-hashtag-button">Adding a Hashtag Button</a></li>
+</ul>
+          </div>
+        
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="http://10web.io/about-us/">About</a></li>
+			  <li><a href="http://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="http://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="http://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2017 10Web, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+<meta name="description" content="Guide to add events in WordPress Event Calendar WD plugin"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Creating Events · 10web</title>
+<link rel="icon" type="image/x-icon" href="/10web_docs/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/10web_docs/assets/css/minima.css">
+<link rel="stylesheet" href="/10web_docs/assets/css/style-10web.css">
+<script src="/10web_docs/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/10web_docs/assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo"  href="/10web_docs/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/10web_docs/" >Docs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/10web_docs/docs/tenweb-tutorial">Tutorial</a>
+		  </li>
+		  <li class="nav-item">
+			<a href="http://dev.10web.io" class="login_but btn">Login</a>
+		  </li>
+		</ul>
+		
+	</div>
+</nav>
+	
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap toc_doc">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">Event Calendar WD</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">Event Calendar WD</h4><div class="clear bd-toc-item active">
+      <a class="bd-toc-link" href="/10web_docs/docs/event-calendar-wd/creating-events">
+        <span class="parent-title">Creating Events </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/event-calendar-wd/calendar-attributes">
+        <span class="parent-title">Categories, Organizers, Tags And Venues </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/event-calendar-wd/creating-calendars">
+        <span class="parent-title">Creating Calendars </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/event-calendar-wd/publishing-calendar">
+        <span class="parent-title">Publishing The Created Calendar </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/10web_docs/docs/event-calendar-wd/settings-themes">
+        <span class="parent-title">Calendar Settings And Themes </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item has_child">
+      <a class="bd-toc-link" href="/10web_docs/docs/event-calendar-wd/add-ons">
+        <span class="parent-title">Event Calendar WD Add-ons </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/10web_docs/docs/event-calendar-wd/add-ons/frontend-event-management.html">
+              Frontend Event Management
+            </a></li><li>
+            <a href="/10web_docs/docs/event-calendar-wd/add-ons/subscribe.html">
+              Subscribe
+            </a></li><li>
+            <a href="/10web_docs/docs/event-calendar-wd/add-ons/other-management-addons.html">
+              Other Management Add-ons
+            </a></li><li>
+            <a href="/10web_docs/docs/event-calendar-wd/add-ons/event-grouping-addons.html">
+              Event Grouping Add-ons
+            </a></li><li>
+            <a href="/10web_docs/docs/event-calendar-wd/add-ons/integration-addons.html">
+              Integration Add-ons
+            </a></li></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+          <h1 class="bd-title" id="content">Creating Events</h1>
+          <p class="bd-lead">Guide to add events in WordPress Event Calendar WD plugin</p>
+          <h3 id="all-events">All Events</h3>
+
+<p>In this section you will learn how to create and modify events by Event Calendar WD.</p>
+
+<p>Here you can find the list of all created events. You can add new events, edit, quick edit, duplicate or delete them, as well as take bulk actions and apply filtering to make the search of the events easier. Click the <strong>‘Add new’</strong> button to create a new Event. You can <strong>view</strong> your Event right from the WordPress top bar menu either after publishing a new event or editing an existing one.</p>
+
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-01.PNG" alt="All Events page" /></p>
+
+<h3 id="creating-events">Creating Events</h3>
+
+<p>Here you can create new events by specifying such details, as:</p>
+
+<p><strong>Title.</strong> Set a title for the event.</p>
+
+<p><strong>Content.</strong> Provide the details of the event.</p>
+
+<ul>
+  <li><strong>Event Settings:</strong> These settings will help you configure the event dates, repeat rates, URL, venues and organizers.</li>
+  <li><strong>Event Dates.</strong> Specify the starting and finishing dates and times for the event using the datepicker. If the event lasts all day, check the “All Day” option.</li>
+  <li><strong>Repeat Rate.</strong> If the event is recurring, you can set a repeat rate and specify the days for repeating the event on a daily, weekly, monthly or yearly basis.
+    <ul>
+      <li><strong>Daily repeat:</strong> Here you can set the frequency of the repeat rate and its finish date. For example, repeat every 4 days until October 5, 2017.</li>
+      <li><strong>Weekly repeat.</strong> Here you can set the finish date and the weekly frequency of the repeat by specifying a repetition day for the selected number of weeks. For example, repeat every 2 weeks on Mondays until October 5, 2015.</li>
+      <li><strong>Monthly repeat.</strong> Here you can set the monthly frequency and the finish date of the repeat. This can be done either by setting the event on the same day of the month as the original event or repeating it on a specified day of the first, second, third, fourth or simply the last week of the month. For example, repeat the event 2 months on the first Friday of the month until October, 2017.​</li>
+      <li><strong>Yearly repeat.</strong> Here you can set the yearly frequency and the finish date of the repeat. This can be done by setting the event on the same day of every year as the original event or repeating it every specific month on a specified day of the first, second, third, fourth or simply the last week of that month. For example, repeat the event 2 years on the first Friday of the September until October, 2017.</li>
+    </ul>
+  </li>
+  <li><strong>Event Venue.</strong> Select the venue of the event from the existing venues or create a new one by adding a venue title, description, address, phone, website and location using a Google Maps key if necessary. Please note that you need to get a Google Maps key from <strong>Google APIs</strong> first to be able to configure the Gmaps features and styles in the plugin <strong>Settings</strong>. As for a newly created venue, it will automatically be added to your Venue list.</li>
+  <li><strong>Event URL.</strong> Set an external URL, which will be included within the event description.</li>
+  <li><strong>Event Video URL.</strong> Set the absolute URL of a YouTube/Vimeo video to be displayed within the event.</li>
+  <li><strong>Calendars.</strong> You can choose the calendar to which the event will be added to.</li>
+  <li><strong>Organizers.</strong> You can choose the organizer of the event from the existing organizers or set a new one by adding the organizer title, description, phone and website.</li>
+  <li><strong>Event Location.</strong> If the venue is not set, you can specify a new location for the event using Google Maps feature. Note that the location will not be added to the Venue list.</li>
+</ul>
+
+<h2 id="side-bar-options">Side-bar options</h2>
+
+<p><strong>Categories.</strong> You can either choose an event category from the existing categories or add a new one.</p>
+
+<p><strong>Tags.</strong> You can either add a new event tag or choose from the most used ones.</p>
+
+<p><strong>Featured Image.</strong> Similar to other WP posts, each event can have its own featured image, which will be displayed with the event.</p>
+
+<h2 id="viewing-the-event">Viewing the Event</h2>
+
+<p>You can view your Event right from the WordPress top bar menu either after publishing a new event or editing an existing one.</p>
+
+        </main>
+		
+		
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h3"><a href="#all-events">All Events</a></li>
+<li class="toc-entry toc-h3"><a href="#creating-events">Creating Events</a></li>
+<li class="toc-entry toc-h2"><a href="#side-bar-options">Side-bar options</a></li>
+<li class="toc-entry toc-h2"><a href="#viewing-the-event">Viewing the Event</a></li>
+</ul>
+          </div>
+        
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="http://10web.io/about-us/">About</a></li>
+			  <li><a href="http://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="http://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="http://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2017 10Web, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>
