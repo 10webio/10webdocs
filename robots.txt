@@ -1,1 +1,1 @@
-Sitemap: /http://docs.10web.io/sitemap.xml
+Sitemap: http://docs.10web.io/sitemap.xml
