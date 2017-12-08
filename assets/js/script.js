@@ -40,6 +40,69 @@ jQuery( document ).ready(function() {
 	});
 	
 	jQuery(".bd-toc").css("max-height",jQuery(".bd-toc .section-nav").outerHeight(true));
+	
+	/*Search in plugins page*/
+	if(jQuery('#plugins_search_input').length!=0) {		
+
+		jQuery.extend(jQuery.expr[':'], {
+		  'containsi': function(elem, i, match, array)
+		  {
+		    return (elem.textContent || elem.innerText || '').toLowerCase()
+		    .indexOf((match[3] || "").toLowerCase()) >= 0;
+		  }
+		});
+
+		var $grid = jQuery('.plugins-container').isotope({
+			layoutMode: 'fitRows',
+			itemSelector: '.plugins-container > .plugin',
+			fitRows: {
+				percentPosition: true,
+				columnWidth: '.plugins-container > .plugin',
+				gutter: 0
+			}
+		});
+		jQuery(document).on('keyup','#plugins_search_input',function () { 
+			searched_word = jQuery(this).val();
+			if(searched_word != ""){
+				jQuery("#plugins_reset").css("display","inline-block");
+			} else {
+				jQuery("#plugins_reset").css("display","none");
+			}
+			if(searched_word != '') {
+				jQuery('.plugin').each(function() {
+					if (jQuery(this).find("h5:containsi(" + searched_word + ")").length > 0) {
+						jQuery(this).removeClass(' hidden');
+					}
+					else
+						jQuery(this).addClass(' hidden');
+				});
+				jQuery(".plugins-container").each(function(){
+					if(!jQuery(this).find(".plugin:visible").length){
+						jQuery(this).prev().hide();
+					} else {
+						jQuery(this).prev().show();
+					}
+				});
+				jQuery(this).addClass('active');
+			}
+			else {
+				jQuery('.plugins-container .plugin').removeClass(' hidden');
+				jQuery('.plugins-container .no_result').hide();
+				jQuery(this).removeClass('active');
+			}		
+			$grid.isotope();			
+		});
+		 
+
+		jQuery(document).on('click','#plugins_reset',function () {
+			jQuery('.plugins-container .plugin').removeClass(' hidden');
+			jQuery('.plugins-container .no_result').hide();
+			jQuery(this).css("display","none");
+			jQuery('#plugins_search_input').val('');
+			$grid.isotope();
+		});
+
+	}
 });
 jQuery(window).scroll(function () {
 	var sTop = jQuery(window).scrollTop();

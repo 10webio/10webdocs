@@ -88,15 +88,15 @@ strong{
     padding: 0 5px;
 	margin-left:0;
 }
-.home .row .col.m4 .icon-block {
-    border: 1px solid #efefef;
+.home .row .col.m4 {
+border: 1px solid #efefef;
     border-radius: 4px;
-    padding: 33px 10px 27px;
-    margin: 0 0px 10px;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    min-height: 278px;
+    margin: 0 1% 20px;
+	background:#ffffff;
+	width: 31.33333%;
+}
+.home .row .col.m4 .icon-block {
+    padding: 20px 10px 20px;
 }
 .home .row .col.m4 .icon-block  p {
     color: #6c6e7a;
@@ -315,6 +315,69 @@ h4.plugin-name-mobile {
     float: left;
     margin: 9px 0 0 5px;
     font-size: 19px;
+}
+input#plugins_search_input {
+border: 1px solid #efefef;
+    padding: 12px 6px 12px 41px;
+    border-radius: 2px;
+    width: calc(100% - 82px);
+    color: #84898f;
+    text-transform: uppercase;
+    background: #f9f9fa url(../img/search.svg) no-repeat;
+    background-position: 13px center;
+    background-size: 16px;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 1px;
+    height: 42px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+input#plugins_search_input:focus {
+    box-shadow:none;
+}
+.plugins_search {
+    margin: 20px auto;
+    width: 465px;
+    max-width: 100%; 
+	text-align: center;
+}
+.home h1.header {
+text-transform: uppercase;
+    font-size: 26px;
+    margin: 20px 0 17px;
+}
+.home h2.header {
+    text-transform: uppercase;
+    font-size: 25px;  
+	margin: 5px 0 17px;
+}
+a#plugins_reset {
+    background: #efefef;
+    font-size: 14px;
+    color: #84898f;
+    width: 77px;
+    display: none;
+    padding: 11px 0 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+.plugin.hidden {
+    display: none;
+}
+.icon-block h5.center {
+    margin: 30px 0 0;
+    text-transform: uppercase;
+	font-size: 18px;
+}
+@media only screen and (min-width: 1920px){
+	.home .row .col.m4 {
+    margin: 0 .5% 20px;
+    width: 23%;
+}
 }
 @media only screen and (max-width: 1024px){
 	.toc_doc .bd-toc{
