@@ -177,6 +177,7 @@ li.active.bd-sidenav-active a,
 .bd-toc-item a.bd-toc-link:hover,
 .bd-toc-item.active a.bd-toc-link {
     font-weight: 600;
+	
 }
 .bd-toc-item.active ul.nav.bd-sidenav {
 	display:block;
