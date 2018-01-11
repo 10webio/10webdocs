@@ -382,6 +382,14 @@ a#plugins_reset {
     text-transform: uppercase;
 	font-size: 18px;
 }
+a.trial_but.btn {
+    background: #367bf2;
+    margin: 0 0 0 7px !important;
+    border: 1px solid #367bf2;
+}
+a.login_but.btn{
+    margin-right: 0 !important;
+}
 @media only screen and (min-width: 1920px){
 	.home .row .col.m4 {
     margin: 0 .5% 20px;
@@ -411,13 +419,17 @@ a#plugins_reset {
     text-align: center;
 }
 nav[role="navigation"] {
-    height: 122px; 
-	line-height: 2;
-	text-align:center;
+height: auto;
+    line-height: 2;
+    text-align: center;
+    padding-bottom: 15px;
 }
 nav[role="navigation"]  ul li {
     display: inline-block;
 	float:none;
+}
+nav[role="navigation"]  ul li:last-child {  
+  margin-top: 10px;
 }
 nav .brand-logo {
 	position:static;
