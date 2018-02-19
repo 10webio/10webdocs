@@ -59,23 +59,28 @@
 </div>
 <div class="collapse bd-links" id="bd-docs-nav">
   <h4 class="plugin-name">Instagram Feed WD</h4><div class="clear bd-toc-item">
-      <a class="bd-toc-link" href="/docs/wd-instagram-feed/installing-instagram-feed">
-        <span class="parent-title">Installing Instagram Feed WD </span></a>
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/introduction">
+        <span class="parent-title">Introducing Instagram Feed Plugin </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/getting-access-token">
+        <span class="parent-title">Configuring Instagram Access Token </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item has_child">
       <a class="bd-toc-link" href="/docs/wd-instagram-feed/creating-feed">
-        <span class="parent-title">Creating an Instagram Feed </span><span class="parent-icon"> </span></a>
+        <span class="parent-title">Creating Feeds </span><span class="parent-icon"> </span></a>
 
       <ul class="nav bd-sidenav"><li>
-            <a href="/docs/wd-instagram-feed/creating-feed/thumbnails-masonry.html">
-              Thumbnails and Masonry Layouts
+            <a href="/docs/wd-instagram-feed/creating-feed/creating-instagram-feed.html">
+              Creating Instagram Feed
             </a></li><li>
-            <a href="/docs/wd-instagram-feed/creating-feed/blog-style.html">
-              Blog Style
+            <a href="/docs/wd-instagram-feed/creating-feed/feed-layouts.html">
+              Selecting a Layout for Instagram Feed
             </a></li><li>
-            <a href="/docs/wd-instagram-feed/creating-feed/image-browser.html">
-              Image Browser
+            <a href="/docs/wd-instagram-feed/creating-feed/feed-settings.html">
+              Configuring Feed Settings
             </a></li><li>
             <a href="/docs/wd-instagram-feed/creating-feed/lightbox-settings.html">
               Lightbox Settings
@@ -89,51 +94,68 @@
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item">
-      <a class="bd-toc-link" href="/docs/wd-instagram-feed/styling-with-themes">
-        <span class="parent-title">Styling with Themes </span></a>
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/theme-options">
+        <span class="parent-title">Instagram Feed WD Themes </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item">
       <a class="bd-toc-link" href="/docs/wd-instagram-feed/advanced-options">
-        <span class="parent-title">Advanced Customizing Options </span></a>
+        <span class="parent-title">Advanced Options of Instagram Feed </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/">
+        <span class="parent-title"> </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div></div>
         </div>
 		
         <main class="tenweb-content" role="main">
-          <h1 id="publishing-instagram-feed">Publishing Instagram feed</h1>
+          <h1 id="publishing-instagram-feed">Publishing Instagram Feed</h1>
 
-<p>Instructions to publish <a href="https://10web.io/plugins/wordpress-instagram-feed/">WordPress Instagram feed</a>.</p>
+<p>Using <a href="https://10web.io/plugins/wordpress-instagram-feed/">WordPress Instagram feed</a> plugin, you can publish your feeds with the following 3 different methods:</p>
 
-<p>You can publish Instagram Feed in a post/page, as a widget or using php function.</p>
+<ul>
+  <li>on a WordPress <strong>page</strong> or <strong>post,</strong></li>
+  <li>as a <strong>widget,</strong></li>
+  <li>on a <strong>custom template</strong> with a PHP function.</li>
+</ul>
 
-<h3 id="publishing-in-a-pagepost">Publishing in a Page/Post</h3>
+<p>A quick guide for this is provided with <strong>How To Publish Feed</strong> tab above your Instagram feed. Let’s go through the necessary steps of each publishing method, and help you choose the one that fits your site the best.</p>
 
-<p>To use the created feeds within a page or post you should use shortcode. Open the page/post from the back end. Press on the <strong>Add Instagram Feed</strong> button within the editor. Then select the feed and press Insert button.
-An alternative will be copying the shortcode from <strong>Instagram Feed WD&gt; Feeds</strong> toolbar and pasting it within post/page.</p>
+<h2 id="publishing-the-feed-on-pages-or-posts">Publishing the Feed on Pages or Posts</h2>
 
-<h2 id="publishing-as-a-widget">Publishing as a Widget</h2>
+<p>To publish Instagram feeds with this method, add or edit the page or post from WordPress administrative dashboard of your website. Click on <strong>Add Instagram Feed</strong> button from the top of the post editor. Afterwards, select the feed you wish to publish and press <strong>Insert.</strong></p>
 
-<p>Go to <strong>Appearance &gt; Widgets</strong> toolbar.</p>
+<p>The <strong>shortcode</strong> of Instagram Feed WD plugin will be added to the content of your page/post.</p>
 
-<p>Find <strong>Instagram Feed WD</strong> widget and assign it to a custom widget position. Fill in the details below:</p>
+<p><img src="http://docscdn.10web.io/wd-instagram-feed/instagram-22.png" alt="Instagram feed on pages or posts" /></p>
 
-<p><strong>Title.</strong> Provide a title for your Instagram Feed.</p>
+<p>Alternatively, you can copy the shortcode from <strong>Instagram Feed WD &gt; Feeds</strong> dashboard, under <strong>Shortcode</strong> column, and paste it into the content of your WordPress page/post.</p>
 
-<p><strong>Feed.</strong> Select the feed which will be displayed as a widget.</p>
+<h2 id="publishing-instagram-feed-as-a-widget">Publishing Instagram Feed as a Widget</h2>
 
-<p><strong>Number of Columns.</strong> Set the number of image columns (for thumbnail and masonry view).</p>
+<p>Navigate to <strong>Appearance &gt; Widgets</strong> page from WordPress administrative dashboard to begin configuring your Instagram feed widget. Firstly, search for <strong>Instagram Feed WD Widget</strong> and drag it to the widget area, where you wish to display your feed.</p>
 
-<p><strong>Number of images to display.</strong> Set a constant number of images which will be displayed with widget.</p>
+<p>Provide a <strong>Title</strong> for your Instagram Feed, then choose the feed to publish using <strong>Feed</strong> drop-down box. Make sure to specify <strong>Number of Columns,</strong> as well as <strong>Number of images to show</strong> on your Instagram feed.</p>
 
-<p><strong>Show Likes and Comments.</strong> Check the box to display likes and comments below view thumbnails.</p>
+<p>Also, you can activate the following attributes and display them with your feed:</p>
 
-<h3 id="publishing-by-php-function">Publishing by PHP function</h3>
+<ul>
+  <li>post <strong>descriptions,</strong></li>
+  <li><strong>likes</strong> and <strong>comments,</strong></li>
+  <li><strong>Load More</strong> button.</li>
+</ul>
 
-<p>It is also possible to insert the created feeds into the theme by calling it with <strong>PHP</strong> function. This feature is commonly used for adding the code to header.php for displaying feeds within header or footer position of the website. You can find the function located in <strong>Instagram Feed &gt; Feeds</strong> section under <strong>PHP function</strong> column.</p>
+<p><img src="http://docscdn.10web.io/wd-instagram-feed/instagram-23.png" alt="Instagram feed widget" /></p>
 
-        </main>
+<h2 id="publishing-with-php-function">Publishing with PHP function</h2>
+
+<p>It is also possible to publish Instagram feeds on <strong>custom PHP templates</strong> using their <strong>PHP functions.</strong> To do this, simply copy the <strong>PHP function</strong> of your feed from <strong>Instagram Feed WD &gt; Feeds</strong> page, then paste it to the necessary section of your custom template.</p>
+
+<p><img src="http://docscdn.10web.io/wd-instagram-feed/instagram-24.png" alt="Publishing with PHP function" /></p>
+<p class="product_version">v.1.2.15</p></main>
 		
 		
       </div>
@@ -160,7 +182,7 @@ An alternative will be copying the shortcode from <strong>Instagram Feed WD&gt; 
         <div class="container">
             <div>
                 <span>
-                Copyright © 2017 TenWeb, Inc. All rights reserved 
+                Copyright © 2018 TenWeb, Inc. All rights reserved 
                 </span>
             </div>
         </div>

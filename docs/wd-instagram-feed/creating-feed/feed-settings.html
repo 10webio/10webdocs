@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110398783-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+ gtag('config', 'UA-110398783-1');
+</script>
+
+<meta name="google-site-verification" content="bU33Rd709RLTNobw9w3j4puG_-28Mmi2bPxdi3UQiN0" />
+<meta charset="UTF-8">
+
+<meta name="description" content="How to configure Feed Settings of the WordPress Instagram Feed plugin. Modify layout and pagination options, as well as advanced options."/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Configuring Feed Settings | 10Web</title>
+<link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/assets/css/minima.css">
+<link rel="stylesheet" href="/assets/css/style-10web.css">
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/isotope.js"></script>
+<script src="/assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo clear"  href="/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+		<div class="theme_10web_logo_demo">Docs</div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/" >Docs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/tutorial">Tutorial</a>
+		  </li>
+		  <li class="nav-item"><a href="https://10web.io/plugins/wordpress-instagram-feed/" class="login_but btn">See All Features</a><a href="https://10web.io/pricing/" class="trial_but btn">Free trial</a>
+		  </li>
+		</ul>
+		
+	</div>
+</nav>
+	
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap toc_doc">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">Instagram Feed WD</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">Instagram Feed WD</h4><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/introduction">
+        <span class="parent-title">Introducing Instagram Feed Plugin </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/getting-access-token">
+        <span class="parent-title">Configuring Instagram Access Token </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item active has_child">
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/creating-feed">
+        <span class="parent-title">Creating Feeds </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/docs/wd-instagram-feed/creating-feed/creating-instagram-feed.html">
+              Creating Instagram Feed
+            </a></li><li>
+            <a href="/docs/wd-instagram-feed/creating-feed/feed-layouts.html">
+              Selecting a Layout for Instagram Feed
+            </a></li><li class="active bd-sidenav-active">
+            <a href="/docs/wd-instagram-feed/creating-feed/feed-settings.html">
+              Configuring Feed Settings
+            </a></li><li>
+            <a href="/docs/wd-instagram-feed/creating-feed/lightbox-settings.html">
+              Lightbox Settings
+            </a></li><li>
+            <a href="/docs/wd-instagram-feed/creating-feed/conditional-filters.html">
+              Conditional Filters
+            </a></li></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/publishing-instagram-feed">
+        <span class="parent-title">Publishing Instagram Feed </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/theme-options">
+        <span class="parent-title">Instagram Feed WD Themes </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/advanced-options">
+        <span class="parent-title">Advanced Options of Instagram Feed </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/">
+        <span class="parent-title"> </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+          <h1 id="configuring-feed-settings">Configuring Feed Settings</h1>
+
+<p><a href="https://10web.io/plugins/wordpress-instagram-feed/">Instagram Feed plugin</a> comes with a number of advanced customization options, which you can use to change the functionality and features of your feeds. You can modify the feed as far as:</p>
+
+<ul>
+  <li>changing its <strong>pagination</strong> and <strong>loading,</strong></li>
+  <li>defining the number of displayed and newly loaded posts,</li>
+  <li>personalizing the settings of all 4 layouts,</li>
+  <li>controlling the <strong>sort order</strong> of the media on your Instagram feed,</li>
+  <li>choosing the attributes to showcase with the feed,</li>
+</ul>
+
+<p>and much more.</p>
+
+<p>To begin configuring these options, edit your feed and open <strong>Feed Settings</strong> tab. Scroll down a bit to find the following two sections:</p>
+
+<ul>
+  <li>Layout and Pagination,</li>
+  <li>Advanced.</li>
+</ul>
+
+<p>Let’s go through each section and discuss every option individually.</p>
+
+<p><img src="http://docscdn.10web.io/wd-instagram-feed/instagram-14.png" alt="Instagram Feed Settings" /></p>
+
+<h2 id="layout-and-pagination">Layout and Pagination</h2>
+
+<p><strong>New Media Loading.</strong> Select the method to use while loading more images and videos on your Instagram feed. You can choose one of the following options:</p>
+
+<ul>
+  <li>Pagination,</li>
+  <li>Load More Button,</li>
+  <li>Infinite Scroll,</li>
+  <li>None.</li>
+</ul>
+
+<p><strong>Number of Columns.</strong> Set the number of columns which will be used to align Instagram media in <strong>Thumbnails</strong> and <strong>Masonry</strong> feeds.</p>
+
+<p><strong>Number of Images/Videos.</strong> Specify the number of Instagram media to display when the feed is loaded initially.</p>
+
+<p><strong>Number of New Media.</strong> Set the number of posts which will be added to the feed, after the user clicks on <strong>Load More</strong> button or triggers <strong>Infinite Scroll.</strong></p>
+
+<p><strong>Combine and Sort Again After Loading More.</strong> If this option is enabled, both newly loaded and existing media are mixed then resorted together according to <strong>Sort Media By</strong> setting.</p>
+
+<p><strong>Make Layout Not Responsive.</strong> When this option is selected, the layout of the feed does not convert to single-column display on small screens. The feed width is shrunk, but the number of columns stays the same.</p>
+
+<p><strong>Number of Media for Initial Preload.</strong> Specify the number of posts to preload, when an Instagram feed is first loaded. This option helps to load a few posts at once, then navigate through the media smoothly. Note, that this setting applies to <strong>Image Browser</strong> feeds only.</p>
+
+<p><strong>Number of Media for Pagination Preload.</strong> Set the number of posts to preload, while the user navigates through the media by clicking on <strong>Next</strong> or <strong>Previous</strong> buttons. Note, that this option is applicable to <strong>Image Browser</strong> layout only.</p>
+
+<p><img src="http://docscdn.10web.io/wd-instagram-feed/instagram-15.png" alt="Layout and Pagination Settings" /></p>
+
+<h2 id="advanced">Advanced</h2>
+
+<p><strong>Theme.</strong> Select the theme which will be used to style the appearance of your Instagram feed. You can edit the theme or create a new one from <strong>Instagram Feed WD &gt; Themes</strong> page.</p>
+
+<p><strong>Feed Media Resolution.</strong> Choose the resolution of the media on your Instagram feed. You can select one of the following options:</p>
+
+<ul>
+  <li>Optimal,</li>
+  <li>Standard (640 pixels),</li>
+  <li>Low (320 pixels),</li>
+  <li>Thumbnail (150 pixels).</li>
+</ul>
+
+<p>In case <strong>Optimal</strong> is selected, the dimensions of the loaded media are calculated according to the width of feed container. This provides fast loading and no stretching images.</p>
+
+<p><strong>Featured Image.</strong> Set the featured image of the header section of your Instagram feed. The image is pulled from the <strong>user profile</strong> or <strong>hashtag</strong> you select.</p>
+
+<p><strong>Show Feed Header.</strong> Activate this option to display a header on your Instagram feed. It includes <strong>Feed Title</strong> and <strong>Featured Image</strong> you specified.</p>
+
+<p><strong>Show User Data.</strong> If this option is enabled, additional details from the selected accounts and hashtags will be displayed on your Instagram feed. You can activate:</p>
+
+<ul>
+  <li><strong>Follow On Instagram</strong> button,</li>
+  <li>Number of <strong>Posts</strong> and <strong>Followers</strong> of Instagram account/hashtag,</li>
+  <li><strong>User Bio,</strong> which will only appear if the feed consists of just one Instagram account.</li>
+</ul>
+
+<p><strong>Show Media Caption.</strong> Enable this setting to display descriptions of Instagram photos or videos below them, fully or partly.</p>
+
+<p><strong>Show Full Description.</strong> Activate this setting to show the full captions of Instagram media. Note that this option only applies to feeds with <strong>Masonry</strong> layout.</p>
+
+<p><strong>Show Number of Likes.</strong> Mark this option as checked to display the number of likes on each Instagram post.</p>
+
+<p><strong>Show Number of Comments.</strong> Display the number of comments on Instagram photos or videos with your feed.</p>
+
+<p><strong>Show Username On Image Thumb.</strong> Activating this setting will let you show the username of the Instagram users on the images or videos of your feed.</p>
+
+<p><img src="http://docscdn.10web.io/wd-instagram-feed/instagram-16.png" alt="Advanced Feed Settings" /></p>
+<p class="product_version">v.1.2.15</p></main>
+		
+		
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#configuring-feed-settings">Configuring Feed Settings</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#layout-and-pagination">Layout and Pagination</a></li>
+<li class="toc-entry toc-h2"><a href="#advanced">Advanced</a></li>
+</ul>
+</li>
+</ul>
+          </div>
+        
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="https://10web.io/">Home</a></li>
+              <li><a href="https://10web.io/about-us/">About</a></li>
+			  <li><a href="https://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="https://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="https://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2018 TenWeb, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>

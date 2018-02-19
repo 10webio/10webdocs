@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110398783-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+ gtag('config', 'UA-110398783-1');
+</script>
+
+<meta name="google-site-verification" content="bU33Rd709RLTNobw9w3j4puG_-28Mmi2bPxdi3UQiN0" />
+<meta charset="UTF-8">
+
+<meta name="description" content="How to add layers to the slide through the WordPress slider plugin. A useful guide by 10Web."/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Adding Layers To The Slide | WordPress Slider | 10Web</title>
+<link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/assets/css/minima.css">
+<link rel="stylesheet" href="/assets/css/style-10web.css">
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/isotope.js"></script>
+<script src="/assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo clear"  href="/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+		<div class="theme_10web_logo_demo">Docs</div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/" >Docs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/tutorial">Tutorial</a>
+		  </li>
+		  <li class="nav-item"><a href="" class="login_but btn">See All Features</a><a href="https://10web.io/pricing/" class="trial_but btn">Free trial</a>
+		  </li>
+		</ul>
+		
+	</div>
+</nav>
+	
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">Slider WD</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">Slider WD</h4><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/slider-wd/indroduction">
+        <span class="parent-title">Introducing WordPress Slider Plugin </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item active has_child">
+      <a class="bd-toc-link" href="/docs/slider-wd/creating-sliders">
+        <span class="parent-title">Creating Sliders </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/docs/slider-wd/creating-sliders/adding-images-videos.html">
+              Adding Images And Videos
+            </a></li><li>
+            <a href="/docs/slider-wd/creating-sliders/posts-media.html">
+              Adding Posts And Embedding Media
+            </a></li><li>
+            <a href="/docs/slider-wd/creating-sliders/wd-uploader.html">
+              Using WD Media Uploader
+            </a></li><li class="active bd-sidenav-active">
+            <a href="/docs/slider-wd/creating-sliders/adding-layers.html">
+              Adding Layers To The Slide
+            </a></li></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/slider-wd/slider-settings">
+        <span class="parent-title">Modifying Slider Settings </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/slider-wd/publishing-slider">
+        <span class="parent-title">Publishing the Created Slider </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/slider-wd/global-options">
+        <span class="parent-title">Editing Global Options </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/slider-wd/import-export">
+        <span class="parent-title">Importing and Exporting Sliders </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/slider-wd/">
+        <span class="parent-title"> </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+          <h1 id="adding-layers-to-the-slide">Adding Layers to The Slide</h1>
+
+<p><a href="https://10web.io/plugins/wordpress-slider/">WordPress slider plugin</a> provides powerful layer options, which help you enhance the display of your slideshow. This section of Slider WD user guide will help you add them to your slides and fully customize them.</p>
+
+<p>The plugin is tuned up with the following types of layers, which can be added to each slide multiple times:</p>
+
+<ul>
+  <li><strong>Text,</strong> allowing you to display a text block on your slides,</li>
+  <li><strong>Image,</strong> which lets you place an image layer over the slide background image,</li>
+  <li><strong>Video,</strong> which you can use to add a self-hosted video on the slide,</li>
+  <li><strong>Media Embed,</strong> that adds <strong>YouTube, Vimeo, Instagram, Flickr,</strong> and <strong>Dailymotion</strong> media as slide layer,</li>
+  <li><strong>Social Buttons,</strong> letting you place <strong>Facebook, Google+, Twitter, Pinterest,</strong> and <strong>Tumblr</strong> share buttons on your slides,</li>
+  <li><strong>Hotspot,</strong> which adds an animating spot to slides. It displays additional text, when users hover the hotspot, and you can also add an onclick link to it.</li>
+</ul>
+
+<p>Click on a slide you wish to edit, and the layer buttons will appear under the main image. Press the one you wish to add to the selected slide, and let’s begin customizing its settings.</p>
+
+<p><img src="http://docscdn.10web.io/slider-wd/slider-13.png" alt="Layer Types" /></p>
+
+<p>After a layer is added, a new toolbox becomes available, providing various customization options. Using the top bar, you can:</p>
+
+<ul>
+  <li>reorder the layer using <strong>drag-and-drop feature,</strong></li>
+  <li><strong>edit the title</strong> of the layer,</li>
+  <li><strong>delete</strong> or <strong>copy</strong> it,</li>
+  <li><strong>change its order number.</strong></li>
+</ul>
+
+<p><img src="http://docscdn.10web.io/slider-wd/slider-14.png" alt="Layer Settings" /></p>
+
+<p>Click on the gray bar to expand and edit all options of the layer. This section of user-friendly tools allows to fully personalize each layer. You are able to implement modifications such as:</p>
+
+<ul>
+  <li>specify the dimensions of layers,</li>
+  <li>set their positions on slides,</li>
+  <li>configure slide in and slide out animations effects,</li>
+  <li>modify their color, font style, transparency,</li>
+  <li>add unique classes for layers,</li>
+  <li>set links on each layer,</li>
+  <li>configure various on-click actions, such as playing/pausing slideshow,</li>
+</ul>
+
+<p>and much more.</p>
+
+<p>It is important to note, that Slider WD plugin also allows you to reposition layers by dragging them around on the slide itself.</p>
+<p class="product_version">v.1.2.5</p></main>
+		
+		
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="https://10web.io/">Home</a></li>
+              <li><a href="https://10web.io/about-us/">About</a></li>
+			  <li><a href="https://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="https://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="https://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2018 TenWeb, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>

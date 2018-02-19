@@ -59,23 +59,28 @@
 </div>
 <div class="collapse bd-links" id="bd-docs-nav">
   <h4 class="plugin-name">Instagram Feed WD</h4><div class="clear bd-toc-item">
-      <a class="bd-toc-link" href="/docs/wd-instagram-feed/installing-instagram-feed">
-        <span class="parent-title">Installing Instagram Feed WD </span></a>
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/introduction">
+        <span class="parent-title">Introducing Instagram Feed Plugin </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/getting-access-token">
+        <span class="parent-title">Configuring Instagram Access Token </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item active has_child">
       <a class="bd-toc-link" href="/docs/wd-instagram-feed/creating-feed">
-        <span class="parent-title">Creating an Instagram Feed </span><span class="parent-icon"> </span></a>
+        <span class="parent-title">Creating Feeds </span><span class="parent-icon"> </span></a>
 
       <ul class="nav bd-sidenav"><li>
-            <a href="/docs/wd-instagram-feed/creating-feed/thumbnails-masonry.html">
-              Thumbnails and Masonry Layouts
+            <a href="/docs/wd-instagram-feed/creating-feed/creating-instagram-feed.html">
+              Creating Instagram Feed
             </a></li><li>
-            <a href="/docs/wd-instagram-feed/creating-feed/blog-style.html">
-              Blog Style
+            <a href="/docs/wd-instagram-feed/creating-feed/feed-layouts.html">
+              Selecting a Layout for Instagram Feed
             </a></li><li>
-            <a href="/docs/wd-instagram-feed/creating-feed/image-browser.html">
-              Image Browser
+            <a href="/docs/wd-instagram-feed/creating-feed/feed-settings.html">
+              Configuring Feed Settings
             </a></li><li class="active bd-sidenav-active">
             <a href="/docs/wd-instagram-feed/creating-feed/lightbox-settings.html">
               Lightbox Settings
@@ -89,13 +94,18 @@
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item">
-      <a class="bd-toc-link" href="/docs/wd-instagram-feed/styling-with-themes">
-        <span class="parent-title">Styling with Themes </span></a>
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/theme-options">
+        <span class="parent-title">Instagram Feed WD Themes </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item">
       <a class="bd-toc-link" href="/docs/wd-instagram-feed/advanced-options">
-        <span class="parent-title">Advanced Customizing Options </span></a>
+        <span class="parent-title">Advanced Options of Instagram Feed </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/">
+        <span class="parent-title"> </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div></div>
@@ -104,59 +114,56 @@
         <main class="tenweb-content" role="main">
           <h1 id="lighbox-settings">Lighbox Settings</h1>
 
-<p>Description of Lightbox settings in <a href="https://10web.io/plugins/wordpress-instagram-feed/">Instagram Feed plugin</a>.</p>
+<p><a href="https://10web.io/plugins/wordpress-instagram-feed/">Instagram Feed plugin</a> comes with a popup box, which appears when users click on a photo or a video in the feed. It lets them display the larger versions of Instagram media, as well as play videos and navigate through the posts.</p>
 
-<p><strong>Note:</strong> Lightbox shows only already loaded images.</p>
+<p>To run the lightbox by clicking on the media, make sure <strong>Action OnClick</strong> option of <strong>Feed Settings</strong> tab is set to <strong>Open Lightbox.</strong></p>
 
-<p><strong>Full width lightbox.</strong> Check to enable full width button.</p>
+<p>Just like other attributes of Instagram feeds, <strong>Lightbox Settings</strong> can be personalized as well. Edit your feed, then navigate to <strong>Lightbox Settings</strong> tab. Here you will find all the tools which help you tweak the features of the lightbox.</p>
 
-<p><strong>Lightbox Width.</strong> Set the lightbox width. Note that it will be used for the entire display, thus when you press to view the comment image will be resized to fit this width.</p>
+<p><img src="http://docscdn.10web.io/wd-instagram-feed/instagram-17.png" alt="Lightbox Settings" /></p>
 
-<p><strong>Lightbox Height.</strong> Set the lightbox height.</p>
+<p>The user-friendly lightbox options are divided into the following two main sections:</p>
 
-<p><strong>Lightbox Effect.</strong> Select a lightbox slide transition effect. Each lightbox can use only one effect. Or choose random to display random effect for every transition.</p>
+<ul>
+  <li>General Settings,</li>
+  <li>Advanced Settings.</li>
+</ul>
 
-<p><strong>Lightbox autoplay.</strong> Choose whether use slideshow autoplay or not. If you decide not to use, you can instead set up control buttons.</p>
+<p>Let’s discuss these two sections and discover the benefits of the options they provide.</p>
 
-<p><strong>Time Interval.</strong> Define the time interval between each slide when autoplay is turned on.</p>
+<h2 id="general">General</h2>
 
-<p><strong>Enable filmstrip in lightbox.</strong> Choose whether to enable filmstrip within the lightbox or not. Filmstrip alignment and styling can be edited in Themes section.</p>
+<p><strong>General</strong> section of Lightbox Settings mainly provides options to modify the dimensions and effects on the popup box. You are able to make the following changes:</p>
 
-<p><img src="http://docscdn.10web.io/wd-instagram-feed/instagram-7.png" alt="Filmstrip in lightbox" /></p>
+<ul>
+  <li>set the <strong>dimensions</strong> of the lightbox,</li>
+  <li>configure <strong>autoplay</strong> and choose from 14 amazing <strong>animation effects,</strong></li>
+  <li>activate <strong>full-width</strong> lightbox,</li>
+</ul>
 
-<p><strong>Filmstrip size.</strong> Define the filmstrip height/width (depending whether you have horizontal or vertical view, the stated dimension will be applied to one property only).</p>
+<p>and more.</p>
 
-<p><strong>Show Next / Previous Buttons.</strong> Choose whether to display Next/Previous buttons for the slideshow or not.</p>
+<p><img src="http://docscdn.10web.io/wd-instagram-feed/instagram-18.png" alt="Lightbox Settings - General" /></p>
 
-<p><img src="http://docscdn.10web.io/wd-instagram-feed/instagram-8.png" alt="Next/Previous buttons" /></p>
+<h2 id="advanced">Advanced</h2>
 
-<p><strong>Display info by default.</strong> Choose whether to display image/video caption and author profile by default or not.</p>
+<p>With <strong>Advanced</strong> section of Lightbox settings, you have full control of what’s shown with the popup pox of Instagram feed images and videos. It takes just a few steps to get the appearance of the lightbox exactly as you wish to have it.</p>
 
-<p><strong>Full width info.</strong> Enable the option to display image/video information within entire width of the lightbox otherwise it will be displayed based on the image container width.</p>
+<p>Lightbox Advanced options allow you to:</p>
 
-<p><strong>Enable Loop.</strong> When loop is enabled the user the slideshow will continue to the first image/video when pressing Next button.</p>
+<ul>
+  <li>add a filmstrip to the lightbox, containing the thumbnails of Instagram posts,</li>
+  <li>customize the navigation on the lightbox, adding <strong>Next</strong> and <strong>Previous</strong> buttons,</li>
+  <li>activate image <strong>captions</strong> and display them on the image,</li>
+  <li>enable <strong>right-click protection,</strong> and thus disallow right-click on images and videos,</li>
+  <li>place <strong>share, fullscreen, download</strong> and other control buttons,</li>
+  <li>add <strong>comments section</strong> to the lightbox,</li>
+</ul>
 
-<p><strong>Enable Right Click Protection.</strong> When enabled user will not be able to Save images or videos using Right-click and pressing <strong>Save as</strong> button.</p>
+<p>and much more.</p>
 
-<p><strong>Enable control buttons.</strong> Enable to display Play,Full Width, Comments and other buttons within lightbox.</p>
-
-<p><strong>Enable info button.</strong> Enable to allow the user to read image metadata (caption and hashtags) when clicking on the button.</p>
-
-<p><strong>Enable fullscreen.</strong> Enable button to display images in fullscreen mode.</p>
-
-<p><img src="http://docscdn.10web.io/wd-instagram-feed/instagram-9.png" alt="Enable fullscreen" /></p>
-
-<p><strong>Enable comments.</strong> Enable a button to show or hide comments.</p>
-
-<p><strong>Enable Original Image Display Button.</strong> Shows a link to the original instagram post opened in the new window.</p>
-
-<p><strong>Enable Download Button.</strong> Enable direct image/video download from lightbox.</p>
-
-<p><strong>Enable Share Buttons.</strong> Enable social sharing buttons (Google+, Twitter, Facebook, Pinterest).</p>
-
-<p><img src="http://docscdn.10web.io/wd-instagram-feed/instagram-10.png" alt="Control buttons" /></p>
-
-        </main>
+<p><img src="http://docscdn.10web.io/wd-instagram-feed/instagram-19.png" alt="Lightbox Settings - Advanced" /></p>
+<p class="product_version">v.1.2.15</p></main>
 		
 		
       </div>
@@ -183,7 +190,7 @@
         <div class="container">
             <div>
                 <span>
-                Copyright © 2017 TenWeb, Inc. All rights reserved 
+                Copyright © 2018 TenWeb, Inc. All rights reserved 
                 </span>
             </div>
         </div>

@@ -14,10 +14,10 @@
 <meta name="google-site-verification" content="bU33Rd709RLTNobw9w3j4puG_-28Mmi2bPxdi3UQiN0" />
 <meta charset="UTF-8">
 
-<meta name="description" content="The WordPress Instagram Feed plugin allows to use Custom Css and Custom Javascript options to make specific style changes on your website."/>
+<meta name="description" content="The WordPress Instagram Feed plugin allows to use Custom CSS and Custom Javascript options to make specific style changes on your website."/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#157878">
-<title>WordPress Instagram Feed - Customization Options | 10Web</title>
+<title>WordPress Instagram Feed - Advanced Options | 10Web</title>
 <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/assets/css/minima.css">
@@ -59,23 +59,28 @@
 </div>
 <div class="collapse bd-links" id="bd-docs-nav">
   <h4 class="plugin-name">Instagram Feed WD</h4><div class="clear bd-toc-item">
-      <a class="bd-toc-link" href="/docs/wd-instagram-feed/installing-instagram-feed">
-        <span class="parent-title">Installing Instagram Feed WD </span></a>
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/introduction">
+        <span class="parent-title">Introducing Instagram Feed Plugin </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/getting-access-token">
+        <span class="parent-title">Configuring Instagram Access Token </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item has_child">
       <a class="bd-toc-link" href="/docs/wd-instagram-feed/creating-feed">
-        <span class="parent-title">Creating an Instagram Feed </span><span class="parent-icon"> </span></a>
+        <span class="parent-title">Creating Feeds </span><span class="parent-icon"> </span></a>
 
       <ul class="nav bd-sidenav"><li>
-            <a href="/docs/wd-instagram-feed/creating-feed/thumbnails-masonry.html">
-              Thumbnails and Masonry Layouts
+            <a href="/docs/wd-instagram-feed/creating-feed/creating-instagram-feed.html">
+              Creating Instagram Feed
             </a></li><li>
-            <a href="/docs/wd-instagram-feed/creating-feed/blog-style.html">
-              Blog Style
+            <a href="/docs/wd-instagram-feed/creating-feed/feed-layouts.html">
+              Selecting a Layout for Instagram Feed
             </a></li><li>
-            <a href="/docs/wd-instagram-feed/creating-feed/image-browser.html">
-              Image Browser
+            <a href="/docs/wd-instagram-feed/creating-feed/feed-settings.html">
+              Configuring Feed Settings
             </a></li><li>
             <a href="/docs/wd-instagram-feed/creating-feed/lightbox-settings.html">
               Lightbox Settings
@@ -89,43 +94,55 @@
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item">
-      <a class="bd-toc-link" href="/docs/wd-instagram-feed/styling-with-themes">
-        <span class="parent-title">Styling with Themes </span></a>
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/theme-options">
+        <span class="parent-title">Instagram Feed WD Themes </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item active">
       <a class="bd-toc-link" href="/docs/wd-instagram-feed/advanced-options">
-        <span class="parent-title">Advanced Customizing Options </span></a>
+        <span class="parent-title">Advanced Options of Instagram Feed </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/">
+        <span class="parent-title"> </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div></div>
         </div>
 		
         <main class="tenweb-content" role="main">
-          <h1 id="advanced-customization-options">Advanced Customization Options</h1>
+          <h1 id="advanced-options-of-instagram-feed">Advanced Options of Instagram Feed</h1>
 
-<p>Description of Advanced options in <a href="https://10web.io/plugins/wordpress-instagram-feed/">Instagram Feed plugin</a>.</p>
+<p><strong>Advanced Options</strong> of Instagram Feed WD plugin allow you to modify a few global parameters, that apply to all feeds. Go to <strong>Instagram Feed WD &gt; Settings</strong> page and click on <strong>Advanced Options</strong> bar to expand this toolbox.</p>
 
-<p><strong>Instagram Feed WD</strong> comes with detailed themes section, but if you want to make specific style changes you can also use</p>
+<p>With <strong>Minimal role to add and manage Feeds or Themes</strong> option, you can select the WordPress user role which will have access to Instagram Feed WD plugin. The user roles of higher levels will also be able to modify and manage the feeds.</p>
 
-<ul>
-  <li><strong>Custom CSS</strong> field located in <strong>Instagram Feed &gt; Settings.</strong></li>
-  <li><strong>Custom Javascript</strong> within the same location.</li>
-</ul>
+<p><strong>Custom CSS</strong> lets you write your own CSS code for your Instagram feeds. This is handy, in case you need to make specific changes regarding the styling of your feed. Whereas with <strong>Custom Javascript</strong> you are able to apply additional scripts.</p>
 
-<p>A <strong>Custom Javascript</strong> event is available for scripts to run after all feed images are loaded.
-Suppose you have feed with thumbnails view and besides displaying your feed you want to open up captions for some photos. You can achieve this by assigning our custom <strong>wdi_feed_loaded</strong> event to feed container and set callback function for that event.
-Here is quick example how to open up captions for images with 0,1,2,3 indexes.</p>
+<p><img src="http://docscdn.10web.io/wd-instagram-feed/instagram-27.png" alt="Instagram Feed WD Advanced Settings" /></p>
+
+<p>For instance, let’s consider you have a feed with <strong>Thumbnails Layout,</strong> and besides displaying the feed, you wish to expand captions for some posts. You can achieve this the following way.</p>
+
+<p>Firstly, you need to assign custom <strong>wdi_feed_loaded</strong> event of the plugin to the container of the Instagram feed, then set callback function for this event.</p>
+
+<p>Here is an example of a script, which expands captions of posts with 0, 1, 2, 3 indexes:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jQuery('#wdi_feed_0').on('wdi_feed_loaded',function(){
-    jQuery('.wdi_photo_title').eq(0).trigger('click');
-    jQuery('.wdi_photo_title').eq(1).trigger('click');
-    jQuery('.wdi_photo_title').eq(2).trigger('click');
-    jQuery('.wdi_photo_title').eq(3).trigger('click');
-  }); 
+  jQuery('.wdi_photo_title').eq(0).trigger('click');
+  jQuery('.wdi_photo_title').eq(1).trigger('click');
+  jQuery('.wdi_photo_title').eq(2).trigger('click');
+  jQuery('.wdi_photo_title').eq(3).trigger('click');
+}); 
 </code></pre></div></div>
+<p>Make sure to <strong>Save Changes</strong> after you finish modifying Advanced Options.</p>
 
-        </main>
+<h2 id="uninstalling-instagram-feed-wd-plugin">Uninstalling Instagram Feed WD Plugin</h2>
+
+<p>In case you wish to completely remove Instagram Feed WD plugin, you can <strong>Uninstall</strong> it using <strong>Instagram Feed WD &gt; Uninstall</strong> menu item. However, it is important to note, that uninstalling the plugin will delete all feeds, reset all options to their defaults, and remove other data on the plugin.</p>
+
+<p>Please make sure you don’t have any important information before you proceed.</p>
+<p class="product_version">v.1.2.15</p></main>
 		
 		
       </div>
@@ -152,7 +169,7 @@ Here is quick example how to open up captions for images with 0,1,2,3 indexes.</
         <div class="container">
             <div>
                 <span>
-                Copyright © 2017 TenWeb, Inc. All rights reserved 
+                Copyright © 2018 TenWeb, Inc. All rights reserved 
                 </span>
             </div>
         </div>

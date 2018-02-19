@@ -59,23 +59,28 @@
 </div>
 <div class="collapse bd-links" id="bd-docs-nav">
   <h4 class="plugin-name">Instagram Feed WD</h4><div class="clear bd-toc-item">
-      <a class="bd-toc-link" href="/docs/wd-instagram-feed/installing-instagram-feed">
-        <span class="parent-title">Installing Instagram Feed WD </span></a>
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/introduction">
+        <span class="parent-title">Introducing Instagram Feed Plugin </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/getting-access-token">
+        <span class="parent-title">Configuring Instagram Access Token </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item active has_child">
       <a class="bd-toc-link" href="/docs/wd-instagram-feed/creating-feed">
-        <span class="parent-title">Creating an Instagram Feed </span><span class="parent-icon"> </span></a>
+        <span class="parent-title">Creating Feeds </span><span class="parent-icon"> </span></a>
 
       <ul class="nav bd-sidenav"><li>
-            <a href="/docs/wd-instagram-feed/creating-feed/thumbnails-masonry.html">
-              Thumbnails and Masonry Layouts
+            <a href="/docs/wd-instagram-feed/creating-feed/creating-instagram-feed.html">
+              Creating Instagram Feed
             </a></li><li>
-            <a href="/docs/wd-instagram-feed/creating-feed/blog-style.html">
-              Blog Style
+            <a href="/docs/wd-instagram-feed/creating-feed/feed-layouts.html">
+              Selecting a Layout for Instagram Feed
             </a></li><li>
-            <a href="/docs/wd-instagram-feed/creating-feed/image-browser.html">
-              Image Browser
+            <a href="/docs/wd-instagram-feed/creating-feed/feed-settings.html">
+              Configuring Feed Settings
             </a></li><li>
             <a href="/docs/wd-instagram-feed/creating-feed/lightbox-settings.html">
               Lightbox Settings
@@ -89,13 +94,18 @@
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item">
-      <a class="bd-toc-link" href="/docs/wd-instagram-feed/styling-with-themes">
-        <span class="parent-title">Styling with Themes </span></a>
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/theme-options">
+        <span class="parent-title">Instagram Feed WD Themes </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item">
       <a class="bd-toc-link" href="/docs/wd-instagram-feed/advanced-options">
-        <span class="parent-title">Advanced Customizing Options </span></a>
+        <span class="parent-title">Advanced Options of Instagram Feed </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/wd-instagram-feed/">
+        <span class="parent-title"> </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div></div>
@@ -104,35 +114,57 @@
         <main class="tenweb-content" role="main">
           <h1 id="conditional-filters">Conditional Filters</h1>
 
-<p>Description of Conditional Filters settings in <a href="https://10web.io/plugins/wordpress-instagram-feed/">Instagram Feed plugin</a>.</p>
+<p>In case you wish to showcase Instagram feeds with additional, more definitive filters, <strong>Conditional Filters</strong> feature of <a href="https://10web.io/plugins/wordpress-instagram-feed/">Instagram Feed plugin</a> will help you with it. This functionality allows you to show images of an Instagram account with a specific hashtag, skip images which belong to certain usernames/hashtags, and more.</p>
 
-<p>Conditional filters are used in cases if you want to insert filtered feeds of certain user(s) or hashtag(s). Conditional filters can be used for both displaying or skipping certain images. Filters are also applicable to mixed feeds.</p>
+<p>To begin creating additional filters for your Instagram feed, edit it and navigate to <strong>Conditional Filters</strong> tab. Use <strong>Enable Conditional Filters</strong> to activate the necessary tools.</p>
 
-<p><strong>Enable Conditional Filters.</strong> Enabling the option you will be able to add condition to the feed.</p>
+<p><img src="http://docscdn.10web.io/wd-instagram-feed/instagram-20.png" alt="Conditional Filters" /></p>
 
-<p><strong>Source of filtering.</strong> When creating a feed you provide username(s) and/or hashtag(s). All provided usernames and/or hashtags will be used as initial source. Filters will be applied to feed generated on this selection.</p>
+<p><strong>Feeds to Filter</strong> option shows the basis for conditional filters. These are the usernames and hashtags you have added to your Instagram feed. The filters will search among the posts of these usernames and hashtags, and pull those which fulfill the specified condition.</p>
 
-<p><strong>Filter Logic.</strong> Filter logic allows displaying one of the options:</p>
-
-<ul>
-  <li><strong>And</strong> - Displays Instagram posts which correspond to all filters.</li>
-  <li><strong>Or</strong> - Displays Instagram posts which correspond to at least one of the filters.</li>
-  <li><strong>Nor</strong> - Hides Instagram posts which correspond to at least one of the filters.</li>
-</ul>
-
-<p><strong>Add Condition.</strong> Write your condition, select condition type and click on Add New Condition. You can add as many conditions as you want repeating the process. You can add different condition types mixed together as well. Condition might be username (use @ before the username), hashtag (use # before the keyword), text or link (provide full URL) depending on condition type. Let’s discuss each condition type separately:</p>
+<p>Now let’s configure the condition itself. First, you need to choose the logical operator of the condition using <strong>Filter Logic</strong> setting. Select one of the following 3 operators:</p>
 
 <ul>
-  <li><strong>Username.</strong> Useful when you have a feed based on hashtags. It will allow displaying feeds of only certain accounts using that hashtag. Let’s consider you have #panda and #animal hashtags, you can set @natgeo and @instapandacool to display images from these two accounts.</li>
-  <li><strong>Hashtag.</strong> Useful when you have a feed based on usernames. It will allow displaying feeds using only certain hashtag, e.g. if you have @bmw and @instacars as users and want to display only posts containing #bmw hashtag.</li>
-  <li><strong>Mention.</strong> This can be used both in cases of hashtag and usernames, e.g. displaying posts where @moby is mentioned.</li>
-  <li><strong>Description.</strong> This can be used both with hashtags and usernames. This can be a single keyword or word combination which should be used within the Instagram post description.</li>
-  <li><strong>Instagram Media Link.</strong> This is the shareable link of the Instagram post. The entire URL should be used for serving as a filter.</li>
+  <li><strong>AND:</strong> Shows Instagram posts that belong to <strong>all sources</strong> of filtering.</li>
+  <li><strong>OR:</strong> Shows Instagram media which belong to <strong>at least one of the sources</strong> of filtering.</li>
+  <li><strong>NOR:</strong> Hides Instagram posts which belong to <strong>at least one of the sources</strong> of filtering.</li>
 </ul>
 
-<p><strong>Result.</strong> Here you will see all of the added filters which will be applied to your feed.</p>
+<p>Afterwards, use <strong>Add Condition</strong> option to specify the parameter for the condition, which can be one of the following.</p>
 
-        </main>
+<ul>
+  <li>
+    <p><strong>Username.</strong> This is useful, in case your feed uses hashtags. It will let you display posts with those hashtags, which only belong to certain Instagram accounts.</p>
+
+    <p>For instance, you have <code class="highlighter-rouge">#interiorinspo</code> and <code class="highlighter-rouge">#kitchen</code> hashtags, you can set <code class="highlighter-rouge">@esminteriors</code> user to display images from this accounts.</p>
+  </li>
+  <li>
+    <p><strong>Hashtag.</strong> If you have a feed based on usernames, this will help you display posts of a certain hashtag.</p>
+
+    <p>For example, in case you use <code class="highlighter-rouge">@bmw</code> and <code class="highlighter-rouge">@instacars</code> Instagram accounts on your feed, you can display the posts with <code class="highlighter-rouge">#bmw</code> hashtag only.</p>
+  </li>
+  <li>
+    <p><strong>Mention.</strong> This option can be used for feeds both with hashtags and usernames, e.g. you can display posts where <code class="highlighter-rouge">@gameofthrones</code> is mentioned.</p>
+  </li>
+  <li>
+    <p><strong>Description.</strong> Just like Mentions, Description can be used both with hashtags and usernames. You can specify a single keyword or a phrase, which is used in descriptions of Instagram posts.</p>
+  </li>
+  <li>
+    <p><strong>Instagram Media Link.</strong> You are able to filter using the shareable link of Instagram media. Simply provide the full URL of the post, as the following example:
+<em>https://www.instagram.com/p/Be6H6G9lmCQ/</em></p>
+  </li>
+</ul>
+
+<p>Afterwards, select the <strong>Condition Type</strong> for the filter, which corresponds to the parameter you are adding. For instance, in case you are adding <code class="highlighter-rouge">#liveauthentic</code> hashtag, the <strong>Condition Type</strong> needs to be set as <strong>Hashtag</strong> as well.</p>
+
+<blockquote>
+  <p><strong>Important!</strong> While adding the parameter for the condition, <strong>do not use</strong> @ sign before usernames and # sign before hashtags.</p>
+</blockquote>
+
+<p>Lastly, click <strong>Add Condition</strong> button, and the parameters you have added will be visible below <strong>Result</strong> section. Make sure to press <strong>Save</strong> after you finish configuring the filters.</p>
+
+<p><img src="http://docscdn.10web.io/wd-instagram-feed/instagram-21.png" alt="Configuring Conditional Filters" /></p>
+<p class="product_version">v.1.2.15</p></main>
 		
 		
       </div>
@@ -159,7 +191,7 @@
         <div class="container">
             <div>
                 <span>
-                Copyright © 2017 TenWeb, Inc. All rights reserved 
+                Copyright © 2018 TenWeb, Inc. All rights reserved 
                 </span>
             </div>
         </div>

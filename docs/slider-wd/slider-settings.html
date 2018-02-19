@@ -59,18 +59,30 @@
 </div>
 <div class="collapse bd-links" id="bd-docs-nav">
   <h4 class="plugin-name">Slider WD</h4><div class="clear bd-toc-item">
-      <a class="bd-toc-link" href="/docs/slider-wd/adding-images">
-        <span class="parent-title">Adding Images to Sliders </span></a>
+      <a class="bd-toc-link" href="/docs/slider-wd/indroduction">
+        <span class="parent-title">Introducing WordPress Slider Plugin </span></a>
 
       <ul class="nav bd-sidenav"></ul>
-    </div><div class="clear bd-toc-item">
-      <a class="bd-toc-link" href="/docs/slider-wd/adding-layers">
-        <span class="parent-title">Adding Layers to The Slide </span></a>
+    </div><div class="clear bd-toc-item has_child">
+      <a class="bd-toc-link" href="/docs/slider-wd/creating-sliders">
+        <span class="parent-title">Creating Sliders </span><span class="parent-icon"> </span></a>
 
-      <ul class="nav bd-sidenav"></ul>
+      <ul class="nav bd-sidenav"><li>
+            <a href="/docs/slider-wd/creating-sliders/adding-images-videos.html">
+              Adding Images And Videos
+            </a></li><li>
+            <a href="/docs/slider-wd/creating-sliders/posts-media.html">
+              Adding Posts And Embedding Media
+            </a></li><li>
+            <a href="/docs/slider-wd/creating-sliders/wd-uploader.html">
+              Using WD Media Uploader
+            </a></li><li>
+            <a href="/docs/slider-wd/creating-sliders/adding-layers.html">
+              Adding Layers To The Slide
+            </a></li></ul>
     </div><div class="clear bd-toc-item active">
       <a class="bd-toc-link" href="/docs/slider-wd/slider-settings">
-        <span class="parent-title">Modifying Slider WD Settings </span></a>
+        <span class="parent-title">Modifying Slider Settings </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item">
@@ -79,239 +91,171 @@
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/slider-wd/global-options">
+        <span class="parent-title">Editing Global Options </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
       <a class="bd-toc-link" href="/docs/slider-wd/import-export">
         <span class="parent-title">Importing and Exporting Sliders </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/slider-wd/">
+        <span class="parent-title"> </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div></div>
         </div>
 		
         <main class="tenweb-content" role="main">
-          <h1 id="modifying-slider-wd-settings">Modifying Slider WD Settings</h1>
+          <h1 id="modifying-slider-settings">Modifying Slider Settings</h1>
 
-<p>Guide to modify settings of Slider WD WordPress plugin.</p>
+<p><a href="https://10web.io/plugins/wordpress-slider/">WordPress Slider plugin</a> comes with a set of useful options which allow you to customize each slideshow independently. Having configured slideshows separately, you can publish multiple sliders on your website, each with its own unique design and purpose.</p>
 
-<p>In this section you will learn how to change different settings of your <a href="https://10web.io/plugins/wordpress-slider/">WordPress slider</a>.</p>
+<p>Navigate to <strong>Settings</strong> tab of your slider to begin configuring its options.</p>
 
-<iframe width="600" height="400" src="https://www.youtube.com/embed/Peny_dkHaMo?rel=0" frameborder="0" allowfullscreen=""></iframe>
+<p><img src="http://docscdn.10web.io/slider-wd/slider-15.png" alt="Slider Settings" /></p>
 
-<p>To access the settings you should go to <strong>Slider WD &gt; Sliders &gt; Settings</strong> tab.</p>
+<p>This toolbox consists of the following sections, each providing its own pack of user-friendly options.</p>
 
-<h3 id="global-settings">Global Settings</h3>
+<h3 id="global">Global</h3>
 
-<p>You can change the main settings here. The changes will affect only the current slider and not previously created ones.</p>
+<p><strong>Global</strong> tab of Slider Settings includes general options for the slider. You can personalize the way your slider behaves and shows. You can:</p>
 
-<p><strong>Dimensions.</strong> Set the maximum dimensions of the slider. The dimension is set to maximum since with smaller displays the slider will be displayed in smaller dimensions due to the responsiveness feature. This will be the constant dimension regardless of the images.</p>
+<ul>
+  <li>modify its <strong>display type</strong> and <strong>dimensions,</strong></li>
+  <li>set <strong>animation effect</strong> and its <strong>duration,</strong></li>
+  <li>specify slider <strong>looping</strong> and <strong>shuffling</strong> settings,</li>
+  <li>change slideshow behavior on <strong>desktop</strong> and <strong>mobile devices,</strong></li>
+  <li>set <strong>music</strong> to play along with the slider,</li>
+  <li>enable <strong>parallax effect</strong> for the slider, and much more.</li>
+</ul>
 
-<p><strong>Full width.</strong> Choose whether to have the overall slider stretched to the full width of the page, where it is posted or not. The length will be given corresponding to the original ratio, e.g. if you have it set to 480x300 and the width of the page is 960, then the height will be 600. In addition you can change the ratio manually, deleting the provided number and replacing it with another option.</p>
-
-<p><strong>Background fit.</strong> There are three options for inserting the image into a slide. You can choose the option that better suits you. In case you have images smaller or larger than your slide the views will change accordingly. Let’s examine the changes separately.</p>
-
-<p><strong>Cover.</strong> The image will get cut from the middle part and will get enlarged to fit the entire background.</p>
-
-<p><strong>Fill.</strong> The image will get stretched or compressed to the dimensions of the slider.</p>
-
-<p><strong>Contain.</strong> The image will stay in its original form and the rest of the slider content area will be covered by the slider background.</p>
-
-<p><strong>Align.</strong> With this option you can align your slider to either left, right or to the center. If your theme content area width is small i.e. if you have a column on left or right side of your webpage you may not be able to see this option at work. Also if the dimension is set to 800x300px, which is the maximum size for use with responsiveness feature, you will not see any difference while trying to align your slide to any direction.</p>
-
-<p><strong>Effect.</strong> Select the effect which will be applied when shifting from one slider to another. <strong>Note,</strong> that it is different from the layer effects and does not affect the layer effects.</p>
-
-<p><strong>Effect duration.</strong> Set the timing for the slider effect in ms.</p>
-
-<p><strong>Time Interval.</strong> Set the time interval for the change of the sliders.</p>
-
-<p><strong>Autoplay.</strong> Choose whether to autoplay the sliders or not.</p>
-
-<p><strong>Shuffle.</strong> Choose whether to have the slides change in a random manner or to keep the original sequence.</p>
-
-<p><strong>Start with slide.</strong> By default the slide will start with the first slide. Using the option you can select the slide, which will be first displayed. You can use 0 for randomizing the option.</p>
-
-<p><strong>Music.</strong> Choose whether to have music/audio track playback with the slider or not.</p>
-
-<p><strong>Music URL.</strong> Provide the full link to the audio track, which will be used with the slider.</p>
-
-<p><strong>Smart Load.</strong> Choose whether to have the smart load feature, which will help to have faster load for the first few images and will process the rest meanwhile.</p>
-
-<p><strong>Background color.</strong> Select a background color for the slider, as well as its transparency level.</p>
-
-<p><strong>Border.</strong> Set the border width, type, as well as the color.</p>
-
-<p><strong>Border radius.</strong> Set the border radius using CSS type values.</p>
-
-<p><strong>Margin.</strong> Set a margin for the slider in pixels.</p>
-
-<p><strong>Shadow.</strong> Set a slider shadow using CSS type values.</p>
-
-<p><strong>Right click protection.</strong> Choose whether to have right click protection for avoiding the image download or not.</p>
-
-<p><strong>Layer out on next.</strong> Choose whether to have the layer effect out regardless of the timing between the hit to the next slider or skip the effect out and get to the next image.</p>
-
-<p><strong>Turn Slide WD Media Upload.</strong> Choose whether to use the Slider WD Media Upload option or use the standard WordPress Media Upload.</p>
-
-<p><strong>Published.</strong> Choose whether to publish the mentioned slider or not.</p>
+<p><img src="http://docscdn.10web.io/slider-wd/slider-16.png" alt="Global Settings" /></p>
 
 <h3 id="carousel">Carousel</h3>
 
-<p>You can display the slider images in a carousel view, which displays a larger image within the center and descending size images before and after the main image.</p>
+<p>Have your slideshow appearing in Carousel mode by activating it from <strong>Carousel</strong> tab of Slider Settings. With these options, you can personalize the display of your slider carousel. You are able to:</p>
 
-<p><strong>Carousel.</strong> Choose whether to use carousel display of images or not.</p>
+<ul>
+  <li>change the <strong>number of images</strong> shown on carousel,</li>
+  <li>set the <strong>ratio</strong> of carousel image dimensions (width divided by height),</li>
+  <li>edit the styles of carousel <strong>background image,</strong></li>
+</ul>
 
-<p><strong>Number of images for carousel.</strong> Define the number of visible images whenever using carousel display.</p>
+<p>and more.</p>
 
-<p><strong>Carousel image ratio.</strong> Define the proportions between the main image and images preceding and following the main image.</p>
-
-<p><strong>Container fit.</strong> If you activate the option the distance between the images will be identical so that the images fill the container, otherwise the distance between the images will depend on the ratio.</p>
-
-<p><strong>Fixed Width.</strong> Define the maximum width of the carousel display.</p>
+<p><img src="http://docscdn.10web.io/slider-wd/slider-17.png" alt="Carousel" /></p>
 
 <h3 id="navigation">Navigation</h3>
 
-<p>You can change the style, colors and dimensions for the navigation buttons or completely remove the navigation buttons.</p>
-
-<p><strong>Next/ Previous buttons.</strong> Choose whether to display Previous and Next buttons or not.</p>
-
-<p><strong>Next/ Previous buttons.</strong> Choose whether to display Play and Pause buttons or not.</p>
-
-<p><strong>Show Navigation buttons.</strong> Select between the option of always displaying the navigation buttons or only when hovered.</p>
-
-<p><strong>Image for Next / Previous buttons.</strong> There is an opportunity to use the default set of navigation buttons, upload images to be used as navigation buttons or to use styled fonts.</p>
+<p>Completely customize the way your slider navigates using the tools provided in <strong>Navigation</strong> section of Slider Settings. You are able to switch on:</p>
 
 <ul>
-  <li><strong>Default.</strong> Here you should choose the button group, color option. You can use reverse feature.</li>
-  <li><strong>Custom.</strong> Here you should upload images for each action button by clicking on it and adding the corresponding image. You can use reverse feature.</li>
-  <li><strong>Styled.</strong> Here you should select the button style using the drop-down list.</li>
+  <li>mouse-click navigation <strong>(Next/Previous buttons),</strong></li>
+  <li><strong>mouse-swipe</strong> and <strong>mouse-wheel</strong> navigation,</li>
+  <li><strong>touch-swipe</strong> navigation on mobile devices,</li>
+  <li><strong>keyboard navigation</strong> with next/previous keys,</li>
+  <li>on-slider <strong>Play / Pause</strong> buttons,</li>
 </ul>
 
-<p><strong>Next/ Previous buttons style.</strong> Choose the style of the button you prefer to have as navigation buttons.</p>
+<p>as well as activate navigation buttons for your slider and style every attribute as you wish.</p>
 
-<p><strong>Next/ Previous buttons size.</strong> Set the dimensions for the right/left buttons.</p>
-
-<p><strong>Play/Pause button.</strong> Choose whether to display Play and Pause buttons or not.</p>
-
-<p><strong>Image for Play / Pause buttons.</strong> There is an opportunity to use the default set of play/pause buttons, upload images or to use styled fonts.</p>
-
-<ul>
-  <li><strong>Default.</strong> Here you should choose the button group, color option . You can use reverse feature.</li>
-  <li><strong>Custom.</strong> Here you should upload images for each action button by clicking on it and adding the corresponding image. You can use reverse feature.</li>
-</ul>
-
-<p><strong>Play / Pause button size</strong>. Set the dimensions for the play/pause buttons.</p>
-
-<p><strong>Buttons color (for Styled only).</strong> Select a color for the navigation buttons.</p>
-
-<p><strong>Hover color (for Styled only).</strong> Select a hover color for the navigation buttons.</p>
-
-<p><strong>Border.</strong> Select the type, size, as well as the color of border for the navigation buttons.</p>
-
-<p><strong>Border radius.</strong> Set border radius for the navigation buttons using CSS type values.</p>
-
-<p><strong>Background color.</strong> Select the background color for the navigation buttons using the color picker. In addition you can set the transparency level of the background.</p>
+<p><img src="http://docscdn.10web.io/slider-wd/slider-18.png" alt="Navigation" /></p>
 
 <h3 id="bullets">Bullets</h3>
 
-<p>In addition to navigation buttons, you can also use bullets. Upon hitting the bullet the image in the corresponding position will be displayed.</p>
-
-<p><strong>Enable bullets.</strong> Choose whether to have navigation bullets or not.</p>
-
-<p><strong>Position.</strong> Select the position for the navigation bullets.</p>
-
-<p><strong>Bullet style.</strong> There is an opportunity to use the default set of bullet images, upload unique image to be used as a navigation bullet or to use default styled fonts.</p>
+<p>Place bullets on your slider by activating them from this section. This feature lets users to easily navigate from one slide to another in a random sequence. This set of options lets you:</p>
 
 <ul>
-  <li><strong>Default.</strong> Here you should choose the button group, color option as. You can use reverse feature.</li>
-  <li><strong>Custom.</strong> Here you should upload images for active and deactive bullets by clicking on it and adding the corresponding image. You can use reverse feature.</li>
-  <li><strong>Styled.</strong> Here you should select the bullet style using the drop-down list.</li>
+  <li>select to show bullets <strong>on hover</strong> or <strong>always,</strong></li>
+  <li>set the <strong>position</strong> of slider bullets,</li>
+  <li>choose <strong>color, size</strong> and <strong>margin</strong> for them,</li>
+  <li><strong>customize the bullets</strong> by uploading your own images, and more.</li>
 </ul>
 
-<p><strong>Size.</strong> Define the size of the navigation bullets.</p>
-
-<p><strong>Color (for Styled only).</strong> Select the color for the navigation bullets.</p>
-
-<p><strong>Active color (for Styled only).</strong> Select the color for the bullet, which is currently displaying a corresponding image.</p>
-
-<p><strong>Margin.</strong> Set the margin for the navigation bullets in pixels.</p>
+<p><img src="http://docscdn.10web.io/slider-wd/slider-19.png" alt="Bullets" /></p>
 
 <h3 id="filmstrip">Filmstrip</h3>
 
-<p>You can add a filmstrip for the slider images.</p>
+<p>Display a nifty filmstrip of slide thumbnails along with your slider. This is a neat way to showcase miniatures of your slides before users click to view their larger versions. You can customize the filmstrip by:</p>
 
-<p><strong>Enable filmstrip.</strong> Choose whether to have thumbnails of the slides displayed as a filmstrip or not.</p>
+<ul>
+  <li>changing its <strong>position</strong> on the slider,</li>
+  <li>setting <strong>background color</strong> and <strong>inactive thumbnail</strong> transparency,</li>
+  <li>specify <strong>thumbnail dimensions</strong> and <strong>separator size,</strong></li>
+  <li>customize the <strong>border</strong> of the active thumbnail.</li>
+</ul>
 
-<p><strong>Position.</strong> Set the position of the filmstrip between 4 possible options.</p>
+<p><img src="http://docscdn.10web.io/slider-wd/slider-20.png" alt="Filmstrip" /></p>
 
-<p><strong>Thumbnail dimensions.</strong> Define the dimensions of the filmstrip thumbnails.</p>
+<h3 id="timer-bar">Timer bar</h3>
 
-<p><strong>Background color.</strong> Select the background color for the filmstrip.</p>
+<p>Activating <strong>Timer bar</strong> lets you have a neat loading bar with each slide. The loading bar starts every time a slide displays, and ends when the slideshow switches to the next image during autoplay.</p>
 
-<p><strong>Thumbnail margin.</strong> Set the margin for the thumbnails in pixels.</p>
+<p>You can customize the <strong>type</strong> of the Timer bar, as well as its <strong>size,</strong> <strong>color</strong> and <strong>transparency.</strong></p>
 
-<p><strong>Active border.</strong> The thumbnail for the currently displayed image will have a border. You can set its size, type and color.</p>
-
-<p><strong>Deactive transparency.</strong> You can set a transparency level for the inactive filmstrip items.</p>
-
-<h3 id="timer-bar">Timer Bar</h3>
-
-<p>You can add a bar displaying the timing left to switching to the next slide. This is commonly used when using autoplay for the slider.</p>
-
-<p><strong>Enable timer bar.</strong> Choose whether to display a timer bar over the images or not.</p>
-
-<p><strong>Type.</strong> Choose the type of the timer bar to be used within the slider.</p>
-
-<p><strong>Size.</strong> Define the size of the timer bar in pixels.</p>
-
-<p><strong>Color.</strong> Select the color and the transparency level of the timer bar.</p>
+<p><img src="http://docscdn.10web.io/slider-wd/slider-21.png" alt="Timer Bar" /></p>
 
 <h3 id="watermark">Watermark</h3>
 
-<p>You can add watermark over the slider images both in the forms of text and images.</p>
-
-<p>Please note that the <strong>Fill</strong> and <strong>Contain</strong> options will work fine with <strong>Watermark</strong> option regardless of the image dimensions, whereas for the <strong>Cover</strong> option you should have the image identical to the size set in the <strong>Dimensions</strong> setting. If you have uploaded the image with another dimension, you will need to resize the image and upload it again.</p>
-
-<p><strong>Watermark Type.</strong> Choose what kind of watermark you want to use from provided 2 options (text, image) or not to use watermarks over your slides.</p>
-
-<h4 id="text">Text</h4>
+<p>You are able to add watermark to the main images of your slider with the options <strong>Watermark</strong> section provides. Choose the type of the watermark, <strong>text</strong> or <strong>image,</strong> then configure settings such as:</p>
 
 <ul>
-  <li><strong>Watermark text.</strong> Provide the text which will be displayed over the slides.</li>
-  <li><strong>Watermark font size.</strong> Specify the font size of the watermark in pixels.</li>
-  <li><strong>Watermark font style.</strong> Specify the font family for the watermark text.</li>
-  <li><strong>Watermark color.</strong> Select the watermark text font color, as well as the watermark transparency using CSS type values.</li>
-  <li><strong>Watermark position.</strong> Choose the positioning of the watermark from the available 9 options.</li>
+  <li>providing watermark <strong>text</strong> or <strong>image URL,</strong></li>
+  <li>specifying <strong>font size, font style</strong> and <strong>color</strong> of watermark text.</li>
+  <li>setting the <strong>size</strong> of the watermark image,</li>
+  <li>and select the <strong>position</strong> of the watermark.</li>
 </ul>
 
-<h4 id="image">Image</h4>
+<p>Press <strong>Set Watermark</strong> to add the watermark text or image to main images of your slider. To remove it, simply click on <strong>Reset Watermark</strong> button.</p>
 
-<ul>
-  <li><strong>Watermark URL.</strong> Provide the absolute URL of the image which will be used for the watermark. Please note that only .png images are supported.</li>
-  <li><strong>Watermark image size.</strong> Define the size (in percentage for the responsive look) of the image used for the watermark.</li>
-  <li><strong>Watermark position.</strong> Choose the positioning of the watermark from the available 9 options.</li>
-</ul>
+<p><img src="http://docscdn.10web.io/slider-wd/slider-22-1.png" alt="Watermark" /></p>
 
 <h3 id="css">CSS</h3>
 
-<p>You can add custom CSS in the box below to apply custom changes to the slider. The changes will override the original styles.</p>
+<p>Use <strong>CSS</strong> tab of Slider Settings to write additional CSS code and apply custom styles to the slideshow. Note, that these changes will override the original styles of the slider.</p>
 
-        </main>
+<p><img src="http://docscdn.10web.io/slider-wd/slider-23.png" alt="Custom CSS" /></p>
+
+<h3 id="slider-callbacks">Slider Callbacks</h3>
+
+<p>Slider Callbacks allow you to call your own Javascript function when a certain action occurs. Press the <strong>Plus (+)</strong> button and a text box will appear, allowing you to write your script.</p>
+
+<p>You can call the script:</p>
+
+<ul>
+  <li>on slider Init,</li>
+  <li>on slide change start,</li>
+  <li>on slide change end,</li>
+  <li>on slide play,</li>
+  <li>on slide pause,</li>
+  <li>on slide hover,</li>
+  <li>on slide blur,</li>
+  <li>on slider resize,</li>
+  <li>on swipe start.</li>
+</ul>
+
+<p>Make sure to select the desired action for your Javascript code, then hit <strong>Update</strong> button to save Slider Settings.</p>
+
+<p><img src="http://docscdn.10web.io/slider-wd/slider-24.png" alt="Slider Callbacks" /></p>
+<p class="product_version">v.1.2.5</p></main>
 		
 		
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h1"><a href="#modifying-slider-wd-settings">Modifying Slider WD Settings</a>
+<li class="toc-entry toc-h1"><a href="#modifying-slider-settings">Modifying Slider Settings</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#global-settings">Global Settings</a></li>
+<li class="toc-entry toc-h3"><a href="#global">Global</a></li>
 <li class="toc-entry toc-h3"><a href="#carousel">Carousel</a></li>
 <li class="toc-entry toc-h3"><a href="#navigation">Navigation</a></li>
 <li class="toc-entry toc-h3"><a href="#bullets">Bullets</a></li>
 <li class="toc-entry toc-h3"><a href="#filmstrip">Filmstrip</a></li>
-<li class="toc-entry toc-h3"><a href="#timer-bar">Timer Bar</a></li>
-<li class="toc-entry toc-h3"><a href="#watermark">Watermark</a>
-<ul>
-<li class="toc-entry toc-h4"><a href="#text">Text</a></li>
-<li class="toc-entry toc-h4"><a href="#image">Image</a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h3"><a href="#timer-bar">Timer bar</a></li>
+<li class="toc-entry toc-h3"><a href="#watermark">Watermark</a></li>
 <li class="toc-entry toc-h3"><a href="#css">CSS</a></li>
+<li class="toc-entry toc-h3"><a href="#slider-callbacks">Slider Callbacks</a></li>
 </ul>
 </li>
 </ul>
@@ -341,7 +285,7 @@
         <div class="container">
             <div>
                 <span>
-                Copyright © 2017 TenWeb, Inc. All rights reserved 
+                Copyright © 2018 TenWeb, Inc. All rights reserved 
                 </span>
             </div>
         </div>
