@@ -325,7 +325,7 @@ img.error-image {
 
 .tenweb-content img{
 	display:block;  
-	margin: 10px 0;
+	margin: 10px auto;
 }
 
 .tenweb-content p.product_version{
@@ -412,6 +412,19 @@ a.trial_but.btn {
 a.login_but.btn{
     margin-right: 0 !important;
 }
+
+.tenweb-content iframe {
+    display: block;
+    margin: 30px auto;
+}
+.tenweb-content p {
+    padding: 5px 0;
+}
+.tenweb-content h2 {
+    padding-top: 20px;
+}
+
+
 @media only screen and (min-width: 1920px){
 	.home .row .col.m4 {
     margin: 0 .5% 20px;

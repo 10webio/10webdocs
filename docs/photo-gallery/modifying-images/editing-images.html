@@ -14,10 +14,10 @@
 <meta name="google-site-verification" content="bU33Rd709RLTNobw9w3j4puG_-28Mmi2bPxdi3UQiN0" />
 <meta charset="UTF-8">
 
-<meta name="description" content="Export/Import add-on of Photo Gallery plugin allows to easily export all gallery data and import them into a new website."/>
+<meta name="description" content="How to crop, edit, publish WordPress gallery images, and make other modifications using Photo Gallery plugin. A step-by-step guide by 10Web."/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#157878">
-<title>Photo Gallery Export/Import Add-on | 10Web</title>
+<title>Modifying Photo Gallery Images | Photo Gallery | 10Web</title>
 <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/assets/css/minima.css">
@@ -52,7 +52,7 @@
 </nav>
 	
     <div class="container-fluid">
-      <div class="row flex-xl-nowrap">
+      <div class="row flex-xl-nowrap toc_doc">
         <div class="tenweb-sidebar">
           <div class="mobile-nav"><h4 class="plugin-name-mobile">Photo Gallery</h4>
 <span  id="trigram-for-heaven">  <span></span></span>
@@ -77,11 +77,11 @@
             <a href="/docs/photo-gallery/adding-galleries/embedding-media.html">
               Embedding Media to Photo Gallery
             </a></li></ul>
-    </div><div class="clear bd-toc-item has_child">
+    </div><div class="clear bd-toc-item active has_child">
       <a class="bd-toc-link" href="/docs/photo-gallery/modifying-images">
         <span class="parent-title">Modifying Gallery Images </span><span class="parent-icon"> </span></a>
 
-      <ul class="nav bd-sidenav"><li>
+      <ul class="nav bd-sidenav"><li class="active bd-sidenav-active">
             <a href="/docs/photo-gallery/modifying-images/editing-images.html">
               Editing Individual Images
             </a></li><li>
@@ -133,14 +133,14 @@
         <span class="parent-title">Managing Comments and Ratings </span></a>
 
       <ul class="nav bd-sidenav"></ul>
-    </div><div class="clear bd-toc-item active has_child">
+    </div><div class="clear bd-toc-item has_child">
       <a class="bd-toc-link" href="/docs/photo-gallery/add-ons">
         <span class="parent-title">Photo Gallery Add-ons </span><span class="parent-icon"> </span></a>
 
       <ul class="nav bd-sidenav"><li>
             <a href="/docs/photo-gallery/add-ons/photo-gallery-ecommerce.html">
               Photo Gallery Ecommerce Add-on
-            </a></li><li class="active bd-sidenav-active">
+            </a></li><li>
             <a href="/docs/photo-gallery/add-ons/export-import.html">
               Photo Gallery Export/Import Add-on
             </a></li><li>
@@ -156,52 +156,122 @@
         </div>
 		
         <main class="tenweb-content" role="main">
-          <h1 id="export-import-add-on">Export Import Add-on</h1>
+          <h1 id="modifying-photo-gallery-images">Modifying Photo Gallery Images</h1>
 
-<p>Description of Export Import Add-on of <a href="https://10web.io/plugins/wordpress-photo-gallery/">Photo Gallery plugin</a>.</p>
+<p><a href="https://10web.io/blog/plugins/wordpress-photo-gallery/">Photo Gallery plugin</a> allows you to edit and apply numerous functions to gallery images. You can implement various modifications, such as:</p>
 
-<p>Moving your WordPress website galleries to a new domain or simply recreating your photo galleries has never been easier. Export/Import add-on of Photo Gallery plugin allows you to export all gallery data and import it to a new site. Make your life easier with the Export/Import add-on.</p>
+<ul>
+  <li><strong>crop</strong> or <strong>resize</strong> the images,</li>
+  <li><strong>rotate</strong> them,</li>
+  <li>set or remove <strong>watermark,</strong></li>
+  <li>add <strong>tags,</strong></li>
+  <li>edit image <strong>titles</strong> or <strong>descriptions,</strong></li>
+  <li><strong>reorder</strong> images in the gallery,</li>
+</ul>
 
-<h3 id="general-description">General Description</h3>
+<p>and more. The plugin lets you make these changes both on single and multiple images using its <strong>Bulk Actions.</strong> Add or edit your gallery and let’s go through each option, discovering all image editing tools of Photo Gallery plugin.</p>
 
-<p>Do you have amazing galleries on one site and want to display some of them on another site? Are you moving your website and do not want to recreate your galleries? Photo Gallery Export/Import add-on is a tool you are looking for. Using the add-on you can export/import galleries, albums and all related data from one WordPress site to another.</p>
+<h2 id="editing-individual-images">Editing Individual Images</h2>
 
-<p>Photo Gallery Export/Import is designed not only for transferring images, but related data such as photo tags and standard image comments. You can export/import both selected or all galleries and albums.</p>
+<p>First and foremost, the plugin lets you implement changes on individual images. You can:</p>
 
-<p>To preserve the modified appearance, the add-on also allows exporting/importing Options and Themes.</p>
+<ul>
+  <li>add <strong>information</strong> and <strong>tags</strong> on images,</li>
+  <li><strong>edit</strong> and <strong>crop</strong> them, apply visual effects,</li>
+  <li><strong>reset</strong> them to their original state,</li>
+  <li><strong>publish/unpublish</strong> or <strong>delete</strong> them,</li>
+</ul>
 
-<p>The imported Photo Gallery Options and Themes can be further changed and modified upon necessity.</p>
+<p>and more. Begin modifying the images by filling out the following options:</p>
 
-<p>For larger galleries/albums there is an option of exporting only image URLs instead of actual images. Note that only after importing the exported zip file a new site you can remove the images from original site.</p>
+<ul>
+  <li><strong>Alt/Title.</strong> Set a title for an image by filling out this input box.</li>
+  <li><strong>Description.</strong> Include a description for your photo by writing it in this option.</li>
+  <li><strong>Tags.</strong> To add tags to a specific image, hover over this column and click on <strong>Add tag</strong> link that appears. You will then be able to select the necessary tags and add them to this particular image.</li>
+</ul>
 
-<h3 id="exportingimporting">Exporting/Importing</h3>
+<blockquote>
+  <p><strong>Note:</strong> Photo Gallery automatically imports meta information <strong>(EXIF data)</strong> of images as their <strong>titles</strong> and <strong>descriptions,</strong> while they are being uploaded.</p>
+</blockquote>
 
-<p><strong>Note:</strong> Please make sure that Photo Gallery Export/Import add-on is installed and activated both on the site from which you are exporting your galleries and the site where you are moving your galleries to.</p>
+<p><img src="http://docscdn.10web.io/photo-gallery/gallery-28.png" alt="Editing Individual Images" /></p>
 
-<h3 id="exporting-options">Exporting Options</h3>
+<p>To apply visual effects on images, rotate them, change brightness or contrast, you need to click on <strong>Edit</strong> button next to the item. A popup box will appear containing all necessary tools. You will notice the following effects at the top of this toolbox:</p>
 
-<p>Go to <strong>PG Export/Import &gt; Export.</strong></p>
+<ul>
+  <li>Grayscale,</li>
+  <li>Negative,</li>
+  <li>Removal,</li>
+  <li>Sepia,</li>
+  <li>Slate,</li>
+  <li>Saturate.</li>
+</ul>
 
-<p><strong>Galleries.</strong> Select the gallery(ies) to export using the checkbox next to the gallery title.</p>
+<p>Clicking on one of these options will assign the corresponding effect to your gallery image. Furthermore, you can implement the following changes using this image editor box:</p>
 
-<p><strong>Albums.</strong> Select the album(s) to export using the checkbox next to the album title.</p>
+<ul>
+  <li><strong>Flip</strong> the image (vertically, horizontally, and by both directions),</li>
+  <li><strong>Rotate</strong> it left and right.</li>
+</ul>
 
-<p><strong>Export Themes.</strong> Choose whether to export the themes created for galleries/album or not. You can further add more themes, modify the existing themes or remove them.</p>
+<p>The small gear button at the bottom of the image will allow you to expand <strong>Brightness</strong> and <strong>Contrast</strong> options. Click and drag the bars of these options to set the desired appearance on your picture.</p>
 
-<p><strong>Export Options.</strong> Choose whether to export the options created for galleries/album or not. These options can be modified further .</p>
+<p>In case you wish to revert the changes you have made, click on <strong>Reset Image</strong> button from the top of this popup box.</p>
 
-<p><strong>Export Images using URL.</strong> This option should be used in cases when you have large amount of images for galleries and albums. Using this method you will export not the image itself, but the image URL. Please note that you should not delete any images from original site in advance to importing and re-creating galleries on your second site.</p>
+<p><img src="http://docscdn.10web.io/photo-gallery/gallery-29.png" alt="Editing Images" /></p>
 
-<p><img src="http://docscdn.10web.io/photo-gallery/9.png" alt="Exporting Options" /></p>
+<p>By providing its <strong>Crop</strong> feature, Photo Gallery plugin lets you set desired areas of images as their thumbnails. Click on <strong>Crop</strong> button next to the photo you wish to modify. Afterwards, select the area to crop for the thumbnail.</p>
 
-<h3 id="importing-options">Importing Options</h3>
+<p><strong>Keep aspect ratio</strong> option applies the same width and height for the cropped area, if selected. Alternatively, you can uncheck this setting and use different dimensions while selecting the area to crop. However, you should note, that this can result stretching of the thumbnails on published galleries.</p>
 
-<p>Go to Photo Gallery Export&gt;Import. Press on “Choose File” and select exported zip file that should be imported.</p>
+<blockquote>
+  <p><strong>Note:</strong> Cropping does not modify large images on photo galleries, i.e. only the thumbnail of a picture is being cropped.</p>
+</blockquote>
 
-<p><img src="http://docscdn.10web.io/photo-gallery/10.png" alt="Importing Options" /></p>
+<p>Clicking <strong>Reset</strong> button next to an image will remove all changes you have made on it, and bring the original version of this particular item to your photo gallery. You can also <strong>Unpublish</strong> or <strong>Delete</strong> individual images on your galleries by pressing corresponding buttons.</p>
+
+<h2 id="editing-image-ordering">Editing Image Ordering</h2>
+
+<p>Photo Gallery plugin allows you to reorder the images, to get the exact sequence of the pictures you wish to have in your galleries. You can do that using the following 2 methods:</p>
+
+<ul>
+  <li>dragging and dropping the images to the desired position,</li>
+  <li>providing the order number for each image.</li>
+</ul>
+
+<p>You can <strong>Drag and Drop</strong> images using the small cross next to the items. Simply reposition the photos as you wish to have them.</p>
+
+<p><img src="http://docscdn.10web.io/photo-gallery/gallery-26-1.png" alt="Drag and Drop" /></p>
+
+<p>To change the order numbering manually, you first need to open <strong>Order Column</strong> of your gallery. Click on <strong>Show Order Column</strong> button, and you will be able to specify the image ordering with the inputs that appear below.</p>
+
+<p><img src="http://docscdn.10web.io/photo-gallery/gallery-27.png" alt="Order Column" /></p>
+
+<h3 id="screen-options">Screen Options</h3>
+
+<p>Initially, Photo Gallery shows 20 images per page in the gallery editor. However, in case of having many images, you might need to display more items per page to be able to drag and drop photos to the desired position.</p>
+
+<p>To change the number of displayed images on gallery editor, click on <strong>Screen Options</strong> and open this toolbox. You will find <strong>Pagination</strong> section with <strong>Number of items per page</strong> option. Set it to a value larger than 20.</p>
+
+<p>Make sure to press <strong>Publish</strong> or <strong>Update,</strong> to save the changes you made to the images.</p>
 <p class="product_version">v.1.4.0</p></main>
 		
 		
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#modifying-photo-gallery-images">Modifying Photo Gallery Images</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#editing-individual-images">Editing Individual Images</a></li>
+<li class="toc-entry toc-h2"><a href="#editing-image-ordering">Editing Image Ordering</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#screen-options">Screen Options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+          </div>
+        
       </div>
     </div>
 

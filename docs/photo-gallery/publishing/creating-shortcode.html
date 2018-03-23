@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110398783-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+ gtag('config', 'UA-110398783-1');
+</script>
+
+<meta name="google-site-verification" content="bU33Rd709RLTNobw9w3j4puG_-28Mmi2bPxdi3UQiN0" />
+<meta charset="UTF-8">
+
+<meta name="description" content="How to publish photo gallery on your WordPress site. A useful guide of Photo Gallery plugin."/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Configuring Photo Gallery Shortcode | 10Web</title>
+<link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/assets/css/minima.css">
+<link rel="stylesheet" href="/assets/css/style-10web.css">
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/isotope.js"></script>
+<script src="/assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo clear"  href="/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+		<div class="theme_10web_logo_demo">Docs</div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/" >Docs</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/tutorial">Tutorial</a>
+		  </li>
+		  <li class="nav-item"><a href="https://10web.io/plugins/wordpress-photo-gallery/" class="login_but btn">See All Features</a><a href="https://10web.io/pricing/" class="trial_but btn">Free trial</a>
+		  </li>
+		</ul>
+		
+	</div>
+</nav>
+	
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap toc_doc">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">Photo Gallery</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">Photo Gallery</h4><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/photo-gallery/introduction">
+        <span class="parent-title">Introducing Photo Gallery Plugin </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item has_child">
+      <a class="bd-toc-link" href="/docs/photo-gallery/adding-galleries">
+        <span class="parent-title">Adding Galleries and Images </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/docs/photo-gallery/adding-galleries/creating-galleries.html">
+              Creating Galleries
+            </a></li><li>
+            <a href="/docs/photo-gallery/adding-galleries/adding-images.html">
+              Adding Images to Galleries
+            </a></li><li>
+            <a href="/docs/photo-gallery/adding-galleries/embedding-media.html">
+              Embedding Media to Photo Gallery
+            </a></li></ul>
+    </div><div class="clear bd-toc-item has_child">
+      <a class="bd-toc-link" href="/docs/photo-gallery/modifying-images">
+        <span class="parent-title">Modifying Gallery Images </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/docs/photo-gallery/modifying-images/editing-images.html">
+              Editing Individual Images
+            </a></li><li>
+            <a href="/docs/photo-gallery/modifying-images/bulk-actions.html">
+              Applying Bulk Actions to Gallery Images
+            </a></li></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/photo-gallery/image-tags">
+        <span class="parent-title">Creating and Applying Image Tags </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/photo-gallery/gallery-groups">
+        <span class="parent-title">Creating Gallery Groups </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/photo-gallery/photo-gallery-options">
+        <span class="parent-title">Modifying Photo Gallery Options </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item active has_child">
+      <a class="bd-toc-link" href="/docs/photo-gallery/publishing">
+        <span class="parent-title">Publishing Photo Gallery </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/docs/photo-gallery/publishing/publishing-photo-gallery.html">
+              Publishing Created Galleries
+            </a></li><li class="active bd-sidenav-active">
+            <a href="/docs/photo-gallery/publishing/creating-shortcode.html">
+              Configuring Photo Gallery Shortcode
+            </a></li><li>
+            <a href="/docs/photo-gallery/publishing/gallery-layouts.html">
+              Choosing Gallery Layouts
+            </a></li><li>
+            <a href="/docs/photo-gallery/publishing/gallery-group-layouts.html">
+              Selecting Gallery Group Layouts
+            </a></li><li>
+            <a href="/docs/photo-gallery/publishing/publishing-widgets.html">
+              Publishing Photo Gallery Widgets
+            </a></li></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/photo-gallery/photo-gallery-themes">
+        <span class="parent-title">Editing Photo Gallery Themes </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/photo-gallery/comments-ratings">
+        <span class="parent-title">Managing Comments and Ratings </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item has_child">
+      <a class="bd-toc-link" href="/docs/photo-gallery/add-ons">
+        <span class="parent-title">Photo Gallery Add-ons </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/docs/photo-gallery/add-ons/photo-gallery-ecommerce.html">
+              Photo Gallery Ecommerce Add-on
+            </a></li><li>
+            <a href="/docs/photo-gallery/add-ons/export-import.html">
+              Photo Gallery Export/Import Add-on
+            </a></li><li>
+            <a href="/docs/photo-gallery/add-ons/facebook.html">
+              Photo Gallery Facebook Integration Add-on
+            </a></li></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/photo-gallery/">
+        <span class="parent-title"> </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+          <h1 id="configuring-photo-gallery-shortcode">Configuring Photo Gallery Shortcode</h1>
+
+<p>To add a gallery or a gallery group on pages, posts or custom templates, you need to configure a <strong>shortcode.</strong> <a href="https://10web.io/blog/plugins/wordpress-photo-gallery/">Photo Gallery plugin</a> provides a comprehensive toolbox for this purpose, letting you achieve the layout which best fits your website.</p>
+
+<p>You can begin creating a shortcode by using with one of the following 2 methods:</p>
+
+<ul>
+  <li>Navigating to <strong>Photo Gallery &gt; Options</strong> page, and clicking on <strong>Generate Shortcode</strong> button of <strong>General</strong> tab. After setting up the desired configuration, click <strong>Generate</strong> to receive the <strong>shortcode</strong> and <strong>PHP function.</strong></li>
+</ul>
+
+<p><img src="http://docscdn.10web.io/photo-gallery/gallery-45.png" alt="Generate Shortcode" /></p>
+
+<ul>
+  <li>Adding or editing a WordPress <strong>page</strong> or <strong>post,</strong> and pressing <strong>Add Photo Gallery</strong> button to open the shortcode toolbox. In this case, you need to click <strong>Insert Into Post</strong> button after configuring the options. Note, that PHP function is not provided with this method.</li>
+</ul>
+
+<p><img src="http://docscdn.10web.io/photo-gallery/gallery-46.png" alt="Insert Shortcode" /></p>
+
+<p>After accessing the shortcode toolbox, you will find two main sections of options:</p>
+
+<ul>
+  <li><strong>Gallery,</strong> that lets you create shortcodes for your image galleries,</li>
+  <li><strong>Gallery Group,</strong> which lets you configure a shortcode for a gallery group.</li>
+</ul>
+
+<p>Let’s go through the settings of these two sections separately and discover all options of shortcode setup.</p>
+
+<h2 id="creating-gallery-shortcode">Creating Gallery Shortcode</h2>
+
+<p>Begin the setup of a shortcode for your gallery by selecting one of these mobile-friendly, stunning layouts:</p>
+
+<ul>
+  <li>Thumbnails,</li>
+  <li>Masonry,</li>
+  <li>Mosaic,</li>
+  <li>Slideshow,</li>
+  <li>Image Browser,</li>
+  <li>Blog Style,</li>
+  <li>Carousel.</li>
+</ul>
+
+<p>Afterwards, choose the <strong>Gallery</strong> you wish to showcase, a <strong>Tag</strong> to filter images by, and the <strong>Theme</strong> to use while displaying the gallery.</p>
+
+<p><img src="http://docscdn.10web.io/photo-gallery/gallery-38.png" alt="Gallery Shortcode" /></p>
+
+<p>Selecting <strong>Use default options</strong> checkbox lets you use the settings configured in <strong>Photo Gallery &gt; Options</strong> page. However, you can unmark this option and provide unique setup for this particular shortcode.</p>
+
+<h2 id="configuring-gallery-group-shortcode">Configuring Gallery Group Shortcode</h2>
+
+<p>To begin creating a shortcode for your gallery groups, navigate to <strong>Gallery Group</strong> tab of this dashboard. The following 3 outstanding responsive layouts for gallery groups will appear at the top:</p>
+
+<ul>
+  <li>Compact,</li>
+  <li>Masonry,</li>
+  <li>Extended.</li>
+</ul>
+
+<p>Choose the one you wish to use, then select the <strong>Gallery Group</strong> and a <strong>Theme</strong> to apply.</p>
+
+<p><img src="http://docscdn.10web.io/photo-gallery/gallery-42.png" alt="Gallery Group Shortcode" /></p>
+
+<p>As in the case of gallery shortcode, you can mark <strong>Use default options</strong> and apply the settings configured on <strong>Photo Gallery &gt; Options</strong> page.</p>
+
+<p>Nevertheless, the plugin lets you implement unique setup for each gallery group by modifying shortcode settings. Make sure to uncheck <strong>Use default options</strong> setting.</p>
+
+<p>As you uncheck <strong>Use default options</strong> for a <strong>gallery</strong> or a <strong>gallery group shortcode,</strong> the sections listed below will appear, containing their own set of tools.</p>
+
+<h4 id="gallery">Gallery</h4>
+
+<p>Click on <strong>Gallery</strong> bar to expand corresponding settings. With these options in the shortcode toolbox, you are able to:</p>
+
+<ul>
+  <li>define number of <strong>image columns</strong> and <strong>thumbnail dimensions,</strong></li>
+  <li>set <strong>pagination, image sorting,</strong> and <strong>ordering,</strong></li>
+  <li>enable <strong>Search Box</strong> and <strong>Tag Box,</strong></li>
+  <li>activate <strong>bulk download</strong> of gallery images,</li>
+  <li>enable image <strong>titles</strong> and <strong>descriptions,</strong></li>
+</ul>
+
+<p>and much more.</p>
+
+<p><img src="http://docscdn.10web.io/photo-gallery/gallery-39.png" alt="Gallery Options in Shortcode" /></p>
+
+<h4 id="gallery-group">Gallery Group</h4>
+
+<p>These options allow you to fully personalize the features on your gallery groups. You are able to apply numerous modifications, such as:</p>
+
+<ul>
+  <li>setting gallery group thumbnail columns and dimensions,</li>
+  <li>configuring pagination options,</li>
+  <li>selecting order parameters on gallery groups,</li>
+  <li>enabling gallery group <strong>Search Box</strong> and <strong>Tag Box,</strong></li>
+  <li>activating <strong>descriptions</strong> of gallery groups, image <strong>titles,</strong></li>
+  <li>allowing users to <strong>bulk download</strong> gallery images,</li>
+</ul>
+
+<p>and more.</p>
+
+<p><img src="http://docscdn.10web.io/photo-gallery/gallery-43.png" alt="Gallery Group Options in Shortcode" /></p>
+
+<p>####Lightbox</p>
+
+<p>Expand <strong>Lightbox</strong> section of shortcode toolbox to begin configuring the following features for your gallery:</p>
+
+<ul>
+  <li>enable <strong>lightbox,</strong> or change the <strong>click action</strong> for gallery images,</li>
+  <li>set lightbox <strong>dimensions,</strong> navigation <strong>effects,</strong> and <strong>autoplay,</strong></li>
+  <li>activate a <strong>filmstrip</strong> containing miniatures of gallery images,</li>
+  <li>activate image <strong>titles</strong> and <strong>descriptions</strong> on lightbox,</li>
+  <li>enable numerous control buttons, such as <strong>fullscreen, social sharing,</strong> and <strong>commenting.</strong></li>
+</ul>
+
+<p>Using these tools, you are able to fully personalize the image lightbox of your gallery. For instance, you can select <strong>Redirect to URL</strong> option for <strong>Image Click Action</strong> setting, and navigate users to different pages when they click on gallery image <strong>thumbnails.</strong></p>
+
+<p><img src="http://docscdn.10web.io/photo-gallery/gallery-40.png" alt="Lightbox Options in Shortcode" /></p>
+
+<h4 id="advanced">Advanced</h4>
+
+<p>This section of Photo Gallery shortcode toolbox allows you to add <strong>Text</strong> or <strong>Image</strong> advertisement on the images of your gallery. Using these options, you can:</p>
+
+<ul>
+  <li>provide the <strong>image</strong> or <strong>text</strong> to add as the advertisement,</li>
+  <li>set the <strong>link of advertisement</strong> on the image or text,</li>
+  <li>choose the <strong>font style</strong> and <strong>color</strong> for <strong>text</strong> advertisement,</li>
+  <li>determine the <strong>dimensions</strong> of <strong>image</strong> advertisement,</li>
+  <li>set advertisement <strong>position</strong> on the photos.</li>
+</ul>
+
+<p>Note, that the advertisement appears on the images when they are displayed within the lightbox popup.</p>
+
+<p><img src="http://docscdn.10web.io/photo-gallery/gallery-41.png" alt="Advertisement Options in Shortcode" /></p>
+
+<h2 id="editing-shortcodes">Editing Shortcodes</h2>
+
+<p>With <strong>Generate Shortcode</strong> option, you also have the tools to <strong>edit</strong> existing shortcodes. Use the drop-down list of shortcodes to choose one and modify as necessary.</p>
+
+<p>As you finish making changes, make sure to click <strong>Update</strong> button to save the shortcode.</p>
+
+<p><img src="http://docscdn.10web.io/photo-gallery/gallery-47.png" alt="Editing Shortcodes" /></p>
+<p class="product_version">v.1.4.0</p></main>
+		
+		
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#configuring-photo-gallery-shortcode">Configuring Photo Gallery Shortcode</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#creating-gallery-shortcode">Creating Gallery Shortcode</a></li>
+<li class="toc-entry toc-h2"><a href="#configuring-gallery-group-shortcode">Configuring Gallery Group Shortcode</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#gallery">Gallery</a></li>
+<li class="toc-entry toc-h4"><a href="#gallery-group">Gallery Group</a></li>
+<li class="toc-entry toc-h4"><a href="#advanced">Advanced</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#editing-shortcodes">Editing Shortcodes</a></li>
+</ul>
+</li>
+</ul>
+          </div>
+        
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="https://10web.io/">Home</a></li>
+              <li><a href="https://10web.io/about-us/">About</a></li>
+			  <li><a href="https://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="https://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="https://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2018 TenWeb, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>
