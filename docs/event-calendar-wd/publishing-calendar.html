@@ -59,28 +59,48 @@
 </div>
 <div class="collapse bd-links" id="bd-docs-nav">
   <h4 class="plugin-name">Event Calendar WD</h4><div class="clear bd-toc-item">
-      <a class="bd-toc-link" href="/docs/event-calendar-wd/creating-events">
-        <span class="parent-title">Creating Events </span></a>
-
-      <ul class="nav bd-sidenav"></ul>
-    </div><div class="clear bd-toc-item">
-      <a class="bd-toc-link" href="/docs/event-calendar-wd/calendar-attributes">
-        <span class="parent-title">Categories, Organizers, Tags And Venues </span></a>
+      <a class="bd-toc-link" href="/docs/event-calendar-wd/introduction">
+        <span class="parent-title">Introducing WordPress Event Calendar </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item">
       <a class="bd-toc-link" href="/docs/event-calendar-wd/creating-calendars">
-        <span class="parent-title">Creating Calendars </span></a>
+        <span class="parent-title">Creating Calendars on WordPress </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/event-calendar-wd/creating-events">
+        <span class="parent-title">Creating Events on WordPress </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/event-calendar-wd/categories-tags">
+        <span class="parent-title">Event Categories and Tags </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/event-calendar-wd/organizers-venues">
+        <span class="parent-title">Event Organizers and Venues </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/event-calendar-wd/settings">
+        <span class="parent-title">Configuring Event Calendar Settings </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/event-calendar-wd/google-maps-api">
+        <span class="parent-title">Adding Google Maps API Key </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/event-calendar-wd/themes">
+        <span class="parent-title">Event Calendar Themes </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item active">
       <a class="bd-toc-link" href="/docs/event-calendar-wd/publishing-calendar">
-        <span class="parent-title">Publishing The Created Calendar </span></a>
-
-      <ul class="nav bd-sidenav"></ul>
-    </div><div class="clear bd-toc-item">
-      <a class="bd-toc-link" href="/docs/event-calendar-wd/settings-themes">
-        <span class="parent-title">Calendar Settings And Themes </span></a>
+        <span class="parent-title">Publishing Event Calendar </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item has_child">
@@ -103,54 +123,134 @@
             <a href="/docs/event-calendar-wd/add-ons/integration-addons.html">
               Integration Add-ons
             </a></li></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/event-calendar-wd/">
+        <span class="parent-title"> </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
     </div></div>
         </div>
 		
         <main class="tenweb-content" role="main">
-          <h1 id="publishing-the-created-calendar">Publishing The Created Calendar</h1>
+          <h1 id="publishing-event-calendar">Publishing Event Calendar</h1>
 
-<p>Guide to publish <a href="https://10web.io/plugins/wordpress-event-calendar/">Event Calendar plugin</a> as a widget and into a page or post.</p>
+<p><a href="https://10web.io/plugins/wordpress-event-calendar/">WordPress Event Calendar plugin</a> lets you publish your calendars on your website with the following two methods:</p>
+
+<ul>
+  <li>on WordPress <strong>pages</strong> and <strong>posts,</strong> using shortcode,</li>
+  <li>on any widget area, using <strong>Event Calendar WD Widget.</strong></li>
+</ul>
+
+<p>Let’s discuss the options mentioned above, and help you choose the way to publish your event calendar.</p>
 
 <h2 id="publishing-the-calendar-into-a-page-or-post">Publishing the Calendar into a Page or Post</h2>
 
-<p>To use the created calendars within a page or post you should use the shortcode. Open the page/post from the back end. Press on the <strong>Event Calendar WD</strong> icon within the editor. The shortcode with three tabs will appear. An alternative is copying the shortcode from the All Calendars subsection (it will take default settings) and further editing it.</p>
+<p>To publish the created calendars with this method, add or edit the page or post from WordPress administrative panel of your site. Click <strong>Event Calendar WD</strong> icon from the top of the content editor to open the shortcode toolbox.</p>
+
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-45.png" alt="Publishing Event Calendar" /></p>
+
+<p>The toolbox popup consists of 3 sections:</p>
+
+<ul>
+  <li>General,</li>
+  <li>Views,</li>
+  <li>Filters,</li>
+</ul>
+
+<p>which allow you to personalize the calendar features even further. Let’s go through each section separately and discover all options.</p>
 
 <h3 id="general">General</h3>
 
-<p><strong>Select Calendar.</strong> Using the drop-down list choose the calendar you want to add.</p>
+<p>Using <strong>Select Calendar</strong> option of <strong>General</strong> tab in the shortcode toolbox, choose the calendar you wish to publish. Afterwards, configure the following settings:</p>
 
-<p><strong>Events per page in list view.</strong> By default 5 events are being listed in list view. You can change the number to the desired quantity.</p>
+<ul>
+  <li><strong>Select View type.</strong> Choose the type for the published calendar. The following options are available:
+    <ul>
+      <li><strong>Full,</strong> which allows you to showcase your calendar with comprehensive features. In this case, event titles are shown on the calendar,</li>
+      <li><strong>Mini,</strong> which displays a smaller version of your event calendar. With this view type, the dates with events are marked with dots with the colors of event categories. Clicking on these dates expands the event list below the Mini calendar.</li>
+    </ul>
+  </li>
+  <li><strong>Events per page in list view.</strong> Set the number of events to display with <strong>List</strong> view of the calendar.</li>
+  <li><strong>Calendar start date.</strong> You can set to display your calendar with any start date using this option. The date format must be <strong>Y-m(2016-05).</strong> Leave the input empty to display the current date.</li>
+  <li><strong>Enable event search.</strong> Mark this option to activate a search feature on your calendar, allowing visitors to look for any event quickly.</li>
+</ul>
 
-<p><strong>Enable Event search.</strong> Check the box to enable front end search for the events.</p>
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-46.png" alt="General Settings in Event Calendar Shortcode" /></p>
 
 <h3 id="views">Views</h3>
 
-<p>You can set up to 7 different views. By using the drop-down you can select a view for each tab. The order of the tabs will be based on the selection.</p>
+<p>With Event Calendar WD plugin, your calendars can be published with <strong>7 stunning views</strong> listed below:</p>
+
+<ul>
+  <li>Month,</li>
+  <li>List,</li>
+  <li>Week,</li>
+  <li>Day,</li>
+  <li>4 Days,</li>
+  <li>Posterboard,</li>
+  <li>Map.</li>
+</ul>
+
+<p>Click <strong>Views</strong> tab to access the corresponding settings, from <strong>View 1</strong> through <strong>View 7.</strong> Each of these options controls the tabs on the published calendar.</p>
+
+<p><strong>View 1</strong> option allows you to set the <strong>default</strong> view of the calendar (i.e. it displays when the page with the calendar is loaded). The order for the rest of the tabs is based on the selection of these options.</p>
+
+<p>For example, let’s assume you need to display only <strong>Month</strong> and <strong>Map</strong> views on your calendar. To achieve this, you need to select:</p>
+
+<ul>
+  <li><strong>Month</strong> for <strong>View 1</strong> drop-down,</li>
+  <li>and <strong>Map</strong> for <strong>View 2,</strong></li>
+</ul>
+
+<p>then set the rest of view select boxes to <strong>None.</strong></p>
+
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-47.png" alt="View Settings in Event Calendar Shortcode" /></p>
 
 <h3 id="filters">Filters</h3>
 
-<p>This section works with <a href="http://10web.io/addons/event-calendar-wd-add-ons/">Filters add on</a>. You can specify the list of the filtering options you want to display for the front-end users.</p>
+<p>Filters tab of Event Calendar WD shortcode allows you to configure <a href="http://10web.io/addons/event-calendar-wd-add-ons/">Filters add on</a> of the plugin. It tunes up your calendar with highly intuitive filtering options, allowing website visitors to navigate through the events quickly and easily.</p>
 
-<h2 id="publishing-the-calendar-as-a-widget">Publishing the Calendar as a Widget</h2>
+<p>Configure Filters add-on by following its <a href="add-ons/event-grouping-addons.html#filter">user guide</a>.</p>
 
-<p>Go to <strong>Appearance &gt; Widgets</strong> toolbar.
-Find the Event Calendar WD widget and assign it to a custom widget position.</p>
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-48.png" alt="Filter Settings in Event Calendar Shortcode" /></p>
 
-<p><strong>Title.</strong> Set a title for the widget. Alternatively, you can leave it blank.</p>
+<h2 id="publishing-event-calendar-as-a-widget">Publishing Event Calendar as a Widget</h2>
 
-<p><strong>Calendar to Display.</strong> Select the calendar which will be displayed as a widget.</p>
+<p>Navigate to <strong>Appearance &gt; Widgets</strong> page to begin publishing your calendar as a widget. From the left side of this dashboard, look for Event Calendar WD Widget. Click on it, then select the widget area where you wish to have the calendar.</p>
 
-<p><strong>Display events as.</strong> Here you can set the events to be displayed either in a Month or List view.</p>
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-49.png" alt="Publishing Event Calendar Widget" /></p>
 
-<p><strong>Events per page as a list view.</strong> Here you can set the number of events you want to be displayed when list view is in use.</p>
+<p>Afterwards, press <strong>Add Widget</strong> button.</p>
 
-<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-06.PNG" alt="Event Calendar WD widget" /></p>
-</main>
+<p>To finalize the configuration of your event calendar widget, set a <strong>Title</strong> for it, then fill in the following options:</p>
+
+<ul>
+  <li><strong>Calendar to display.</strong> Choose the calendar to showcase with this widget.</li>
+  <li><strong>Display Events as.</strong> Select the view to display your event calendar with. You can choose between the following view types:
+    <ul>
+      <li>Month,</li>
+      <li>List,</li>
+      <li>Week,</li>
+      <li>Day.</li>
+    </ul>
+  </li>
+  <li><strong>Calendar theme.</strong> Use this drop-down box to choose a theme for your event calendar widget.</li>
+  <li><strong>Events per page in list view.</strong> Set the number of events you wish to showcase the calendar is displayed with List view.</li>
+</ul>
+
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-50.png" alt="Settings of Event Calendar Widget" /></p>
+
+<p>After the widget is configured as you like, make sure to press <strong>Save</strong> to publish it.</p>
+
+<p>The calendar widget appears with a compact display type. In <strong>Month</strong> view, the dates with events are marked with colored dots. The colors are assigned with <a href="categories-tags.html#adding-event-categories">Category Color</a> option of Event Calendar WD. As visitors click on these dots, the events of that date appear below the calendar widget.</p>
+
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-51.png" alt="Event Calendar Widget" /></p>
+<p class="product_version">v.1.1.13</p></main>
 		
 		
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h1"><a href="#publishing-the-created-calendar">Publishing The Created Calendar</a>
+<li class="toc-entry toc-h1"><a href="#publishing-event-calendar">Publishing Event Calendar</a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#publishing-the-calendar-into-a-page-or-post">Publishing the Calendar into a Page or Post</a>
 <ul>
@@ -159,7 +259,7 @@ Find the Event Calendar WD widget and assign it to a custom widget position.</p>
 <li class="toc-entry toc-h3"><a href="#filters">Filters</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#publishing-the-calendar-as-a-widget">Publishing the Calendar as a Widget</a></li>
+<li class="toc-entry toc-h2"><a href="#publishing-event-calendar-as-a-widget">Publishing Event Calendar as a Widget</a></li>
 </ul>
 </li>
 </ul>

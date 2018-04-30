@@ -14,10 +14,10 @@
 <meta name="google-site-verification" content="bU33Rd709RLTNobw9w3j4puG_-28Mmi2bPxdi3UQiN0" />
 <meta charset="UTF-8">
 
-<meta name="description" content="Frontend Event Management Add-on of Event Calendar plugin allows your website users to create events from site's front end."/>
+<meta name="description" content="How to create and modify event categories and tags on your WordPress Event Calendar. A useful guide by 10Web."/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#157878">
-<title>Frontend Event Management Add-on | Event Calendar | 10Web</title>
+<title>Event Calendar - Categories and Tags</title>
 <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/assets/css/minima.css">
@@ -52,7 +52,7 @@
 </nav>
 	
     <div class="container-fluid">
-      <div class="row flex-xl-nowrap">
+      <div class="row flex-xl-nowrap toc_doc">
         <div class="tenweb-sidebar">
           <div class="mobile-nav"><h4 class="plugin-name-mobile">Event Calendar WD</h4>
 <span  id="trigram-for-heaven">  <span></span></span>
@@ -73,7 +73,7 @@
         <span class="parent-title">Creating Events on WordPress </span></a>
 
       <ul class="nav bd-sidenav"></ul>
-    </div><div class="clear bd-toc-item">
+    </div><div class="clear bd-toc-item active">
       <a class="bd-toc-link" href="/docs/event-calendar-wd/categories-tags">
         <span class="parent-title">Event Categories and Tags </span></a>
 
@@ -103,11 +103,11 @@
         <span class="parent-title">Publishing Event Calendar </span></a>
 
       <ul class="nav bd-sidenav"></ul>
-    </div><div class="clear bd-toc-item active has_child">
+    </div><div class="clear bd-toc-item has_child">
       <a class="bd-toc-link" href="/docs/event-calendar-wd/add-ons">
         <span class="parent-title">Event Calendar WD Add-ons </span><span class="parent-icon"> </span></a>
 
-      <ul class="nav bd-sidenav"><li class="active bd-sidenav-active">
+      <ul class="nav bd-sidenav"><li>
             <a href="/docs/event-calendar-wd/add-ons/frontend-event-management.html">
               Frontend Event Management
             </a></li><li>
@@ -132,72 +132,80 @@
         </div>
 		
         <main class="tenweb-content" role="main">
-          <h1 id="frontend-event-management">Frontend Event Management</h1>
+          <h1 id="event-categories-and-tags">Event Categories and Tags</h1>
 
-<p>Description of Event Calendar Frontend Event Management add-on</p>
+<p><a href="https://10web.io/plugins/wordpress-event-calendar/">WordPress Event Calendar plugin</a> allows you to group your events by <strong>categories</strong> and <strong>tags.</strong> These features allow you to organize your calendar events and help users navigate through the calendar easily.</p>
 
-<p>Using Event Calendar WD for managing your community events? Have contributing authors? The Event Calendar WD Frontend Event Management add-on is the perfect solution for you. The add-on allows your users to create events from website front end.</p>
+<p>Let’s begin adding event categories and tags, therewith discussing all available options.</p>
 
-<blockquote>
-  <p><strong>Attention:</strong> Frontend Management Add-On requires <strong><a href="https://10web.io/plugins/wordpress-event-calendar/">Event Calendar Premium version</a> 5.0.23</strong> and higher: if you are using an older version, please update your plugin.</p>
-</blockquote>
+<h2 id="adding-event-categories">Adding Event Categories</h2>
 
-<p>When activated add-on brings two separate sections displayed above the main calendar. With these tabs, the user will be able to add events to the calendar (Add Events) and view (optionally edit/delete) the added event list using filters (My events).</p>
+<p>Navigate to <strong>Events &gt; Event Categories</strong> page to start adding new categories. This requires just a few simple steps. You need to enter the details listed below:</p>
 
-<h3 id="settings">Settings</h3>
+<ul>
+  <li>Name (required),</li>
+  <li>Slug,</li>
+  <li>Parent Category,</li>
+  <li>Description,</li>
+  <li>Category Icon,</li>
+  <li>Category Color.</li>
+</ul>
 
-<p>Frontend Event Management is easy to set up.</p>
+<p><strong>Category Color</strong> is a handy option which helps you make your event calendar appealing and colorful. By selecting a color with this setting, you also assign the same color for the events belonging to this particular category.</p>
 
-<p>This section allows configuring options for the event management system. To access the option go to <strong>Event Calendar WD &gt; Settings &gt; Frontend</strong> event management.</p>
+<p>Using this setting, Event Calendar WD plugin lets you match the style of the calendar events with your <a href="themes.html">calendar theme</a>.</p>
 
-<p><strong>Events should be added as.</strong> Choose the default post status for the submitted events. Anyone can add event. If you want all site visitors to be capable of adding events choose the option. By default only registered users can add events.</p>
+<p>The list of the created categories appears on the right side of this page. Hover over an entry to:</p>
 
-<p><strong>User Can Add Image.</strong> Choose whether to allow the user to add images to the event or not.</p>
+<ul>
+  <li>Edit,</li>
+  <li>Quick Edit,</li>
+  <li>Delete,</li>
+  <li>View</li>
+</ul>
 
-<p><strong>Edit their events.</strong> Check the box to allow the contributors to edit their own events.</p>
+<p>the categories. You can also <strong>search</strong> through the created categories, or <strong>delete</strong> multiple entries using <strong>Bulk Actions.</strong></p>
 
-<p><strong>Remove their events.</strong> Check the box to allow the contributors to remove their own events.</p>
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-25.png" alt="Creating Event Categories" /></p>
 
-<p><strong>Set status “Trash” to delete events.</strong> If you want to have an event recovery from trash select the option otherwise the events will be permanently removed.</p>
+<h2 id="creating-event-tags">Creating Event Tags</h2>
 
-<p><strong>Send an email alert when a new event is submitted.</strong> Check the box to receive email notifications whenever a new event is added.</p>
+<p>Click on <strong>Events &gt; Event Tags</strong> menu item to begin adding new tags to your events. You just need to input the following options:</p>
 
-<p><strong>Email address to be notified.</strong> Provide an email address, which will be used for sending out notifications whenever a new event is added to the calendar.</p>
+<ul>
+  <li>Name (required),</li>
+  <li>Slug,</li>
+  <li>Description.</li>
+</ul>
 
-<p><strong>Events Per Page.</strong> Set the number of posts which will be displayed in My Events page.</p>
+<p>By hovering on a tag from the right side of this page, you can:</p>
 
-<p><strong>Google ReCaptcha site key.</strong> Fill this field and below field to activate recaptcha. It’s used only for the guest visitors.</p>
+<ul>
+  <li>Edit,</li>
+  <li>Quick Edit,</li>
+  <li>Delete,</li>
+  <li>View</li>
+</ul>
 
-<p><strong>Google ReCaptcha secret key.</strong> Fill in the Google ReCaptcha secret key. It’s used only for the guest visitors.</p>
+<p>items separately, as well as <strong>search</strong> through tags and <strong>delete</strong> multiple entries using <strong>Bulk Actions.</strong></p>
 
-<p><img src="http://docscdn.10web.io/event-calendar-wd/18.png" alt="Frontend Event Management" /></p>
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-26-1.png" alt="Creating Event Tags" /></p>
 
-<h3 id="add-event">Add Event</h3>
-
-<p>This section allows registered users to create events . The whole process is divided into 4 sections. You should press “Save Changes” button as a final stage. Let’s discuss each of them in more details:</p>
-
-<p><strong>General.</strong> You can set the event title, description, categories, tags. Set event starting and ending dates, add event and video URLs.</p>
-
-<p><strong>Location.</strong> You can set the venue of the event or add the location filling out the address of the venue. The event will be marked on Google Maps.</p>
-
-<p><strong>Organizer.</strong> You can select the organizer of the event from the available list or create new organizer providing the name of the organizer and description.</p>
-
-<p><strong>Options.</strong> You can set the repeat rate of the event making it recurring on a daily, weekly, monthly or yearly-basis.</p>
-
-<p><img src="http://docscdn.10web.io/event-calendar-wd/16.png" alt="Frontend Event Management" /></p>
-
-<h3 id="my-events">My Events</h3>
-
-<p>This section allows view the events created by the user and optionally edit/delete them. This option is not accessible for the guests.</p>
-
-<p><strong>Category.</strong> Select the category from which you want to display the events.</p>
-
-<p><strong>Status.</strong> Select the post status.</p>
-
-<p><img src="http://docscdn.10web.io/event-calendar-wd/17.png" alt="Frontend Event Management" /></p>
+<p>After creating categories and tags, you can add them to your events. Follow the simple steps described in <strong><a href="creating-events.html#event-categories-and-tags">this section</a>.</strong></p>
 <p class="product_version">v.1.1.13</p></main>
 		
 		
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#event-categories-and-tags">Event Categories and Tags</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#adding-event-categories">Adding Event Categories</a></li>
+<li class="toc-entry toc-h2"><a href="#creating-event-tags">Creating Event Tags</a></li>
+</ul>
+</li>
+</ul>
+          </div>
+        
       </div>
     </div>
 

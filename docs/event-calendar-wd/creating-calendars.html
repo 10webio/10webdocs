@@ -59,28 +59,48 @@
 </div>
 <div class="collapse bd-links" id="bd-docs-nav">
   <h4 class="plugin-name">Event Calendar WD</h4><div class="clear bd-toc-item">
-      <a class="bd-toc-link" href="/docs/event-calendar-wd/creating-events">
-        <span class="parent-title">Creating Events </span></a>
-
-      <ul class="nav bd-sidenav"></ul>
-    </div><div class="clear bd-toc-item">
-      <a class="bd-toc-link" href="/docs/event-calendar-wd/calendar-attributes">
-        <span class="parent-title">Categories, Organizers, Tags And Venues </span></a>
+      <a class="bd-toc-link" href="/docs/event-calendar-wd/introduction">
+        <span class="parent-title">Introducing WordPress Event Calendar </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item active">
       <a class="bd-toc-link" href="/docs/event-calendar-wd/creating-calendars">
-        <span class="parent-title">Creating Calendars </span></a>
+        <span class="parent-title">Creating Calendars on WordPress </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/event-calendar-wd/creating-events">
+        <span class="parent-title">Creating Events on WordPress </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/event-calendar-wd/categories-tags">
+        <span class="parent-title">Event Categories and Tags </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/event-calendar-wd/organizers-venues">
+        <span class="parent-title">Event Organizers and Venues </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/event-calendar-wd/settings">
+        <span class="parent-title">Configuring Event Calendar Settings </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/event-calendar-wd/google-maps-api">
+        <span class="parent-title">Adding Google Maps API Key </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/event-calendar-wd/themes">
+        <span class="parent-title">Event Calendar Themes </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item">
       <a class="bd-toc-link" href="/docs/event-calendar-wd/publishing-calendar">
-        <span class="parent-title">Publishing The Created Calendar </span></a>
-
-      <ul class="nav bd-sidenav"></ul>
-    </div><div class="clear bd-toc-item">
-      <a class="bd-toc-link" href="/docs/event-calendar-wd/settings-themes">
-        <span class="parent-title">Calendar Settings And Themes </span></a>
+        <span class="parent-title">Publishing Event Calendar </span></a>
 
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item has_child">
@@ -103,91 +123,94 @@
             <a href="/docs/event-calendar-wd/add-ons/integration-addons.html">
               Integration Add-ons
             </a></li></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/docs/event-calendar-wd/">
+        <span class="parent-title"> </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
     </div></div>
         </div>
 		
         <main class="tenweb-content" role="main">
           <h1 id="creating-calendars">Creating Calendars</h1>
 
-<p>Guide to create calendars with <a href="https://10web.io/plugins/wordpress-event-calendar/">WordPress Event Calendar plugin</a>.</p>
+<p>As the installation of <a href="https://10web.io/plugins/wordpress-event-calendar/">WordPress Event Calendar plugin</a> is finished, one default calendar will be created automatically. Navigate to <strong>Events &gt; Calendars</strong> page to modify it, or to create your own.</p>
 
-<h2 id="adding-a-calendar">Adding a Calendar</h2>
+<p>This page contains the list of all created calendars, along with additional information. You can check the creation date and IDs of calendars, as well as access their shortcodes. Using <strong>Default Calendar</strong> column of this page, you can select the default calendar of your website.</p>
 
-<p>Here you can find the list of all created calendars. You can edit, quick edit or delete the existing calendars, as well as take bulk actions and/or apply filtering to simplify the search. Click the <strong>‘Add new’</strong> button to create a new calendar. You can <strong>view</strong> your Calendar right from the WordPress top bar menu either after publishing it or editing an existing one.</p>
+<p>You can use the <strong>search bar</strong> to quickly access an entry, as well as <strong>filter calendars</strong> by their creation date. To <strong>edit</strong> or <strong>delete</strong> multiple entries, choose one of the following options from <strong>Bulk Actions</strong> drop-down box:</p>
 
-<p>Create a new calendar by specifying such details, as:</p>
+<ul>
+  <li>Edit,</li>
+  <li>Move to Trash,</li>
+</ul>
 
-<p><strong>Title.</strong> Set a title for the calendar.</p>
+<p>then click <strong>Apply.</strong> Also, you are able to modify individual calendars by hovering over each and choosing from these actions:</p>
 
-<p><strong>Content.</strong> Provide details about the specific calendar if necessary.</p>
+<ul>
+  <li>Edit,</li>
+  <li>Quick Edit,</li>
+  <li>Trash,</li>
+  <li>View.</li>
+</ul>
 
-<p><strong>Events.</strong> You can add an event to the calendar by select an existing one from the popup list.</p>
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-11.png" alt="All Calendars List" /></p>
 
-<p><strong>Themes.</strong> You can change the Calendar theme and preview it by updating the calendar post at first and clicking the ‘Preview/Add Events’ button afterwards.</p>
+<h2 id="adding-a-new-calendar">Adding a New Calendar</h2>
 
-<p><strong>Default calendar.</strong> You can set this calendar as default for newly created events.</p>
+<p>To begin creating a new calendar from scratch, click on <strong>Add New Calendar</strong> button. Write a <strong>title</strong> for the calendar as the first step. You can also enter additional information as the <strong>description</strong> of the calendar using the post editor box.</p>
 
-<h2 id="calendar-shortcode">Calendar Shortcode</h2>
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-12-1.png" alt="Adding a New Calendar" /></p>
 
-<p>You can display this Calendar on any post or page by opening it from the back end and pressing on the Event Calendar WD icon within the editor. The shortcode with three tabs will appear. An alternative is copying the shortcode from the ‘Calendars’ section (it will take default settings) and pasting it into the desired destination for further editing.</p>
+<p>Below the calendar editor box, there is a group of useful <strong>Calendar Settings,</strong> which allow you to configure the features of your calendar. Let’s discuss these tools one by one.</p>
 
-<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-05.png" alt="Calendar Shortcode" /></p>
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-14.png" alt="Calendar Settings" /></p>
 
-<h2 id="calendar-settings">Calendar Settings</h2>
+<h4 id="preview--add-event">Preview / Add Event</h4>
 
-<p>Here you can both preview the current calendar theme and create new events straight from the calendar by clicking the ‘Preview/Add Event’ link and opening up your calendar.</p>
+<p>Press this link to preview the calendar in a popup box and quickly add events to it. You just need to click on a calendar date to begin inputting an event. A toolbox will appear with all necessary settings.</p>
 
-<p><strong>Date.</strong> You can either use the default date or change it using tabs and filling the date based on the date format.</p>
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-13.png" alt="Preview and Add Event" /></p>
 
-<p><strong>Title.</strong> You can give a title to the event and it will be saved as a draft. After adding the title, a link to “Edit details” will be displayed below. Follow the link to add details of the event within the ‘Event’ section and publish it.</p>
+<p>In case you need to add an event, which is going to last multiple days, simply <strong>drag</strong> the mouse from the <strong>start date</strong> to <strong>end date.</strong> You will notice the selected dates appearing in <strong>Add Event</strong> popup box.</p>
 
-<p><strong>Clear cache.</strong> Use the option if you have <a href="http://10web.io/addons/event-calendar-wd-add-ons/">WordPress event calendar integration add-ons</a>. This clears the events cache pulled from other external calendars.</p>
+<p>Set a <strong>title</strong> for your event, then press <strong>Save.</strong> Note, that this entry will be saved as <strong>draft.</strong></p>
 
-<p><strong>Timezone.</strong> Set the timezone for the calendars.</p>
+<h4 id="calendar-shortcode">Calendar Shortcode</h4>
 
-<p><strong>Date format.</strong> Specify the date format for the calendar events.</p>
+<p>Event Calendar plugin creates a shortcode for each calendar you create. It has the following format:</p>
 
-<p><strong>Time format.</strong> Specify the time format for the calendar events.</p>
+<p><code class="highlighter-rouge">[ecwd id="5"]</code></p>
 
-<p><strong>Week start day.</strong> Choose the starting day for the week.</p>
+<p>You can copy this shortcode and paste it into a WordPress post or page to display this calendar.</p>
 
-<p><strong>Events Slug.</strong> Specify a slug for the page which will display the events within a single list.</p>
+<h4 id="events">Events</h4>
 
-<p><strong>Enable comments for events.</strong> Check to allow the users to leave comments below the calendar.</p>
+<p>Click on <strong>Select Events from the list</strong> link to choose events and add them to your event calendar. A popup box will appear, containing all <strong>published</strong> events. Press the <strong>plus (+)</strong> button to insert them into your calendar.</p>
 
-<p><strong>Include events in main loop.</strong> Check the box to include the event posts within the post listing on other WordPress pages.</p>
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-15.png" alt="Add Events to Calendar" /></p>
 
-<p><strong>Enable social icons.</strong> Choose the option to display social sharing buttons (Facebook, Twitter and Google+) in event, organizer and venue pages.</p>
+<h4 id="theme">Theme</h4>
+<p>Use this drop-down box to select the theme to use on your calendar. You can modify the themes by navigating to <strong>Events &gt; Themes</strong> page of the plugin.</p>
 
-<h2 id="previewadd-event">Preview/Add Event</h2>
+<p>After you finish filling out necessary details for your calendar, press <strong>Publish.</strong> As the page reloads, you will notice a calendar icon appearing along with the <strong>description</strong> you have entered. This is the <strong>calendar shortcode</strong> and it is required for the calendar to appear correctly.</p>
 
-<h3 id="adding-an-event-to-wordpress-event-calendar">Adding an event to WordPress event calendar</h3>
+<p>You can check the front-end of the created calendar by clicking on <strong>View Calendar</strong> button from the top bar of WordPress administrative panel.</p>
 
-<p>Here you create events straight from the calendar itself. Upon clicking on the link <strong>“Preview/Add Event”</strong> a calendar will open up:</p>
-
-<p><strong>Date.</strong> You can either use the default date or change it using tabs and filling the date based on the date format.</p>
-
-<p><strong>Title.</strong> You can give a title to the event, it will save a draft with the stated title. When adding the title, a pop-up will open up with a link <strong>“Editing details”</strong>. By clicking on it you can add details of the event within Event section and publish it.</p>
-
-<h3 id="preview">Preview</h3>
-
-<p>The opened calendar will display the selected theme of the calendar. You can change the selected theme using the drop-down below, update the calendar post and preview the newly selected theme by hitting the Preview/Add Event button once more.</p>
-
-<p><strong>Theme.</strong> Choose the theme of the calendar.</p>
-</main>
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-16-1.png" alt="View Calendar" /></p>
+<p class="product_version">v.1.1.13</p></main>
 		
 		
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
 <li class="toc-entry toc-h1"><a href="#creating-calendars">Creating Calendars</a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#adding-a-calendar">Adding a Calendar</a></li>
-<li class="toc-entry toc-h2"><a href="#calendar-shortcode">Calendar Shortcode</a></li>
-<li class="toc-entry toc-h2"><a href="#calendar-settings">Calendar Settings</a></li>
-<li class="toc-entry toc-h2"><a href="#previewadd-event">Preview/Add Event</a>
+<li class="toc-entry toc-h2"><a href="#adding-a-new-calendar">Adding a New Calendar</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#adding-an-event-to-wordpress-event-calendar">Adding an event to WordPress event calendar</a></li>
-<li class="toc-entry toc-h3"><a href="#preview">Preview</a></li>
+<li class="toc-entry toc-h4"><a href="#preview--add-event">Preview / Add Event</a></li>
+<li class="toc-entry toc-h4"><a href="#calendar-shortcode">Calendar Shortcode</a></li>
+<li class="toc-entry toc-h4"><a href="#events">Events</a></li>
+<li class="toc-entry toc-h4"><a href="#theme">Theme</a></li>
 </ul>
 </li>
 </ul>

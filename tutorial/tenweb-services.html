@@ -116,6 +116,8 @@
 
 <p><strong>Logs</strong> section includes the logs from backups done on your website. Each one of them include records from successfully completed or failed backup jobs.</p>
 
+<p><img src="http://docscdn.10web.io/tutorial/tutorial-10.png" alt="10Web Backup" /></p>
+
 <h2 id="image-optimization">Image Optimization</h2>
 
 <p><strong><a href="https://10web.io/services/image-optimizer/">Image Optimizer service</a></strong> of 10Web lets you optimize the pictures of your website. This tool helps you speed up your website and allow its visitors have the best experience.</p>
@@ -123,6 +125,8 @@
 <p>You can configure image optimization settings from WordPress administrative dashboard of your site.</p>
 
 <p>After optimizing a few images, <strong>Statistics</strong> and other information from the plugin will be displayed under <strong>Image Optimizer</strong> tab of your website manager on 10Web Dashboard. You can quickly review the data and receive comprehensive information about your website optimization.</p>
+
+<p><img src="http://docscdn.10web.io/tutorial/tutorial-11.png" alt="Image Optimization" /></p>
 
 <h2 id="search-engine-optimization">Search Engine Optimization</h2>
 
@@ -139,6 +143,8 @@
 <p>You can also check this information from <strong>Search Analytics</strong> and <strong>Search Console</strong> tabs of 10Web Dashboard.</p>
 
 <p>Furthermore, you can authorize <strong><a href="../docs/seo-by-10web/overview#seo-moz-account-setup">SEO Moz account</a></strong> and display corresponding statistics on 10Web Dashboard, as well as in SEO by 10Web plugin.</p>
+
+<p><img src="http://docscdn.10web.io/tutorial/tutorial-12.png" alt="SEO by 10Web" /></p>
 
 <h2 id="performance-monitoring">Performance Monitoring</h2>
 
@@ -158,6 +164,8 @@
 </ul>
 
 <p>Page speed insights tool of 10Web checks more than just the <strong>performance</strong> of your WordPress site. It also provides details and tips about <strong><a href="https://webdesign.tutsplus.com/articles/best-practices-for-increasing-website-performance--webdesign-9109">best practices</a></strong> and <strong><a href="https://www.marcozehe.de/2015/12/14/the-web-accessibility-basics/">accessibility</a></strong> of your website.</p>
+
+<p><img src="http://docscdn.10web.io/tutorial/tutorial-13-1.png" alt="10Web Performance" /></p>
 
 <h3 id="fixing-performance-errors">Fixing Performance Errors</h3>
 
@@ -217,7 +225,7 @@
 
 <p><code class="highlighter-rouge">Declare a doctype in your document.</code></p>
 
-<p>Always declare &lt;!DOCTYPE&gt; at the beginning of your HTML document. It is not an HTML tag. It informs the web browser about the version of HTML the page is structured with.</p>
+<p>Always declare <code class="highlighter-rouge">&lt;!DOCTYPE&gt;</code> at the beginning of your HTML document. It is not an HTML tag. It informs the web browser about the version of HTML the page is structured with.</p>
 
 <p><code class="highlighter-rouge">Serve your content securely.</code></p>
 
@@ -228,6 +236,54 @@
 <p><code class="highlighter-rouge">Serve your content using HTTP/2.</code></p>
 
 <p>Having your website to tun with HTTP/2 together with HTTPS is the new best practice. If you do use HTTPS, which is highly recommended, you should also use HTTP/2.</p>
+
+<p><code class="highlighter-rouge">Declare the language code for your document.</code></p>
+
+<p>According to the <a href="https://www.w3.org/International/questions/qa-html-language-declarations#basics">W3C standards</a>, you need to declare the language of the pages on your website. To do this, you need to add <code class="highlighter-rouge">lang</code> attribute inside <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> tag, e.g. <code class="highlighter-rouge"><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span></code>.</p>
+
+<p><code class="highlighter-rouge">Meta description</code></p>
+
+<p><code class="highlighter-rouge">Page title</code></p>
+
+<p>Search engines recognize your web pages with their titles and meta descriptions. Add a relevant text into <code class="highlighter-rouge">&lt;head&gt;</code> using <code class="highlighter-rouge">&lt;title&gt;</code> tag, as well as meta description, to improve the SEO of your web pages.</p>
+
+<p><code class="highlighter-rouge">Have a good URL format</code></p>
+
+<p>A great URL improves the SEO of your web pages, and is good for your users also. Use readable, short URLs, avoid using spaces in the path, as well as too many request parameters. Do not have session IDs in your URLs.</p>
+
+<h4 id="accessibility">Accessibility</h4>
+
+<p><code class="highlighter-rouge">Always use an alt attribute on image tags</code></p>
+
+<p>According to <a href="https://www.w3.org/standards/webdesign/accessibility">W3C Accessibility Standards</a>, you need to provide <code class="highlighter-rouge">alt</code> attribute for all <code class="highlighter-rouge">&lt;img&gt;</code> tags without any exception. Missing a single <code class="highlighter-rouge">alt</code> attribute is <a href="https://www.marcozehe.de/2015/12/14/the-web-accessibility-basics/">considered as an error</a>.</p>
+
+<p><code class="highlighter-rouge">Use heading tags to structure your page</code></p>
+
+<p>Increase the readability of your pages by adding heading tags. This also provides a logical, easy-to-follow structure to your users. Have one <code class="highlighter-rouge">&lt;h1&gt;</code> as the main heading of your page, and <code class="highlighter-rouge">&lt;h2&gt;</code> through <code class="highlighter-rouge">&lt;h6&gt;</code>, to emphasize subsections.</p>
+
+<p>The headings also help screen readers and search engines to read the structure of your document.</p>
+
+<p><code class="highlighter-rouge">Always set labels on inputs in forms</code></p>
+
+<p>Most form elements, such as inputs, textareas and select boxes need to have labels which describe their purpose. Make sure to provide labels to increase the <a href="https://www.marcozehe.de/2015/12/14/the-web-accessibility-basics/">accessibility</a> of your pages.</p>
+
+<p><code class="highlighter-rouge">Structure your content by using landmarks</code></p>
+
+<p><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">Semantic Elements of HTML5</a> allow you to indicate various sections of your page. Examples of these tags are <code class="highlighter-rouge">&lt;header&gt;</code>, <code class="highlighter-rouge">&lt;article&gt;</code>, <code class="highlighter-rouge">&lt;footer&gt;</code>, and <code class="highlighter-rouge">&lt;nav&gt;</code> tags. Having appropriate landmarks will structure your document nicely and help users navigate easily.</p>
+
+<p><code class="highlighter-rouge">Don't suppress pinch zoom</code></p>
+
+<p>One of the most important features of mobile browsing is letting users to zoom the content in and out within a page. To have great accessibility on your pages, you need to provide <a href="http://www.iheni.com/mobile-accessibility-tip-dont-suppress-pinch-zoom/">pinch zoom</a> for small screens.</p>
+
+<p><code class="highlighter-rouge">Use headings tags within section tags to better structure your page</code></p>
+
+<p>In case you have different <code class="highlighter-rouge">&lt;section&gt;</code> tags on your pages, make sure to provide at least one heading tag in them. This provides a good structure for your content.</p>
+
+<p><code class="highlighter-rouge">Use caption and &lt;th&gt; in tables</code></p>
+
+<p>Use <code class="highlighter-rouge">&lt;caption&gt;</code> tag in <code class="highlighter-rouge">&lt;table&gt;</code> elements to properly describe its content. You can find out more about captions <a href="https://www.w3schools.com/tags/tag_caption.asp">within this link</a>.</p>
+
+<p>Also, <code class="highlighter-rouge">&lt;th&gt;</code> tag is necessary to mark the headings of table columns and rows.</p>
 
 <h2 id="more-10web-services-coming-soon">More 10Web Services Coming Soon</h2>
 
@@ -256,6 +312,7 @@
 <ul>
 <li class="toc-entry toc-h4"><a href="#performance">Performance</a></li>
 <li class="toc-entry toc-h4"><a href="#best-practice">Best Practice</a></li>
+<li class="toc-entry toc-h4"><a href="#accessibility">Accessibility</a></li>
 </ul>
 </li>
 </ul>

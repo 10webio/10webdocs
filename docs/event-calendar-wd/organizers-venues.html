@@ -14,10 +14,10 @@
 <meta name="google-site-verification" content="bU33Rd709RLTNobw9w3j4puG_-28Mmi2bPxdi3UQiN0" />
 <meta charset="UTF-8">
 
-<meta name="description" content="Frontend Event Management Add-on of Event Calendar plugin allows your website users to create events from site's front end."/>
+<meta name="description" content="How to create and modify event categories and tags on your WordPress Event Calendar. A useful guide by 10Web."/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#157878">
-<title>Frontend Event Management Add-on | Event Calendar | 10Web</title>
+<title>Event Calendar - Organizers and Venues</title>
 <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/assets/css/minima.css">
@@ -52,7 +52,7 @@
 </nav>
 	
     <div class="container-fluid">
-      <div class="row flex-xl-nowrap">
+      <div class="row flex-xl-nowrap toc_doc">
         <div class="tenweb-sidebar">
           <div class="mobile-nav"><h4 class="plugin-name-mobile">Event Calendar WD</h4>
 <span  id="trigram-for-heaven">  <span></span></span>
@@ -78,7 +78,7 @@
         <span class="parent-title">Event Categories and Tags </span></a>
 
       <ul class="nav bd-sidenav"></ul>
-    </div><div class="clear bd-toc-item">
+    </div><div class="clear bd-toc-item active">
       <a class="bd-toc-link" href="/docs/event-calendar-wd/organizers-venues">
         <span class="parent-title">Event Organizers and Venues </span></a>
 
@@ -103,11 +103,11 @@
         <span class="parent-title">Publishing Event Calendar </span></a>
 
       <ul class="nav bd-sidenav"></ul>
-    </div><div class="clear bd-toc-item active has_child">
+    </div><div class="clear bd-toc-item has_child">
       <a class="bd-toc-link" href="/docs/event-calendar-wd/add-ons">
         <span class="parent-title">Event Calendar WD Add-ons </span><span class="parent-icon"> </span></a>
 
-      <ul class="nav bd-sidenav"><li class="active bd-sidenav-active">
+      <ul class="nav bd-sidenav"><li>
             <a href="/docs/event-calendar-wd/add-ons/frontend-event-management.html">
               Frontend Event Management
             </a></li><li>
@@ -132,72 +132,87 @@
         </div>
 		
         <main class="tenweb-content" role="main">
-          <h1 id="frontend-event-management">Frontend Event Management</h1>
+          <h1 id="event-organizers-and-venues">Event Organizers and Venues</h1>
 
-<p>Description of Event Calendar Frontend Event Management add-on</p>
+<p>Using WordPress Event Calendar plugin, you have the tools to indicate the <strong>organizers</strong> of your calendar events, as well as show the location of the <strong>venue.</strong> You just need to follow a few simple steps to create the organizers and venues, then add them to your events.</p>
 
-<p>Using Event Calendar WD for managing your community events? Have contributing authors? The Event Calendar WD Frontend Event Management add-on is the perfect solution for you. The add-on allows your users to create events from website front end.</p>
+<h2 id="adding-event-organizers">Adding Event Organizers</h2>
 
-<blockquote>
-  <p><strong>Attention:</strong> Frontend Management Add-On requires <strong><a href="https://10web.io/plugins/wordpress-event-calendar/">Event Calendar Premium version</a> 5.0.23</strong> and higher: if you are using an older version, please update your plugin.</p>
-</blockquote>
+<p>To begin adding organizers to Event Calendar WD, navigate to <strong>Events &gt; Organizers</strong> page. The list of all created organizers is provided on this dashboard. You can quickly find entries using the <strong>search</strong> box, as well as <strong>filter</strong> items by <strong>date.</strong></p>
 
-<p>When activated add-on brings two separate sections displayed above the main calendar. With these tabs, the user will be able to add events to the calendar (Add Events) and view (optionally edit/delete) the added event list using filters (My events).</p>
+<p>Hover over the organizers to:</p>
 
-<h3 id="settings">Settings</h3>
+<ul>
+  <li>Edit,</li>
+  <li>Quick Edit,</li>
+  <li>Trash,</li>
+  <li>View</li>
+</ul>
 
-<p>Frontend Event Management is easy to set up.</p>
+<p>them, or use <strong>Bulk Actions</strong> drop-down box to <strong>edit</strong> multiple entries or <strong>move them to trash.</strong></p>
 
-<p>This section allows configuring options for the event management system. To access the option go to <strong>Event Calendar WD &gt; Settings &gt; Frontend</strong> event management.</p>
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-28.png" alt="List of Event Organizers" /></p>
 
-<p><strong>Events should be added as.</strong> Choose the default post status for the submitted events. Anyone can add event. If you want all site visitors to be capable of adding events choose the option. By default only registered users can add events.</p>
+<p>Click <strong>Add New</strong> button to create a new organizer. Begin with writing a <strong>title</strong> and <strong>description,</strong> giving a few details about the organizing entity. Afterwards, fill in the following options in <strong>Organizer Details</strong> section:</p>
 
-<p><strong>User Can Add Image.</strong> Choose whether to allow the user to add images to the event or not.</p>
+<ul>
+  <li>Phone,</li>
+  <li>Website,</li>
+  <li>Featured Image,</li>
+</ul>
 
-<p><strong>Edit their events.</strong> Check the box to allow the contributors to edit their own events.</p>
+<p>then click <strong>Publish</strong> to save the changes. You can add the organizers to your events by following the steps described in <a href="creating-events.html#organizer">this section</a>.</p>
 
-<p><strong>Remove their events.</strong> Check the box to allow the contributors to remove their own events.</p>
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-27.png" alt="Creating Event Organizers" /></p>
 
-<p><strong>Set status “Trash” to delete events.</strong> If you want to have an event recovery from trash select the option otherwise the events will be permanently removed.</p>
+<h2 id="creating-event-venues">Creating Event Venues</h2>
 
-<p><strong>Send an email alert when a new event is submitted.</strong> Check the box to receive email notifications whenever a new event is added.</p>
+<p>Click on <strong>Events &gt; Venues</strong> menu item from WordPress administrative dashboard. You will access the page with all created event venues. From the list of all venues, you can:</p>
 
-<p><strong>Email address to be notified.</strong> Provide an email address, which will be used for sending out notifications whenever a new event is added to the calendar.</p>
+<ul>
+  <li>Edit,</li>
+  <li>Quick Edit,</li>
+  <li>Trash,</li>
+  <li>View</li>
+</ul>
 
-<p><strong>Events Per Page.</strong> Set the number of posts which will be displayed in My Events page.</p>
+<p>entries separately by hovering on each of them. Use <strong>Filter</strong> option to view venues by the <strong>date</strong> they were created. You can also search through the existing entries.</p>
 
-<p><strong>Google ReCaptcha site key.</strong> Fill this field and below field to activate recaptcha. It’s used only for the guest visitors.</p>
+<p>Furthermore, you are able to <strong>edit</strong> multiple venues or <strong>move them to trash,</strong> using <strong>Bulk Actions</strong> drop-down box.</p>
 
-<p><strong>Google ReCaptcha secret key.</strong> Fill in the Google ReCaptcha secret key. It’s used only for the guest visitors.</p>
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-29.png" alt="List of Event Venues" /></p>
 
-<p><img src="http://docscdn.10web.io/event-calendar-wd/18.png" alt="Frontend Event Management" /></p>
+<p>Press <strong>Add new</strong> button to create a new venue for your events. Name your venue by entering a <strong>title,</strong> and write additional information using the content editor box. Afterwards, you just need to fill in the following options and your venue will be ready:</p>
 
-<h3 id="add-event">Add Event</h3>
+<ul>
+  <li>Address,</li>
+  <li>Phone,</li>
+  <li>Website,</li>
+  <li>Show Google Maps,</li>
+  <li>Featured Image.</li>
+</ul>
 
-<p>This section allows registered users to create events . The whole process is divided into 4 sections. You should press “Save Changes” button as a final stage. Let’s discuss each of them in more details:</p>
+<p>By marking <strong>Show Google Maps</strong> checkbox, you can showcase the location of your venue on a beautiful Google Map. And as you fill in <strong>Address</strong> of your venue, Google Maps marker will be placed on the pointed location. You can also specify <strong>Latitude</strong> and <strong>Longitude</strong> of your address.</p>
 
-<p><strong>General.</strong> You can set the event title, description, categories, tags. Set event starting and ending dates, add event and video URLs.</p>
+<p>Note, that you need to <strong><a href="google-maps-api.html">get Google Maps API key</a></strong> to display a map with your event venue.</p>
 
-<p><strong>Location.</strong> You can set the venue of the event or add the location filling out the address of the venue. The event will be marked on Google Maps.</p>
+<p>After you finish configuring venues, click <strong>Publish</strong> to save the changes. You can add them to your events by following <a href="creating-events.html#venue">these simple steps</a>.</p>
 
-<p><strong>Organizer.</strong> You can select the organizer of the event from the available list or create new organizer providing the name of the organizer and description.</p>
-
-<p><strong>Options.</strong> You can set the repeat rate of the event making it recurring on a daily, weekly, monthly or yearly-basis.</p>
-
-<p><img src="http://docscdn.10web.io/event-calendar-wd/16.png" alt="Frontend Event Management" /></p>
-
-<h3 id="my-events">My Events</h3>
-
-<p>This section allows view the events created by the user and optionally edit/delete them. This option is not accessible for the guests.</p>
-
-<p><strong>Category.</strong> Select the category from which you want to display the events.</p>
-
-<p><strong>Status.</strong> Select the post status.</p>
-
-<p><img src="http://docscdn.10web.io/event-calendar-wd/17.png" alt="Frontend Event Management" /></p>
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-30.png" alt="Add Event Venues" /></p>
 <p class="product_version">v.1.1.13</p></main>
 		
 		
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#event-organizers-and-venues">Event Organizers and Venues</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#adding-event-organizers">Adding Event Organizers</a></li>
+<li class="toc-entry toc-h2"><a href="#creating-event-venues">Creating Event Venues</a></li>
+</ul>
+</li>
+</ul>
+          </div>
+        
       </div>
     </div>
 

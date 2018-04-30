@@ -14,10 +14,10 @@
 <meta name="google-site-verification" content="bU33Rd709RLTNobw9w3j4puG_-28Mmi2bPxdi3UQiN0" />
 <meta charset="UTF-8">
 
-<meta name="description" content="Frontend Event Management Add-on of Event Calendar plugin allows your website users to create events from site's front end."/>
+<meta name="description" content="How to configure Google Maps API key and display Google Maps with your events. A step-by-step guide of Event Calendar plugin by 10Web."/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#157878">
-<title>Frontend Event Management Add-on | Event Calendar | 10Web</title>
+<title>Adding Google Maps API Key | Event Calendar | 10Web</title>
 <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/assets/css/minima.css">
@@ -88,7 +88,7 @@
         <span class="parent-title">Configuring Event Calendar Settings </span></a>
 
       <ul class="nav bd-sidenav"></ul>
-    </div><div class="clear bd-toc-item">
+    </div><div class="clear bd-toc-item active">
       <a class="bd-toc-link" href="/docs/event-calendar-wd/google-maps-api">
         <span class="parent-title">Adding Google Maps API Key </span></a>
 
@@ -103,11 +103,11 @@
         <span class="parent-title">Publishing Event Calendar </span></a>
 
       <ul class="nav bd-sidenav"></ul>
-    </div><div class="clear bd-toc-item active has_child">
+    </div><div class="clear bd-toc-item has_child">
       <a class="bd-toc-link" href="/docs/event-calendar-wd/add-ons">
         <span class="parent-title">Event Calendar WD Add-ons </span><span class="parent-icon"> </span></a>
 
-      <ul class="nav bd-sidenav"><li class="active bd-sidenav-active">
+      <ul class="nav bd-sidenav"><li>
             <a href="/docs/event-calendar-wd/add-ons/frontend-event-management.html">
               Frontend Event Management
             </a></li><li>
@@ -132,69 +132,41 @@
         </div>
 		
         <main class="tenweb-content" role="main">
-          <h1 id="frontend-event-management">Frontend Event Management</h1>
+          <h1 id="adding-google-maps-api-key">Adding Google Maps API Key</h1>
 
-<p>Description of Event Calendar Frontend Event Management add-on</p>
+<p><a href="https://10web.io/plugins/wordpress-event-calendar/">WordPress Event Calendar plugin</a> lets you provide users with a stunning map, showcasing the location of your events.</p>
 
-<p>Using Event Calendar WD for managing your community events? Have contributing authors? The Event Calendar WD Frontend Event Management add-on is the perfect solution for you. The add-on allows your users to create events from website front end.</p>
+<p>To incorporate maps with your event calendar, you need to get <strong>Google Maps API key</strong> as the first step. Navigate to <strong>Events &gt; Settings</strong> page, then click on <strong>Google Maps</strong> tab. You will find <strong>Get key</strong> button in this section. Pressing this button will redirect you to <strong><a href="https://console.developers.google.com/apis/">Google API Console</a>.</strong></p>
+
+<p>First, you need to sign in to your Google account. Afterwards, start creating a project in Google API Console, in case you do not have any. Select <strong>Create a Project</strong> option, then press <strong>Continue.</strong></p>
+
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-38.png" alt="Creating a Project" /></p>
+
+<p>New settings will be loaded, allowing you to configure the project and set API key restrictions.</p>
+
+<p>Enter a <strong>Name</strong> for your project first. If you wish to restrict the API key to only access Google Maps data, click on <strong>API Restrictions</strong> tab and select <strong>Google Maps JavaScript API</strong> option.</p>
+
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-40.png" alt="API Key Restrictions" /></p>
+
+<p>Afterwards, click on <strong>Application Restrictions</strong> tab and choose <strong>HTTP referrers (web sites)</strong> from the list that appears with this section. Finalizing the settings, press <strong>Create.</strong></p>
+
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-39.png" alt="Creating a Project" /></p>
+
+<p>The API key will be provided in a popup window. Copy the key, and paste it into <strong><a href="settings.html#google-maps">API key</a></strong> option of Event Calendar WD <strong>Settings</strong> page, <strong>Google Maps</strong> tab.</p>
+
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-41.png" alt="API key" /></p>
+
+<p>To make sure the API is enabled on your Google project, click on <strong>Library</strong> tab from <strong>Google API Console</strong> dashboard.</p>
+
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-42.png" alt="API Library" /></p>
+
+<p>Use the search box in API Library page to find Google Maps JavaScript API. Click to open the API tools, then press <strong>Enable.</strong></p>
+
+<p><img src="http://docscdn.10web.io/event-calendar-wd/ecwd-43.png" alt="Google Maps JavaScript API" /></p>
 
 <blockquote>
-  <p><strong>Attention:</strong> Frontend Management Add-On requires <strong><a href="https://10web.io/plugins/wordpress-event-calendar/">Event Calendar Premium version</a> 5.0.23</strong> and higher: if you are using an older version, please update your plugin.</p>
+  <p><strong>Note:</strong> It may take up to 5 minutes for the API settings to take effect.</p>
 </blockquote>
-
-<p>When activated add-on brings two separate sections displayed above the main calendar. With these tabs, the user will be able to add events to the calendar (Add Events) and view (optionally edit/delete) the added event list using filters (My events).</p>
-
-<h3 id="settings">Settings</h3>
-
-<p>Frontend Event Management is easy to set up.</p>
-
-<p>This section allows configuring options for the event management system. To access the option go to <strong>Event Calendar WD &gt; Settings &gt; Frontend</strong> event management.</p>
-
-<p><strong>Events should be added as.</strong> Choose the default post status for the submitted events. Anyone can add event. If you want all site visitors to be capable of adding events choose the option. By default only registered users can add events.</p>
-
-<p><strong>User Can Add Image.</strong> Choose whether to allow the user to add images to the event or not.</p>
-
-<p><strong>Edit their events.</strong> Check the box to allow the contributors to edit their own events.</p>
-
-<p><strong>Remove their events.</strong> Check the box to allow the contributors to remove their own events.</p>
-
-<p><strong>Set status “Trash” to delete events.</strong> If you want to have an event recovery from trash select the option otherwise the events will be permanently removed.</p>
-
-<p><strong>Send an email alert when a new event is submitted.</strong> Check the box to receive email notifications whenever a new event is added.</p>
-
-<p><strong>Email address to be notified.</strong> Provide an email address, which will be used for sending out notifications whenever a new event is added to the calendar.</p>
-
-<p><strong>Events Per Page.</strong> Set the number of posts which will be displayed in My Events page.</p>
-
-<p><strong>Google ReCaptcha site key.</strong> Fill this field and below field to activate recaptcha. It’s used only for the guest visitors.</p>
-
-<p><strong>Google ReCaptcha secret key.</strong> Fill in the Google ReCaptcha secret key. It’s used only for the guest visitors.</p>
-
-<p><img src="http://docscdn.10web.io/event-calendar-wd/18.png" alt="Frontend Event Management" /></p>
-
-<h3 id="add-event">Add Event</h3>
-
-<p>This section allows registered users to create events . The whole process is divided into 4 sections. You should press “Save Changes” button as a final stage. Let’s discuss each of them in more details:</p>
-
-<p><strong>General.</strong> You can set the event title, description, categories, tags. Set event starting and ending dates, add event and video URLs.</p>
-
-<p><strong>Location.</strong> You can set the venue of the event or add the location filling out the address of the venue. The event will be marked on Google Maps.</p>
-
-<p><strong>Organizer.</strong> You can select the organizer of the event from the available list or create new organizer providing the name of the organizer and description.</p>
-
-<p><strong>Options.</strong> You can set the repeat rate of the event making it recurring on a daily, weekly, monthly or yearly-basis.</p>
-
-<p><img src="http://docscdn.10web.io/event-calendar-wd/16.png" alt="Frontend Event Management" /></p>
-
-<h3 id="my-events">My Events</h3>
-
-<p>This section allows view the events created by the user and optionally edit/delete them. This option is not accessible for the guests.</p>
-
-<p><strong>Category.</strong> Select the category from which you want to display the events.</p>
-
-<p><strong>Status.</strong> Select the post status.</p>
-
-<p><img src="http://docscdn.10web.io/event-calendar-wd/17.png" alt="Frontend Event Management" /></p>
 <p class="product_version">v.1.1.13</p></main>
 		
 		
