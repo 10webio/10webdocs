@@ -30,7 +30,8 @@
   </head>
   <body>
 
-    <nav class="bright-gray" role="navigation">
+    <div id="header">
+		<nav class="bright-gray" role="navigation">
     <div class="nav-wrapper container">
 	  <a id="logo-container" class="brand-logo clear"  href="/" aria-label="Bootstrap">
 		<div class="theme_10web_logo"></div>
@@ -50,7 +51,7 @@
 		
 	</div>
 </nav>
-	
+	</div>
     <div class="container-fluid">
       <div class="row flex-xl-nowrap toc_doc">
         <div class="tenweb-sidebar">
@@ -109,6 +110,16 @@
         </div>
 		
         <main class="tenweb-content" role="main">
+		<div id="google-search">
+			<div class="google-search-container">
+				<form action='/search.html' method="get" id="search_form" autocomplete="off">
+					<div class="search clear">
+						<input name="q" id="search_searchword" alt="Search" class="inputbox" type="text" value="" placeholder="Search..."> 
+						<input type="submit" value="Search" class="button"> 
+					</div>
+				</form>
+			</div>
+		</div>
           <h1 id="creating-sliders">Creating Sliders</h1>
 
 <p>To configure your first slideshow with <a href="https://10web.io/plugins/wordpress-slider/">WordPress Slider plugin</a>, let’s start with adding images to sliders. Navigate to <strong>Slider WD &gt; Sliders</strong> page to begin. This dashboard includes the list of all sliders created with the plugin. You can run the following basic functions for each individual slider:</p>

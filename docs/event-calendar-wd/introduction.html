@@ -30,7 +30,8 @@
   </head>
   <body>
 
-    <nav class="bright-gray" role="navigation">
+    <div id="header">
+		<nav class="bright-gray" role="navigation">
     <div class="nav-wrapper container">
 	  <a id="logo-container" class="brand-logo clear"  href="/" aria-label="Bootstrap">
 		<div class="theme_10web_logo"></div>
@@ -50,7 +51,7 @@
 		
 	</div>
 </nav>
-	
+	</div>
     <div class="container-fluid">
       <div class="row flex-xl-nowrap">
         <div class="tenweb-sidebar">
@@ -132,6 +133,16 @@
         </div>
 		
         <main class="tenweb-content" role="main">
+		<div id="google-search">
+			<div class="google-search-container">
+				<form action='/search.html' method="get" id="search_form" autocomplete="off">
+					<div class="search clear">
+						<input name="q" id="search_searchword" alt="Search" class="inputbox" type="text" value="" placeholder="Search..."> 
+						<input type="submit" value="Search" class="button"> 
+					</div>
+				</form>
+			</div>
+		</div>
           <h1 id="introducing-wordpress-event-calendar">Introducing WordPress Event Calendar</h1>
 
 <p><a href="https://10web.io/plugins/wordpress-event-calendar/">Event Calendar plugin</a> is a feature-rich and powerful tool, designed to showcase your calendars and events on your WordPress website. Create <strong>unlimited calendars</strong> and <strong>events,</strong> group them by <strong>categories, tags,</strong> and <strong>organizers</strong> without having to write a single line of code. The user-friendly settings of the plugin allow anyone, from WordPress beginners to developers, to incorporate event calendars with WordPress.</p>

@@ -30,7 +30,8 @@
   </head>
   <body>
 
-    <nav class="bright-gray" role="navigation">
+    <div id="header">
+		<nav class="bright-gray" role="navigation">
     <div class="nav-wrapper container">
 	  <a id="logo-container" class="brand-logo clear"  href="/" aria-label="Bootstrap">
 		<div class="theme_10web_logo"></div>
@@ -50,7 +51,7 @@
 		
 	</div>
 </nav>
-	
+	</div>
     <div class="container-fluid">
       <div class="row flex-xl-nowrap">
         <div class="tenweb-sidebar">
@@ -153,6 +154,16 @@
         </div>
 		
         <main class="tenweb-content" role="main">
+		<div id="google-search">
+			<div class="google-search-container">
+				<form action='/search.html' method="get" id="search_form" autocomplete="off">
+					<div class="search clear">
+						<input name="q" id="search_searchword" alt="Search" class="inputbox" type="text" value="" placeholder="Search..."> 
+						<input type="submit" value="Search" class="button"> 
+					</div>
+				</form>
+			</div>
+		</div>
           <h1 id="configuring-api-key">Configuring API Key</h1>
 
 <p>After the installation is done, click on <strong>MailChimp WD</strong> menu item. You will need to provide API Key, which can be created <a href="http://admin.mailchimp.com/account/api">here</a>. Simply press <strong>Create Key</strong> button from <strong>Your API keys</strong> section, and it will be generated. Copy the key, paste it in the input of <a href="https://10web.io/plugins/wordpress-mailchimp/">MailChimp WordPress plugin</a> and click <strong>Connect to MailChimp.</strong></p>

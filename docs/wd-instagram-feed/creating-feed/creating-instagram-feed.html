@@ -30,7 +30,8 @@
   </head>
   <body>
 
-    <nav class="bright-gray" role="navigation">
+    <div id="header">
+		<nav class="bright-gray" role="navigation">
     <div class="nav-wrapper container">
 	  <a id="logo-container" class="brand-logo clear"  href="/" aria-label="Bootstrap">
 		<div class="theme_10web_logo"></div>
@@ -50,7 +51,7 @@
 		
 	</div>
 </nav>
-	
+	</div>
     <div class="container-fluid">
       <div class="row flex-xl-nowrap toc_doc">
         <div class="tenweb-sidebar">
@@ -112,6 +113,16 @@
         </div>
 		
         <main class="tenweb-content" role="main">
+		<div id="google-search">
+			<div class="google-search-container">
+				<form action='/search.html' method="get" id="search_form" autocomplete="off">
+					<div class="search clear">
+						<input name="q" id="search_searchword" alt="Search" class="inputbox" type="text" value="" placeholder="Search..."> 
+						<input type="submit" value="Search" class="button"> 
+					</div>
+				</form>
+			</div>
+		</div>
           <h1 id="creating-instagram-feed">Creating Instagram Feed</h1>
 
 <p>To begin creating your first feed, navigate to <strong>Feeds</strong> page of <a href="https://10web.io/plugins/wordpress-instagram-feed/">Instagram Feed plugin</a>. This page contains a list of all your feeds created with the plugin. You will see the feed of your Instagram profile appearing on this list.</p>
