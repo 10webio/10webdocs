@@ -211,73 +211,190 @@
 				</form>
 			</div>
 		</div>
-          <h1 id="email-options">Email Options</h1>
+          <h1 id="form-maker---email-options">Form Maker - Email Options</h1>
 
-<p>Description of Email Options in <a href="https://10web.io/plugins/wordpress-form-maker/">WordPress Form Maker plugin</a>.</p>
+<p><a href="https://10web.io/plugins/wordpress-form-maker/">WordPress Form Maker plugin</a> lets you receive the information submitted through your forms at multiple email addresses. Additionally, you can send confirmation messages to the submitter of your form send a confirmation email to the submitter and let them know you have received their application.</p>
 
-<p>Form Maker plugin lets you send submitted information to one or multiple email addresses. Furthermore, you can also send a confirmation email to the submitter and let them know you have received their application.</p>
+<p>Enable <strong>Send E-mail</strong> from <strong>Form Options &gt; Email Options</strong> tab and start configuring mailing settings. These options are separated into the following main sections:</p>
 
-<p>Enable <strong>Send E-mail</strong> from <strong>Form Options &gt; Email Options</strong> tab and start configuring mailing settings. Most options require the same configuration for <strong>Email to Administrator</strong> and <strong>Email to User.</strong> However, there are a few settings which are unique.</p>
+<ul>
+  <li>Email to Administrator,</li>
+  <li>Email to User.</li>
+</ul>
 
-<p><img src="https://docsimages.10web.io/form-maker/28.png" alt="Email Options" /></p>
+<p>Most options require the same configuration for <strong>Email to Administrator</strong> and <strong>Email to User.</strong> However, there are a few settings which are unique.</p>
 
-<h3 id="email-to-administrator">Email to Administrator</h3>
+<p><img src="https://docsimages.10web.io/form-maker/98.png" alt="Email Options" /></p>
 
-<p>This section of <strong>Email Options</strong> allows you to set up notifications of form submissions for website owners. You can add multiple recipients, as well as CC or BCC addresses.</p>
+<h2 id="configuring-submission-notifications">Configuring Submission Notifications</h2>
 
-<p><strong>Email to send submissions to.</strong> Specify all email addresses, to which submitted form information will be sent. Multiple addresses can be added easily. Write one email address at a time, then press the small <strong>Plus (+)</strong> button to add the next.</p>
+<p><strong>Email to Administrator</strong> section of <strong>Email Options</strong> allows you to set up notifications of form submissions for website owners. With these settings, you can:</p>
 
-<p><strong>Email Empty Fields.</strong> Disable this setting, in case you do not want to include form fields, which are left empty by the submitter. These fields will simply be skipped in the emails with submission information.</p>
+<ul>
+  <li>set email subject,</li>
+  <li>define the sender’s name,</li>
+  <li>add multiple recipients, CC or BCC addresses,</li>
+</ul>
 
-<h3 id="email-to-user">Email to User</h3>
+<p>and more.</p>
 
-<p><strong>Send to.</strong> Use this setting to select the email field of your form, to which the submissions will be sent.</p>
+<h4 id="email-to-send-submissions-to">Email to send submissions to</h4>
 
-<p><strong>Important!</strong> In case you do not have an email input created from <strong>User Info Fields &gt; Email</strong> type, the following error message will appear:</p>
+<p>Specify all email addresses, to which submitted form information will be sent. You can set multiple addresses by separating them with commas, e.g.:</p>
 
-<p><em>“There is no email field”.</em></p>
+<p><em>example@example.com, email@example.com, example@mydomain.com</em></p>
 
-<p><strong>Email Verification.</strong> Activate this option, in case you would like the users to verify their email addresses. If it’s enabled, the user email will contain a verification link. Clicking on this link set the user email address as verified.</p>
+<p>Additionally, you can use the values of your form fields by clicking on <strong>Add Placeholder</strong> button.</p>
 
-<p><strong>Verification link expires in.</strong> Use this option to specify a time period <strong>(hours),</strong> during which the user will be able to verify their email address.</p>
+<h4 id="email-empty-fields">Email Empty Fields</h4>
 
-<p><strong>Edit Post.</strong> Click this link to edit the content of <strong>Email Verification post.</strong> This is is the page, where users will be redirected after they click on the verification link in user email.</p>
+<p>Disable this setting, in case you do not want to include form fields, which are left empty by the submitter. These fields will simply be skipped in the emails with submission information.</p>
 
-<h3 id="global-email-settings">Global Email Settings</h3>
+<h2 id="sending-confirmation-emails">Sending Confirmation Emails</h2>
 
-<p>The rest of the settings in Email Options apply to both Email to Administrator and Email to User. Let’s discuss them one by one below.</p>
+<p>With <strong>Email to User</strong> options of WordPress Form Maker plugin, you can configure and send confirmation messages to users who submit your form. As the email to administrator, this message is also fully customizable. Use the settings below to setup the confirmation emails.</p>
 
-<p><strong>Subject.</strong> You can add a custom title to be used as the subject for the email. In addition, by clicking the <strong>Plus (+)</strong> button next to the input, you can select a form field, the value of which will be set as the subject.</p>
+<h4 id="send-to">Send to</h4>
 
-<p><strong>Custom Text in Email For Administrator / Custom Text in Email For User.</strong> Use this editor box to add <strong>custom content, images,</strong> and <strong>basic HTML</strong> to the email message which is sent to administrator or user.</p>
+<p>Using this option, you can select the email field of your form, to which the submissions will be sent.</p>
 
-<p>You can include <strong>All Fields List</strong> to forward all submitted information. Alternatively, you are able to use <strong>individual field values</strong> by clicking on corresponding buttons above the custom text editor.</p>
+<blockquote>
+  <p><strong>Important!</strong> In case you do not have an email input created from <strong>User Info Fields &gt; Email</strong> type, the following error message will appear:</p>
 
-<p><strong>Email From (Advanced).</strong> Specify the email address from which the administrator or submitter will receive the email (sender’s email address). If you have an Email type field in your form, you can use select it and receive the submission email from users’ email addresses.</p>
+  <p><em>“There is no email field”.</em></p>
+</blockquote>
 
-<p><strong>From Name (Advanced).</strong> Set the name which is shown as the sender’s name in submission or confirmation emails. You can select a field value to be displayed as the sender’s name. Press the small <strong>Plus (+)</strong> button next to the option and select the field, e.g. submitter’s name.</p>
+<h3 id="advanced-options">Advanced Options</h3>
 
-<p><strong>Reply to (if different from “Email From”) (Advanced).</strong> Specify an alternative email address, to which the administrator or submitter will be able to reply upon receiving the message.</p>
+<h4 id="email-verification">Email Verification</h4>
 
-<p><strong>CC (Advanced).</strong> Provide additional email addresses to send the submission or confirmation email to. The receiver will be able to view all the other recipients of the email. You can add multiple CC emails, separating them by commas.</p>
+<p>Activate this option, in case you would like the users to verify their email addresses. If it’s enabled, the user email will contain a verification link. Clicking on this link set the user email address as verified.</p>
 
-<p><strong>BCC (Advanced).</strong> Write additional email addresses to send the submission or confirmation email to. The receiver will not be able to view other recipients of the email. You can add multiple BCC emails, separating them by commas.</p>
+<h4 id="verification-link-expires-in">Verification link expires in</h4>
 
-<p><strong>Mode (Advanced).</strong> Select the layout of the submission email, <strong>Text</strong> or <strong>HTML.</strong> HTML mode builds a table containing submitted information, whereas Text displays the message as plain text.</p>
+<p>Use this option to specify a time period <strong>(hours),</strong> during which the user will be able to verify their email address.</p>
 
-<p><strong>Attach File (Advanced).</strong> If you have File Upload fields on your form, enable this setting to attach uploaded files to submission or confirmation email.</p>
+<h4 id="edit-post">Edit Post</h4>
 
-<p><img src="https://docsimages.10web.io/form-maker/29.png" alt="Email to administrator and user" /></p>
-<p class="product_version">v.1.12.17</p></main>
+<p>Click this link to edit the content of <strong>Email Verification post.</strong> This is is the page, where users will be redirected after they click on the verification link in user email.</p>
+
+<h2 id="using-placeholders">Using Placeholders</h2>
+
+<p>WordPress Form Maker plugin allows you to use the values of form fields to customize the email notifications further. You can:</p>
+
+<ul>
+  <li>send user-specific confirmation emails by indicating the name of the submitter in the email content,</li>
+  <li>have the name of the sender dynamically changing based on the values of specified fields,</li>
+  <li>set different email subject for each submission notification,</li>
+</ul>
+
+<p>and much more. With Form Maker plugin, you can achieve this using <strong>Placeholders</strong> feature. It is just necessary to select form fields for the following options of <strong>Email to Administrator</strong> and <strong>Email to User</strong> sections:</p>
+
+<ul>
+  <li>Subject,</li>
+  <li>Custom Text in Email For Administrator / User,</li>
+  <li>and From Name.</li>
+</ul>
+
+<p>To begin configuring this feature, press <strong>Add Placeholder</strong> button next to the settings mentioned above. A toolbox will appear allowing you to select values from:</p>
+
+<ul>
+  <li>your <strong>Form Fields,</strong></li>
+  <li>miscellaneous options <strong>(Misc),</strong> such as <strong>Form Title</strong> or <strong>Submission ID.</strong></li>
+</ul>
+
+<p>Additionally, you can use the <strong>Filter</strong> input to quickly find just the form field or misc option you are looking for.</p>
+
+<p><img src="https://docsimages.10web.io/form-maker/70.png" alt="Email Options" /></p>
+
+<h2 id="general-email-settings">General Email Settings</h2>
+
+<p>The rest of the settings in <strong>Email Options</strong> apply to both <strong>Email to Administrator</strong> and <strong>Email to User.</strong> Let’s discuss them one by one below.</p>
+
+<h4 id="subject">Subject</h4>
+
+<p>You can add a custom title to be used as the subject for the email. In addition, by clicking <strong>Add Placeholder</strong> button next to the input, you can select a form field, the value of which will be set as the subject.</p>
+
+<h4 id="custom-text-in-email-for-administrator--user">Custom Text in Email For Administrator / User</h4>
+
+<p>Use this editor box to add <strong>custom content, images,</strong> and <strong>basic HTML</strong> to the email message which is sent to administrator or user.</p>
+
+<p>You can include <strong>All Fields List</strong> by inserting <code class="highlighter-rouge">%all%</code> into the content of the custom text to forward the submitted information fully. Alternatively, you are able to use <strong>field values</strong> and miscellaneous options separately, by selecting them from <strong>Placeholders.</strong> Press <strong>Add Placeholders</strong> button and choose the necessary form fields or options.</p>
+
+<h3 id="advanced-options-1">Advanced Options</h3>
+
+<h4 id="email-from">Email From</h4>
+
+<p>Specify the email address from which the administrator or submitter will receive the email (sender’s email address). If you have an <strong>Email</strong> type field in your form, you can use select it and receive the submission email from users’ email addresses.</p>
+
+<h4 id="from-name">From Name</h4>
+
+<p>Set the name which is shown as the sender’s name in submission or confirmation emails. You can select a field value to be displayed as the sender’s name. Press <strong>Add Placeholders</strong> button next to the option and select the field, e.g. submitter’s name.</p>
+
+<h4 id="reply-to-if-different-from-email-from">Reply to (if different from “Email From”)</h4>
+
+<p>Specify an alternative email address, to which the administrator or submitter will be able to reply upon receiving the message.</p>
+
+<h4 id="cc">CC</h4>
+
+<p>Provide additional email addresses to send the submission or confirmation email to. The receiver will be able to view all the other recipients of the email. You can add multiple CC email addresses, separating them by commas.</p>
+
+<h4 id="bcc">BCC</h4>
+
+<p>Write additional email addresses to send the submission or confirmation email to. The receiver will not be able to view other recipients of the email. You can add multiple BCC email addresses, separating them by commas.</p>
+
+<h4 id="mode">Mode</h4>
+
+<p>Select the layout of the submission email, <strong>Text</strong> or <strong>HTML.</strong> HTML mode builds a table containing submitted information, whereas Text displays the message as plain text.</p>
+
+<h4 id="attach-file">Attach File</h4>
+
+<p>If you have <strong>File Upload</strong> fields on your form, enable this setting to attach uploaded files to submission or confirmation email.</p>
+
+<p><img src="https://docsimages.10web.io/form-maker/99.png" alt="Email to administrator and user" /></p>
+<p class="product_version">v.1.12.30</p></main>
 		
 		
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h1"><a href="#email-options">Email Options</a>
+<li class="toc-entry toc-h1"><a href="#form-maker---email-options">Form Maker - Email Options</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#email-to-administrator">Email to Administrator</a></li>
-<li class="toc-entry toc-h3"><a href="#email-to-user">Email to User</a></li>
-<li class="toc-entry toc-h3"><a href="#global-email-settings">Global Email Settings</a></li>
+<li class="toc-entry toc-h2"><a href="#configuring-submission-notifications">Configuring Submission Notifications</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#email-to-send-submissions-to">Email to send submissions to</a></li>
+<li class="toc-entry toc-h4"><a href="#email-empty-fields">Email Empty Fields</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#sending-confirmation-emails">Sending Confirmation Emails</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#send-to">Send to</a></li>
+<li class="toc-entry toc-h3"><a href="#advanced-options">Advanced Options</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#email-verification">Email Verification</a></li>
+<li class="toc-entry toc-h4"><a href="#verification-link-expires-in">Verification link expires in</a></li>
+<li class="toc-entry toc-h4"><a href="#edit-post">Edit Post</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#using-placeholders">Using Placeholders</a></li>
+<li class="toc-entry toc-h2"><a href="#general-email-settings">General Email Settings</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#subject">Subject</a></li>
+<li class="toc-entry toc-h4"><a href="#custom-text-in-email-for-administrator--user">Custom Text in Email For Administrator / User</a></li>
+<li class="toc-entry toc-h3"><a href="#advanced-options-1">Advanced Options</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#email-from">Email From</a></li>
+<li class="toc-entry toc-h4"><a href="#from-name">From Name</a></li>
+<li class="toc-entry toc-h4"><a href="#reply-to-if-different-from-email-from">Reply to (if different from “Email From”)</a></li>
+<li class="toc-entry toc-h4"><a href="#cc">CC</a></li>
+<li class="toc-entry toc-h4"><a href="#bcc">BCC</a></li>
+<li class="toc-entry toc-h4"><a href="#mode">Mode</a></li>
+<li class="toc-entry toc-h4"><a href="#attach-file">Attach File</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

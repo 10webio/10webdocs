@@ -103,51 +103,100 @@
 				</form>
 			</div>
 		</div>
-          <h1 id="10web-services">10Web Services</h1>
+          <h1 id="configuring-10web-services">Configuring 10Web Services</h1>
 
-<p>10Web offers three web services, <strong><a href="https://10web.io/services/backup/">Backup</a>,</strong> <strong><a href="https://10web.io/services/image-optimizer/">Image Optimization</a></strong> and <strong><a href="https://10web.io/services/seo/">Search Engine Optimization</a>,</strong> which you can use on your websites. They let you have your website performing at its best, and this will help you grow your community, business or organization.</p>
+<p>10Web offers three exclusive web services, <strong><a href="https://10web.io/services/backup/">Backup</a>,</strong> <strong><a href="https://10web.io/services/image-optimizer/">Image Optimization</a>, <a href="https://10web.io/services/seo/">Search Engine Optimization</a>,</strong> and Performance, which let you get your website to function at its best. These tools take the performance of your website to a whole new level, thus can help you grow your community, business or organization.</p>
 
-<p>More services are being developed and will added to this list soon.</p>
+<p><em>*10Web developers create new fantastic services every day. The list below is continuously updated and will include the upcoming tools.</em></p>
 
 <h2 id="managing-backup-service">Managing Backup Service</h2>
 
-<p>Navigate to <strong>Backups</strong> toolbox to start managing your website backups. This toolbox is divided into three sections:</p>
+<p>Navigate to <strong>Backups</strong> toolbox to enable and manage the backup operations on your WordPress site. Press <strong>Enable Now</strong> to activate the service. After just a few seconds, the setup will be finished and you will be provided with the necessary backup tools.</p>
+
+<p>Before initiating a backup process, navigate to <strong>Settings</strong> tab and select website components to backup:</p>
 
 <ul>
-  <li>Backups</li>
-  <li>Jobs</li>
-  <li>Logs</li>
+  <li><strong>Files</strong> - the backup service will copy all files of your website and create an archive,</li>
+  <li><strong>Database</strong> - the MySQL tables of your WordPress database will be backed up.</li>
 </ul>
 
-<p><strong>Backups</strong> section displays the list of created backups on your website. Here you will be able to check the backup files, their physical size and see the date when they have been created.</p>
+<p>As the preferred options are selected, run your very first backup by pressing <strong>Backup Now</strong> button. Depending on the size of your website files and/or database, the process can take a few minutes. After each backup operation is completed, 10Web Dashboard provides respective data under <strong>Backup</strong> tab. This allows you to:</p>
 
-<p><strong>Jobs</strong> presents the list of active backup jobs on your website. These jobs are the configurations for your site backups. Meaning, they control the type of backups, their destinations and more.</p>
+<ul>
+  <li>review the <strong>backup time</strong> and its <strong>size,</strong></li>
+  <li><strong>restore</strong> the backed up files and/or databases,</li>
+  <li><strong>download</strong> the backup file.</li>
+</ul>
 
-<p>To modify the settings of backup jobs, open WordPress administrative dashboard of your website and edit the jobs in Backup plugin section.</p>
+<p><img src="https://docsimages.10web.io/tutorial/tutorial-26.png" alt="10Web Backup" /></p>
 
-<p><strong>Logs</strong> section includes the logs from backups done on your website. Each one of them include records from successfully completed or failed backup jobs.</p>
+<p>Additionally, 10Web Dashboard provides you with a quick calendar tool, letting you check the dates of all backup processes that have run on your website.</p>
 
-<p><img src="https://docsimages.10web.io/tutorial/tutorial-10.png" alt="10Web Backup" /></p>
+<h2 id="setting-up-backup-schedule">Setting Up Backup Schedule</h2>
+
+<p>10Web Backup service lets you configure automated backups based on any preferred schedule. To begin the setup, click <strong>Scheduling</strong> tab and enable this feature. By default, the automated backups are set to occur on a <strong>weekly</strong> basis. While this is a preferable option for static websites with low traffic, you may wish to consider switching to one of the following instead:</p>
+
+<ul>
+  <li><strong>Monthly</strong> - perfect for small websites,</li>
+  <li><strong>Daily</strong> - usually used for websites which are updated at least once a week,</li>
+  <li><strong>Every 12 hours</strong> - great for sensitive websites with daily content updates,</li>
+  <li><strong>Every 6 hours</strong> - for high-traffic websites with multiple changes during the day,</li>
+  <li><strong>Real Time</strong> - best for critical websites with hourly content updates.</li>
+</ul>
+
+<p>After choosing the best automated backup schedule for your website, make sure to press <strong>Save.</strong></p>
+
+<p><img src="https://docsimages.10web.io/tutorial/tutorial-27.png" alt="Backup Scheduling" /></p>
 
 <h2 id="image-optimization">Image Optimization</h2>
 
-<p><strong><a href="https://10web.io/services/image-optimizer/">Image Optimizer service</a></strong> of 10Web lets you optimize the pictures of your website. This tool helps you speed up your website and allow its visitors have the best experience.</p>
+<p><strong><a href="https://10web.io/services/image-optimizer/">Image Optimization service</a></strong> of 10Web lets you boost the performance of your website by optimizing the pictures of your website. This tool helps you speed up your website and allow visitors to have enjoyable experience.</p>
 
-<p>You can configure image optimization settings from WordPress administrative dashboard of your site.</p>
+<p>To begin configuring image optimization settings, press <strong>Enable Now.</strong> After this process is completed, click <strong>Activate Now</strong> button. 10Web Image Optimization service for WordPress provides you with the following 3 quick and easy optimization types:</p>
 
-<p>After optimizing a few images, <strong>Statistics</strong> and other information from the plugin will be displayed under <strong>Image Optimizer</strong> tab of your website manager on 10Web Dashboard. You can quickly review the data and receive comprehensive information about your website optimization.</p>
+<h4 id="conservative">Conservative</h4>
 
-<p><img src="https://docsimages.10web.io/tutorial/tutorial-11.png" alt="Image Optimization" /></p>
+<ul>
+  <li>Reduces image size up to 20%.</li>
+  <li>Keeps EXIF data of the pictures.</li>
+  <li>Keeps full-size images.</li>
+</ul>
+
+<h4 id="balanced">Balanced</h4>
+
+<ul>
+  <li>Reduces image size up to 40% (lossy reduction).</li>
+  <li>Keeps EXIF data of the pictures.</li>
+  <li>Keeps full-size images.</li>
+</ul>
+
+<h4 id="extreme">Extreme</h4>
+
+<ul>
+  <li>Reduces image size up to 90% (extreme reduction).</li>
+  <li>Doesn’t keep EXIF data of the pictures.</li>
+  <li>Doesn’t keep full-sized images.</li>
+</ul>
+
+<p>“How does it work?” link will help you compare the optimization results of all three types, and select the best option for your images. Once you have selected the type, press <strong>Optimize Now</strong> button, and the image compression will begin.</p>
+
+<p>As the optimization process is finished, 10Web Dashboard provides you with comprehensive <strong>Statistics</strong> and <strong>History.</strong> You can quickly review the data and obtain in-depth information about image optimization on your WordPress site.</p>
+
+<p>In case you wish to automatically optimize uploaded images of your WordPress site, turn on <strong>Auto Optimize</strong> setting.</p>
+
+<p><img src="https://docsimages.10web.io/tutorial/tutorial-28.png" alt="Image Optimization" /></p>
 
 <h2 id="search-engine-optimization">Search Engine Optimization</h2>
 
-<p>10Web offers its <strong><a href="https://10web.io/services/seo/">Search Engine Optimization service</a></strong> which helps you improve the SEO of your website. It assists you in detecting and fixing all SEO errors, provides the list of search queries users made to your website, and more. You can enable the service with just a few clicks using 10Web Dashboard.</p>
+<p>10Web provides you with an amazing <strong><a href="https://10web.io/services/seo/">SEO service</a></strong> which helps you improve the rank and visibility of your website on various search engines. It assists you in detecting and fixing all SEO errors, provides the list of search queries users made to your website, and more. You can enable the service with just a few clicks using 10Web Dashboard.</p>
 
-<p>Navigate to <strong>Websites</strong> section of 10Web Dashboard, hover over your WordPress site, then click <strong>Manage.</strong> Afterwards, click on <strong>SEO</strong> tab to expand its tools.</p>
+<p>Navigate to <strong>Websites</strong> section of 10Web Dashboard, hover over your WordPress site, then click <strong>Manage.</strong> Afterwards, click on <strong>Overview</strong> tab of <strong>SEO</strong> menu item to expand its tools.</p>
 
-<p>Firstly, you need to click <strong>Enable SEO Service</strong> button to activate the service. This action will install and activate <strong><a href="../docs/seo-by-10web/installation">SEO by 10Web</a></strong> plugin on your WordPress site.</p>
+<p>Firstly, you need to click <strong>Activate SEO Plugin</strong> button to enable the service. This action will install <strong><a href="../docs/seo-by-10web/installation">SEO by 10Web</a></strong> plugin on your WordPress site.</p>
 
-<p>SEO service brings notices and errors from the plugin and displays them on <strong>Overview</strong> screen of 10Web Dashboard. You can access <strong><a href="../docs/seo-by-10web/search-analytics">Search Analytics</a></strong> and <strong><a href="../docs/seo-by-10web/overview">Search Console</a></strong> pages of the plugin on your WordPress site with a click.</p>
+<p><img src="https://docsimages.10web.io/tutorial/tutorial-29.png" alt="Search Engine Optimization" /></p>
+
+<p>SEO service retrieves notices and errors from the plugin and displays them on <strong>Overview</strong> screen of 10Web Dashboard. You can access <strong><a href="../docs/seo-by-10web/search-analytics">Search Analytics</a></strong> and <strong><a href="../docs/seo-by-10web/overview">Search Console</a></strong> pages of the plugin on your WordPress site with a click.</p>
 
 <p>To receive in-depth and precise information about the indexation behavior of your website, make sure <strong><a href="../docs/seo-by-10web/overview#configuring-google-authorization">Google Authorization Code</a></strong> is added to SEO by 10Web plugin.</p>
 
@@ -155,13 +204,15 @@
 
 <p>Furthermore, you can authorize <strong><a href="../docs/seo-by-10web/overview#seo-moz-account-setup">SEO Moz account</a></strong> and display corresponding statistics on 10Web Dashboard, as well as in SEO by 10Web plugin.</p>
 
-<p><img src="https://docsimages.10web.io/tutorial/tutorial-12.png" alt="SEO by 10Web" /></p>
+<p><img src="https://docsimages.10web.io/tutorial/tutorial-30.png" alt="SEO by 10Web" /></p>
 
 <h2 id="performance-monitoring">Performance Monitoring</h2>
 
-<p>Check the performance, load time, and speed insights of your WordPress site with <strong>Performance</strong> service of 10Web. Get full information about the behaviour of your website, and find useful tips to improve the performance of it.</p>
+<p>Check the performance, load time, and speed insights of your WordPress site with <strong>Performance</strong> service of 10Web. Receive comprehensive information about the behaviour of your website, and find useful tips to improve the performance of it.</p>
 
 <p>To begin using this service, click <strong>Manage</strong> on your website from 10Web Dashboard, then navigate to <strong>Performance</strong> tab. Press <strong>Activate Performance</strong> button to enable the service, and run a performance check on your site for the first time.</p>
+
+<p><img src="https://docsimages.10web.io/tutorial/tutorial-31.png" alt="10Web Performance Service" /></p>
 
 <p>Checking the overall performance of your website will take a few moments. After the results are loaded, you will receive the following data:</p>
 
@@ -176,7 +227,7 @@
 
 <p>Page speed insights tool of 10Web checks more than just the <strong>performance</strong> of your WordPress site. It also provides details and tips about <strong><a href="https://webdesign.tutsplus.com/articles/best-practices-for-increasing-website-performance--webdesign-9109">best practices</a></strong> and <strong><a href="https://www.marcozehe.de/2015/12/14/the-web-accessibility-basics/">accessibility</a></strong> of your website.</p>
 
-<p><img src="https://docsimages.10web.io/tutorial/tutorial-13-1.png" alt="10Web Performance" /></p>
+<p><img src="https://docsimages.10web.io/tutorial/tutorial-32.png" alt="10Web Performance" /></p>
 
 <h3 id="fixing-performance-errors">Fixing Performance Errors</h3>
 
@@ -312,10 +363,17 @@
 		
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h1"><a href="#10web-services">10Web Services</a>
+<li class="toc-entry toc-h1"><a href="#configuring-10web-services">Configuring 10Web Services</a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#managing-backup-service">Managing Backup Service</a></li>
-<li class="toc-entry toc-h2"><a href="#image-optimization">Image Optimization</a></li>
+<li class="toc-entry toc-h2"><a href="#setting-up-backup-schedule">Setting Up Backup Schedule</a></li>
+<li class="toc-entry toc-h2"><a href="#image-optimization">Image Optimization</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#conservative">Conservative</a></li>
+<li class="toc-entry toc-h4"><a href="#balanced">Balanced</a></li>
+<li class="toc-entry toc-h4"><a href="#extreme">Extreme</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#search-engine-optimization">Search Engine Optimization</a></li>
 <li class="toc-entry toc-h2"><a href="#performance-monitoring">Performance Monitoring</a>
 <ul>

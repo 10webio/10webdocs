@@ -53,7 +53,7 @@
 </nav>
 	</div>
     <div class="container-fluid">
-      <div class="row flex-xl-nowrap">
+      <div class="row flex-xl-nowrap toc_doc">
         <div class="tenweb-sidebar">
           <div class="mobile-nav"><h4 class="plugin-name-mobile">Facebook Feed WD</h4>
 <span  id="trigram-for-heaven">  <span></span></span>
@@ -101,60 +101,93 @@
 		</div>
           <h1 id="creating-facebook-app">Creating Facebook App</h1>
 
-<p>Description of Facebook Feed WD options.</p>
+<p>To begin creating Facebook feeds on your WordPress site, it is necessary to configure a Facebook App, as well as get <strong>page access token.</strong> This allows <a href="https://10web.io/plugins/wordpress-facebook-feed/">WordPress Facebook Feed plugin</a> to request and receive data from Facebook and display it on your feed.</p>
 
-<p>Firstly you need to configure Options of the <a href="https://10web.io/plugins/wordpress-facebook-feed/">WordPress Facebook Feed plugin</a> and therefore Go to <strong>Facebook Feed WD &gt; Options.</strong></p>
+<h3 id="configuring-app-id-and-app-secret-keys">Configuring App ID and App Secret Keys</h3>
 
-<p><strong>App ID</strong> and <strong>App Secret Key:</strong>
-Navigate to <a href="https://developers.facebook.com/apps">Facebook Developers Apps</a>.
-If you already have an account press Login button:</p>
+<p>Start creating a Facebook app by navigating to <a href="https://developers.facebook.com/apps">Facebook Developers</a> page, then sign in to your Facebook account. If you are not registered as a facebook developer, registration will be offered to you. Afterwards, press <strong>Add a New App</strong> button to begin the setup.</p>
 
-<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-1.png" alt="Facebook Feed WD App" /></p>
+<p>A popup box will appear, allowing you to fill in <strong>Display Name</strong> of your app, as well as a <strong>Contact Email.</strong> As you fill in this data, click on <strong>Create App ID</strong> button. Facebook may ask you to fill in word validation for <strong>security check</strong> before proceeding to the next step.</p>
 
-<p>If you are new to this system press Login, fill in your Facebook details and further proceed pressing <strong>Register</strong> button:</p>
+<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-15.png" alt="Create a New Facebook App" /></p>
 
-<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-2.png" alt="Register your Facebook App" /></p>
+<p>Your Facebook app will be created in a few moments, however, there are a few settings that are required to be filled in. As you will notice at the top of this page, the <strong>status</strong> of this app will be set to <strong>Development.</strong> After completing the setup, you can publish it by clicking the <strong>On/Off</strong> switch.</p>
 
-<p>A pop-up will come up asking you to agree on terms of usage and privacy. Accept the terms and proceed with next step by filling in your phone number to receive a confirmation code:</p>
+<blockquote>
+  <p><strong>Important!</strong> Unfortunately, Facebook only allows the <strong>admins</strong> of pages to create respective feeds on WordPress.</p>
 
-<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-3.png" alt="Facebook App setup" /></p>
+  <p>And since you are the admin of the Facebook page, you can leave your app in <strong>Development</strong> mode. The feed of your page will display correctly in this case.</p>
+</blockquote>
 
-<p>Fill in the confirmation code and press Register button.</p>
+<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-16-1.png" alt="Configuring Facebook App" /></p>
 
-<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-4.png" alt="Facebook App register" /></p>
+<p>As the first step, using <strong>App Domains</strong> option, fill in the domain of your website where you wish to publish Facebook feeds. The domain must have the following format:</p>
 
-<p>A success message will pop-up confirming your registration:</p>
+<p><em>example.com</em></p>
 
-<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-5.png" alt="Success Message" /></p>
+<p>Afterwards, copy the URL to your <strong>privacy policy</strong> page with the corresponding setting. It is also necessary to upload an image through <strong>App Icon</strong> option. Its dimensions must be <strong>1024 x 1024 pixels.</strong></p>
 
-<p>When you’re done with registration, you can start creating your first application. Press on My apps navigation arrow next to your profile icon and choose <strong>Add a New App.</strong></p>
+<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-17.png" alt="Configuring Facebook App" /></p>
 
-<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-6.png" alt="Add a new app" /></p>
+<p>Afterwards, scroll down to find <strong>Add Platform</strong> button. Clicking on it will open a popup. Select <strong>Website</strong> option.</p>
 
-<p>A screen will pop where you can choose the application platform. Here press on Basic setup button below:</p>
+<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-18.png" alt="Adding a Platform to Facebook App" /></p>
 
-<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-7.png" alt="Bacic setup" /></p>
+<p>Using <strong>Site URL</strong> input box, fill in the URL of your website. It must have the following format:</p>
 
-<p>Here fill in application display name, email and choose category for the app. And press <strong>Create App ID</strong> button.</p>
+<p><em>https://example.com/</em></p>
 
-<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-8.png" alt="Create app ID" /></p>
+<blockquote>
+  <p><strong>Important!</strong> If your WordPress website is located in a sub-folder on your domain, make sure to enter its full path. For instance, <em>https://example.com/wordpress-folder</em>.</p>
+</blockquote>
 
-<p>Navigate to Developer dashboard, where both the <strong>App ID</strong> and <strong>App Secret Key</strong> will be appear. If <strong>Secret Key</strong> is not visible press <strong>Show</strong> button.</p>
+<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-19.png" alt="Adding a Platform to Facebook App" /></p>
 
-<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-9.png" alt="Secret Key" /></p>
+<p><strong>Save the changes</strong> and access WordPress administrative panel of your website. Navigate to <strong>Facebook Feed WD &gt; Options</strong> page and copy the <strong>App ID</strong> and <strong>App Secret</strong> into the corresponding inputs. Make sure to <strong>save</strong> the changes.</p>
 
-<p><strong>Facebook login / logout.</strong> Press to login with provided application details to use content from your user data.</p>
+<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-23.png" alt="Facebook Feed WD Options" /></p>
 
-<p><strong>Feed auto-update interval.</strong> You can define the period of time to update the feed in your website(minimum is 30 second).</p>
+<h3 id="getting-page-access-token">Getting Page Access Token</h3>
 
-<p><strong>Timezone.</strong> Since Facebook will display post time based on timezone, here you can change it from your default timezone to a custom one.</p>
+<p>After configuring your Facebook App, navigate to <strong><a href="https://developers.facebook.com/tools/explorer/">Graph API Explorer</a></strong> page to get page access token. With <strong>Graph API Explorer</strong> drop-down box, select the <strong>same app</strong> you are using in Facebook Feed WD plugin.</p>
 
-<p><strong>Date format for posts.</strong> Set date format while displaying posts from profile, group or page.</p>
+<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-20.png" alt="Getting Page Access Token" /></p>
 
-<p><strong>Date format for events.</strong> Set date format while displaying events.</p>
+<p>Then expand <strong>Get Token</strong> option and select <strong>Get Page Access Token.</strong> It will be necessary to authorize your Facebook App by clicking on <strong>Continue</strong> button.</p>
+
+<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-21.png" alt="Getting Page Access Token" /></p>
+
+<blockquote>
+  <p><strong>Note:</strong> Ignore the warning that your app has not been reviewed. To display your own page, there is no need to pass a review of the app.</p>
+</blockquote>
+
+<p>The <strong>access token</strong> for your page will appear in the corresponding input box.</p>
+
+<blockquote>
+  <p><strong>Note:</strong> In case you manage multiple pages on Facebook, please select the page you wish to use for Facebook Feed WD plugin.</p>
+</blockquote>
+
+<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-22-1.png" alt="Getting Page Access Token" /></p>
+
+<p>Navigate to WordPress administrative panel of your website and edit your feed from <strong>Facebook Feed WD &gt; Feeds</strong> page. Use <strong>Page access token</strong> option to copy the token you just got from Graph API Explorer.</p>
+
+<p>Make sure to press <strong>Save</strong> after the <strong>Page Access Token</strong> is filled in.</p>
+
+<p><img src="https://docsimages.10web.io/wd-facebook-feed/facebook-24.png" alt="Getting Page Access Token" /></p>
 </main>
 		
 		
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#creating-facebook-app">Creating Facebook App</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#configuring-app-id-and-app-secret-keys">Configuring App ID and App Secret Keys</a></li>
+<li class="toc-entry toc-h3"><a href="#getting-page-access-token">Getting Page Access Token</a></li>
+</ul>
+</li>
+</ul>
+          </div>
+        
       </div>
     </div>
 

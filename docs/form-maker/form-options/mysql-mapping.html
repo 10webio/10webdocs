@@ -53,7 +53,7 @@
 </nav>
 	</div>
     <div class="container-fluid">
-      <div class="row flex-xl-nowrap">
+      <div class="row flex-xl-nowrap toc_doc">
         <div class="tenweb-sidebar">
           <div class="mobile-nav"><h4 class="plugin-name-mobile">Form Maker</h4>
 <span  id="trigram-for-heaven">  <span></span></span>
@@ -211,24 +211,28 @@
 				</form>
 			</div>
 		</div>
-          <h1 id="mysql-mapping">MySQL Mapping</h1>
+          <h1 id="form-maker---mysql-mapping">Form Maker - MySQL Mapping</h1>
 
-<p>Description of MySQL Mapping settings in <a href="https://10web.io/plugins/wordpress-form-maker/">WordPress Form Maker plugin</a>.</p>
+<p>By default, <a href="https://10web.io/plugins/wordpress-form-maker/">WordPress Form Maker plugin</a> stores the submitted information into <code class="highlighter-rouge">[prefix]_formmaker_submits</code> MySQL database table of your website. However, with <strong>MySQL Mapping</strong> functionality of Form Maker, you can save this data on a local or remote table of your choice.</p>
 
-<p>WordPress Form Maker stores the submitted information into <em>[prefix]_formmaker_submits</em> MySQL database table of your website by default. However, with <strong>MySQL Mapping</strong> functionality of Form Maker you can save this data on a local or remote table of your choice.</p>
+<p>To configure this feature, edit your form, then navigate to <strong>Form Options &gt; MySQL</strong> Mapping page. Press <strong>Add Query</strong> button to set up the first query for this form. This will open a toolbox popup, where all form fields will be listed, along with their indicators.</p>
 
-<p>Edit your form, then navigate to <strong>Form Options &gt; MySQL</strong> Mapping page and press <strong>Add Query</strong> button to configure the first query for this form. This will open a toolbox popup, where all form fields will be listed, along with their indicators.</p>
+<h4 id="connection-type">Connection type</h4>
 
-<p><strong>Connection type.</strong> Choose to connect to a <strong>Local</strong> or <strong>Remote</strong> database table. Type option lets you configure <strong>Insert, Update</strong> or <strong>Delete</strong> queries. Press <strong>Connect</strong> after selecting these two settings.</p>
+<p>Choose to connect to a <strong>Local</strong> or <strong>Remote</strong> database table. Type option lets you configure <strong>Insert, Update</strong> or <strong>Delete</strong> queries. Press <strong>Connect</strong> after selecting these two settings.</p>
 
 <p>In case you choose to connect to a <strong>Remote</strong> database table, you need to provide the <strong>Username, Password</strong> and the <strong>Database title.</strong></p>
 
-<p><strong>Select a table.</strong> Use this drop-down menu to choose the MySQL Table, where you would like to store the submitted information, for instance, <em>[db_prefix]_posts.</em></p>
+<h4 id="select-a-table">Select a table</h4>
+
+<p>Use this drop-down menu to choose the MySQL Table, where you would like to store the submitted information, for instance:</p>
+
+<p><code class="highlighter-rouge">[db_prefix]_posts</code></p>
 
 <p>Under <strong>SET</strong> section you will see all fields of this database table, <strong>e.g. ID, post_content, post_title</strong> and more. Mark the checkbox next to each input to activate it.</p>
 
 <p>Afterwards, click on the inputs and choose the field of your form. The value of this field will be inserted into the selected database field. It is also possible to specify the form fields by clicking on the inputs and pressing the buttons indicating form fields.
-For instance, activate <strong>post_author</strong> field and choose <strong>Name</strong> as its value:</p>
+For example, activate <strong>post_author</strong> field and choose <strong>Name</strong> as its value:</p>
 
 <p><img src="https://docsimages.10web.io/form-maker/34.png" alt="MySQL Mapping" /></p>
 
@@ -242,14 +246,28 @@ For instance, activate <strong>post_author</strong> field and choose <strong>Nam
 
 <p>Click the <strong>Plus (+)</strong> icon next to WHERE to add a condition. You are able to add multiple conditions, which will run when users press submit.</p>
 
-<p><strong>Where.</strong> Select the table field and provide the condition, which can be set to equal to, not equal to, larger than and more. Afterwards you will need to provide the value of the condition.</p>
+<h4 id="where">Where</h4>
+
+<p>Select the table field and provide the condition, which can be set to equal to, not equal to, larger than and more. Afterwards you will need to provide the value of the condition.</p>
 
 <p>You can remove created queries anytime by pressing <strong>Delete</strong> button from <strong>Form Options &gt; MySQL Mapping</strong> page.</p>
 
 <p><img src="https://docsimages.10web.io/form-maker/35.png" alt="MySQL Mapping" /></p>
-<p class="product_version">v.1.12.17</p></main>
+<p class="product_version">v.1.12.30</p></main>
 		
 		
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#form-maker---mysql-mapping">Form Maker - MySQL Mapping</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#connection-type">Connection type</a></li>
+<li class="toc-entry toc-h4"><a href="#select-a-table">Select a table</a></li>
+<li class="toc-entry toc-h4"><a href="#where">Where</a></li>
+</ul>
+</li>
+</ul>
+          </div>
+        
       </div>
     </div>
 
