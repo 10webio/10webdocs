@@ -14,10 +14,10 @@
 <meta name="google-site-verification" content="bU33Rd709RLTNobw9w3j4puG_-28Mmi2bPxdi3UQiN0" />
 <meta charset="UTF-8">
 
-<meta name="description" content="Conditional Emails Add-on of Form Maker plugin allows to send multiple, custom email notifications to different recipients depending on the form submitted."/>
+<meta name="description" content="Conditional Emails extension of Form Maker plugin allows to send multiple, custom email notifications to different recipients depending on the form submitted."/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#157878">
-<title>Form Maker Conditional Emails Add-on | 10Web</title>
+<title>Form Maker Conditional Emails Extension | 10Web</title>
 <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/assets/css/minima.css">
@@ -135,6 +135,9 @@
             </a></li><li>
             <a href="/docs/form-maker/form-options/mysql-mapping.html">
               MySQL Mapping
+            </a></li><li>
+            <a href="/docs/form-maker/form-options/privacy.html">
+              Privacy
             </a></li></ul>
     </div><div class="clear bd-toc-item">
       <a class="bd-toc-link" href="/docs/form-maker/themes-options">
@@ -153,7 +156,7 @@
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item active has_child">
       <a class="bd-toc-link" href="/docs/form-maker/add-ons">
-        <span class="parent-title">Form Maker Add-ons </span><span class="parent-icon"> </span></a>
+        <span class="parent-title">Form Maker Extensions </span><span class="parent-icon"> </span></a>
 
       <ul class="nav bd-sidenav"><li>
             <a href="/docs/form-maker/add-ons/export-import.html">
@@ -197,7 +200,7 @@
         <span class="parent-title"> </span></a>
 
       <ul class="nav bd-sidenav"></ul>
-    </div></div>
+    </div><a href="https://wordpress.org/support/plugin/form-maker" target="_blank" class="free_support btn">Free Plugin Support</a></div>
         </div>
 		
         <main class="tenweb-content" role="main">
@@ -213,42 +216,53 @@
 		</div>
           <h1 id="conditional-emails">Conditional Emails</h1>
 
-<p>Description of Conditional Emails add-on of <a href="https://10web.io/plugins/wordpress-form-maker/">WordPress Form Maker plugin</a>.</p>
-
-<p>Conditional Emails Add-on for WordPress Form Builder allows you to send multiple, custom email notifications to different recipients depending on the form submitted. Use conditional logic of the add-on to make your forms more useful and powerful.</p>
+<p>Do you wish to send emails to different recipients depending on the data submitted on <a href="https://10web.io/plugins/wordpress-form-maker/">WordPress Form Maker plugin</a>? Do you use the plugin as a contact form for multiple departments? <a href="https://10web.io/addons/wordpress-form-maker/">Conditional Emails extension</a> of Form Maker was designed to help you achieve his. It allows you to send custom email notifications to different recipients depending on the submitted information. With the conditional logic of this extension, you can configure flexible submission notifications for your WordPress forms.</p>
 
 <blockquote>
-  <p><strong>Attention:</strong> Conditional Emails Add-On requires <strong>Form Maker</strong> version <strong>1.7.71/2.7.71</strong> and higher: if you are using an older version, please update your plugin.</p>
+  <p><strong>Attention:</strong> Conditional Emails extension requires <strong>Form Maker</strong> version <strong>1.7.71/2.7.71</strong> and higher. If you are using an older version, please update your plugin.</p>
 </blockquote>
 
-<h3 id="general-information">General information</h3>
+<p>Conditional Emails extension functions with the following method. It lets you specify an email address and only send the submission notification to it if a certain condition is fulfilled. For instance, you can forward the email notification to marketing department, in case users select so as their inquiry type.</p>
 
-<p>Do you want to send emails to different recipients depending on the form submitted? Do you use the Form Maker as a contact form for different departments? The Form Maker Conditional Emails is an optimal solution for these cases. Now you can set the form to be emailed to specific email/emails depending on the submitted data.</p>
+<p>Let’s discuss the options of Conditional Emails extension, and find out how you can achieve that.</p>
 
-<p>The add-on works similar to the conditional fields functionality. This means that all you need to choose the value of the field depending on which e-mails will be sent to different recipients e.g.</p>
+<h3 id="configuring-conditional-emails">Configuring Conditional Emails</h3>
+
+<p><a href="https://docs.10web.io/tutorial/managing-products#installing-extensions">Install the extension</a> and start setting up its options. Open WordPress admin panel of your website, then go to <strong>Form Maker &gt; Forms</strong> page. Edit your form, then navigate to <strong>Form Options &gt; Conditional Emails</strong> section. Begin setting up your first condition by pressing <strong>Add Condition</strong> button.</p>
+
+<p>As the first step, specify the email address of the recipient using <strong>Send email to</strong> input. You can add multiple email addresses as well. Make sure to insert one address at a time, and press the <strong>plus</strong> button.</p>
+
+<p>Afterwards, select the field on which the condition will be based and select its value as well. The submission email will be sent to the specified address if <strong>all</strong> or <strong>any</strong> of the conditions are fulfilled.</p>
+
+<blockquote>
+  <p><strong>Note:</strong> The number of the conditions is unlimited. You can add different fields with their values and set the conditions.</p>
+</blockquote>
+
+<p>Let’s have a look at the screenshot below. The condition configured here states the following:</p>
+
+<p><em>Send email to [marketing@yourdomain.com] if [all] of the following match:</em>
+<em>[Inquiry type] is [Marketing Offer]</em></p>
+
+<p><img src="https://docsimages.10web.io/form-maker/110-1.png" alt="Conditional Emails" /></p>
+
+<p>This means, that the submission email will be sent to marketing@yourdomain.com email address only in case the value of <strong>Inquiry Type</strong> field selected as <strong>Marketing Offer.</strong></p>
+
+<p>In addition, the rule of the conditions for these fields can be set to the following options:</p>
 
 <ul>
-  <li>Send email to <strong>support@10web.io</strong> if <strong>all</strong> of the following match:</li>
-  <li><strong>Why you are contacting 10Web?</strong> is <strong>Customer Support</strong></li>
+  <li>is,</li>
+  <li>is not,</li>
+  <li>like,</li>
+  <li>not like,</li>
+  <li>empty,</li>
+  <li>not empty.</li>
 </ul>
 
-<p>In addition to this you can also include custom text with the email. The email content can differ for each email (set).</p>
+<p><strong>Email Text</strong> option allows you to choose the content of the submission email, which will be emailed based on the configured conditions. It can be identical to <strong>Custom Text to Administrator</strong> or <strong>Custom Text to User,</strong> or you can fill in a unique text for this case only.</p>
 
-<p><img src="https://docsimages.10web.io/form-maker/47.png" alt="Conditional Emails" /></p>
+<p>Additionally, you can insert values of form fields into the email content by pressing <strong><a href="../form-options/email-options.html#using-placeholders">Add Placeholder</a></strong> button.</p>
 
-<h3 id="conditional-emails-section-in-form-maker">Conditional Emails section in Form Maker</h3>
-
-<p>Go to the <strong>Forms</strong> and choose your form. Navigate to <strong>Form Options &gt; Conditional Emails.</strong>
-Here you can find two subsections.</p>
-
-<p><strong>General.</strong> Here you should fill in the condition details depending on which the email will be sent to this or that specific email address. See the sample below. The number of the conditions is not limited, so you can add different fields and values and set the conditions.</p>
-
-<p><img src="https://docsimages.10web.io/form-maker/48.png" alt="Conditional Emails" /></p>
-
-<p><strong>Email Text.</strong> In this subsection you can choose the text, which will be emailed to specific administrator/administrator group. It can be identical to the Custom Text to Administrator or Custom Text to User or you can fill in a different text with/without using the form fields.</p>
-
-<p><img src="https://docsimages.10web.io/form-maker/49.png" alt="Conditional Emails" /></p>
-<p class="product_version">v.1.12.30</p></main>
+<p class="product_version">v.1.12.31</p></main>
 		
 		
       </div>

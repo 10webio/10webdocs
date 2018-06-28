@@ -14,10 +14,10 @@
 <meta name="google-site-verification" content="bU33Rd709RLTNobw9w3j4puG_-28Mmi2bPxdi3UQiN0" />
 <meta charset="UTF-8">
 
-<meta name="description" content="Pushover Integration add-on of Form Maker Plugin allows to get instant notifications to mobile devices running Android and iOS when a user submits a new form."/>
+<meta name="description" content="Pushover Integration extension of Form Maker Plugin allows to get instant notifications to mobile devices running Android and iOS when a user submits a new form."/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#157878">
-<title>Form Maker Pushover Integration Add-on | 10Web</title>
+<title>Form Maker Pushover Integration Extension | 10Web</title>
 <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/assets/css/minima.css">
@@ -135,6 +135,9 @@
             </a></li><li>
             <a href="/docs/form-maker/form-options/mysql-mapping.html">
               MySQL Mapping
+            </a></li><li>
+            <a href="/docs/form-maker/form-options/privacy.html">
+              Privacy
             </a></li></ul>
     </div><div class="clear bd-toc-item">
       <a class="bd-toc-link" href="/docs/form-maker/themes-options">
@@ -153,7 +156,7 @@
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item active has_child">
       <a class="bd-toc-link" href="/docs/form-maker/add-ons">
-        <span class="parent-title">Form Maker Add-ons </span><span class="parent-icon"> </span></a>
+        <span class="parent-title">Form Maker Extensions </span><span class="parent-icon"> </span></a>
 
       <ul class="nav bd-sidenav"><li>
             <a href="/docs/form-maker/add-ons/export-import.html">
@@ -197,7 +200,7 @@
         <span class="parent-title"> </span></a>
 
       <ul class="nav bd-sidenav"></ul>
-    </div></div>
+    </div><a href="https://wordpress.org/support/plugin/form-maker" target="_blank" class="free_support btn">Free Plugin Support</a></div>
         </div>
 		
         <main class="tenweb-content" role="main">
@@ -213,17 +216,11 @@
 		</div>
           <h1 id="pushover-integration">Pushover Integration</h1>
 
-<p>Description of Pushover Integration add-on of <a href="https://10web.io/plugins/wordpress-form-maker/">WordPress Form Maker plugin</a>.</p>
-
-<p>Integrated with the popular push notification service Pushover Add-on of WordPress Form Maker Plugin is the perfect solution if you need to get instant notifications to mobile devices running Android and iOS when a user submits a new form.</p>
+<p>Do you want to be instantly notified when new submissions come through your forms? Are you an active smartphone user and prefer to receive notifications on mobile devices? Integrated with the popular push notification service, <a href="https://10web.io/addons/wordpress-form-maker/">Pushover extension</a> of <a href="https://10web.io/plugins/wordpress-form-maker/">WordPress Form Maker plugin</a> is the perfect solution if you need to get instant notifications to mobile devices running Android and iOS when a user submits a new form.</p>
 
 <blockquote>
-  <p><strong>Attention:</strong> Pushover Integration Add-On requires <strong>Form Maker</strong> version <strong>1.8.2/2.8.2</strong> and higher: if you are using an older version, please update your plugin.</p>
+  <p><strong>Attention:</strong> Pushover Integration extension requires <strong>Form Maker</strong> version <strong>1.8.2/2.8.2</strong> and higher. If you are using an older version, please update your plugin.</p>
 </blockquote>
-
-<h3 id="general-description">General Description</h3>
-
-<p>Do you want to be instantly notified when new submissions come through your forms? Are you an active smartphone user and prefer to receive notifications on mobile devices?</p>
 
 <p><strong>Form Maker Pushover Integration</strong> allows to receive real-time notifications when a user submits a new form. This means messages can be pushed to <strong>Android</strong> and <strong>Apple</strong> devices, as well as <strong>desktop</strong> notification board (if Desktop notifications are enabled).</p>
 
@@ -233,36 +230,25 @@
 
 <p>Each form can have its unique notification message and title. This way you can keep track of submissions for each form.</p>
 
-<p><img src="https://docsimages.10web.io/form-maker/50.png" alt="Pushover Integration" /></p>
+<p><img src="https://docsimages.10web.io/form-maker/111.png" alt="Pushover Integration" /></p>
 
-<h3 id="pushover-integration-1">Pushover Integration</h3>
+<h3 id="integrating-pushover">Integrating Pushover</h3>
 
-<p>Login to your WordPress site back end. Go to Form Maker &gt; Forms, choose your form and press <strong>Form Options</strong> button. Here navigate to <strong>Pushover</strong> tab and Enable it. Fill in the details below and press Save button.</p>
+<p>As the first step, <a href="https://docs.10web.io/tutorial/managing-products#installing-extensions">install Pushover extension</a> to your website. Afterwards, login to WordPress administrative dashboard of your website. Go to <strong>Form Maker &gt; Forms</strong> page, edit your form and press <strong>Form Options</strong> button. Afterwards, navigate to <strong>Pushover</strong> tab and enable the feature. Fill in the details below and press <strong>Save</strong> button.</p>
 
-<p><img src="https://docsimages.10web.io/form-maker/51.png" alt="Pushover Integration" /></p>
-
-<p><strong>Pushover User Key.</strong> If you already have Pushover account, please login to your account. After logging in you will see your user key on the upper right corner. Copy and paste the code. If you are new to Pushover, please create an account on pushover.net.</p>
-
-<p><strong>Device Name.</strong> If you have only one device associated with your Pushover account, you don’t need to fill this field. If you have Pushover on more than one device (IOS, Android or Desktop), here you can enter the device names, that you want to get the notifications on. If you leave this field blank, all devices associated with your account will receive notifications. You can find the names of your devices inside your Pushover account.</p>
-
-<p><strong>Title.</strong> Form title can be used as notification title or you can provide custom title.</p>
-
-<p><strong>Mode.</strong> Notifications can be sent using either Text or HTML modes.</p>
-
-<p><strong>Message.</strong> Here you can add any of the existing form field entries and custom text. Please note that notification has the following character limitations: 1024 4-byte UTF-8 characters.</p>
-
-<p><strong>URL.</strong> To include links within your text you can use this field. The format of the URL should be http://example.com or https://example.com</p>
-
-<p><strong>URL Title.</strong> You can provide a title for URL. This will turn the link into a hyperlink. Clicking on Title user will be redirected to provided URL.</p>
-
-<p><strong>Priority.</strong> Messages can have various priority depending on your needs. They vary from low priority with no notification sound up to emergency priority with constant notifications until the user is acknowledged about the message. More information can be found <a href="https://pushover.net/api#priority">here</a>.</p>
-
-<p><strong>Retry Time.</strong> This option applies to emergency/high priority messages. It will specify how often (in seconds) the Pushover servers will send the same notification to the user.</p>
-
-<p><strong>Sound to play on device.</strong> You can specify the notification sound. It will override the sound set in Settings section of your Pushover account. You can use different sounds for each form to differentiate the notifications for each form.</p>
-
-<p><img src="https://docsimages.10web.io/form-maker/52.png" alt="Pushover Integration" /></p>
-<p class="product_version">v.1.12.30</p></main>
+<ul>
+  <li><strong>Pushover User Key.</strong> If you already have a Pushover account, please login to it. After logging in, you will find your user key on the upper right corner. Copy and paste it into this option in Pushover Integration extension. If you are new to Pushover, please create an account on <a href="https://pushover.net/">pushover.net</a>.</li>
+  <li><strong>Device Name.</strong> If you have only one device associated with your Pushover account, you don’t need to fill in this field. However, in case you have Pushover on more than one device (IOS, Android, or Desktop), use this option to enter the device names, that you want to get the notifications on. If you leave this field blank, all devices associated with your account will receive notifications. You can find the names of your devices in your Pushover account.</li>
+  <li><strong>Title.</strong> Form title can be used as notification title or you can provide custom title.</li>
+  <li><strong>Mode.</strong> Notifications can be sent using either <strong>Text</strong> or <strong>HTML</strong> modes.</li>
+  <li><strong>Message.</strong> Here you can add any of the existing form field entries and custom text. Please note that notification has the following character limitations: 1024 4-byte UTF-8 characters.</li>
+  <li><strong>URL.</strong> To include links within your text you can use this field. The format of the URL should be http://example.com or https://example.com.</li>
+  <li><strong>URL Title.</strong> You can provide a title for URL. This will turn the link into a hyperlink. Clicking on the <strong>Title,</strong> the user will be redirected to the provided URL.</li>
+  <li><strong>Priority.</strong> Messages can have various priority depending on your needs. They vary from low priority with no notification sound, up to emergency priority with constant notifications until the user is acknowledged about the message. More information can be found <a href="https://pushover.net/api#priority">here</a>.</li>
+  <li><strong>Retry Time.</strong> This option applies to emergency/high priority messages. It will specify how often (in seconds) Pushover will send the same notification to the user.</li>
+  <li><strong>Sound to play on device.</strong> You can specify the notification sound. It will override the sound set in <strong>Settings</strong> section of your Pushover account. You can use different sounds for each form to differentiate the notifications for each form.</li>
+</ul>
+<p class="product_version">v.1.12.31</p></main>
 		
 		
       </div>

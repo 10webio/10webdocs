@@ -14,10 +14,10 @@
 <meta name="google-site-verification" content="bU33Rd709RLTNobw9w3j4puG_-28Mmi2bPxdi3UQiN0" />
 <meta charset="UTF-8">
 
-<meta name="description" content="Save Progress Add-on of Form Maker plugin allows you to save the incomplete forms, return later and pick up right where left off."/>
+<meta name="description" content="Save Progress extension of Form Maker plugin allows you to save the incomplete forms, return later and pick up right where left off."/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#157878">
-<title>Form Maker Save Form Progress Add-on | 10Web</title>
+<title>Form Maker Save Form Progress Extension | 10Web</title>
 <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/assets/css/minima.css">
@@ -135,6 +135,9 @@
             </a></li><li>
             <a href="/docs/form-maker/form-options/mysql-mapping.html">
               MySQL Mapping
+            </a></li><li>
+            <a href="/docs/form-maker/form-options/privacy.html">
+              Privacy
             </a></li></ul>
     </div><div class="clear bd-toc-item">
       <a class="bd-toc-link" href="/docs/form-maker/themes-options">
@@ -153,7 +156,7 @@
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item active has_child">
       <a class="bd-toc-link" href="/docs/form-maker/add-ons">
-        <span class="parent-title">Form Maker Add-ons </span><span class="parent-icon"> </span></a>
+        <span class="parent-title">Form Maker Extensions </span><span class="parent-icon"> </span></a>
 
       <ul class="nav bd-sidenav"><li>
             <a href="/docs/form-maker/add-ons/export-import.html">
@@ -197,7 +200,7 @@
         <span class="parent-title"> </span></a>
 
       <ul class="nav bd-sidenav"></ul>
-    </div></div>
+    </div><a href="https://wordpress.org/support/plugin/form-maker" target="_blank" class="free_support btn">Free Plugin Support</a></div>
         </div>
 		
         <main class="tenweb-content" role="main">
@@ -213,44 +216,36 @@
 		</div>
           <h1 id="save-form-progress">Save Form Progress</h1>
 
-<p>Description of Save Form Progress of <a href="https://10web.io/plugins/wordpress-form-maker/">WordPress Form Maker plugin</a>.</p>
-
-<p>Need to save partially completed forms? Then this WordPress form builder will come in handy. Save Progress Add-on allows you to save the incomplete forms, return later and pick up right where they left off. Get Save Progress Add-on now to enhance your plugin!</p>
+<p>Do you have large application forms and want to let your website users to finalize them later? <a href="https://10web.io/plugins/wordpress-form-maker/">WordPress Form Maker plugin</a> provides you with <a href="https://10web.io/addons/wordpress-form-maker/">Save Progress extension</a>, allowing logged-in submitters to save the incomplete forms. They can return anytime later and pick up right where they left off. Get Save Progress extension now and take the functionality of Form Maker to a whole new level!</p>
 
 <blockquote>
-  <p><strong>Attention:</strong> Save Progress Add-On requires <strong>Form Maker</strong> version <strong>1.8.9/2.8.9</strong> and higher: if you are using an older version, please update your plugin.</p>
+  <p><strong>Attention:</strong> Save Progress extension requires <strong>Form Maker</strong> version <strong>1.8.9/2.8.9</strong> and higher. If you are using an older version, please update your plugin.</p>
 </blockquote>
 
-<h3 id="general-description">General Description</h3>
+<p>Using <strong>Save Progress</strong> extension, you can allow <strong>registered users</strong> to begin filling out your form and get back to it at their convenience. As you activate and configure the extension, <strong>Save</strong> button will appear along with the <strong>Submit</strong> button of your form. The submitter can save the form progress at any time.</p>
 
-<p>Do you use large applications and want to allow your users to finalize them later? Using <strong>Form Maker Save Progress</strong> you can let your users to start filling out the form and getting back to it at their convenience. <strong>Save</strong> button will be added to standard and <strong>Submit</strong> buttons, so that user can save the form at any time.</p>
+<p>When logged in to your website, users can return to the form page and find the data they have filled in previously. The users will have the following two options:</p>
 
-<p>The add-on works only for <strong>registered users,</strong> including those who have subscriber user level. When logged in they can return to the form page, where they will see pre-filled data. The users will have two options: to continue where they have left off or change submitted data. For the last option they can use <strong>Clear</strong> button which will completely erase previously saved data.</p>
+<ul>
+  <li>to continue where they have left off,</li>
+  <li>to <strong>clear</strong> the saved data completely and start over.</li>
+</ul>
 
-<p>Partial/Incomplete submissions will be stored in separate <strong>Saved Entries</strong> section when users press <strong>Save</strong> button. As a result no data will be lost, even if the form is not submitted at the end.</p>
+<h3 id="enabling-save-progress-feature">Enabling Save Progress Feature</h3>
 
-<p><img src="https://docsimages.10web.io/form-maker/45.png" alt="Save Form Progress" /></p>
+<p>To begin configuring Save Progress extension, log in to your WordPress site as an administrator. <a href="https://docs.10web.io/tutorial/managing-products#installing-extensions">Install the extension</a>, then go to <strong>Form Maker &gt; Forms</strong> page and edit your form. Press <strong>Form Options</strong> button, then navigate to <strong>Save Progress</strong> tab. <strong>Enable</strong> the feature and begin setting up its options.</p>
 
-<h3 id="save-progress-integration">Save Progress Integration</h3>
+<ul>
+  <li><strong>Display clear button</strong> - When this setting is enabled, <strong>Clear</strong> button will display along with <strong>Save</strong> and <strong>Submit.</strong> This will let the users to delete previously entered data and start filling in the form from scratch.</li>
+  <li><strong>Save data for</strong> - Specify the number of days to keep drafted data for each user. If the form will not be submitted, the data will be permanently erased after this period. Leave it to 0, if you do not want to erase the data.</li>
+  <li><strong>Save message</strong> - Provide a message, which will be displayed to users when they press <strong>Save</strong> button after filling the form.</li>
+  <li><strong>Send email</strong> - Enable this option to send emails to users when form progress is saved.</li>
+  <li><strong>Send to</strong> - Select the recipient which will receive a message informing that the form progress is saved.</li>
+  <li><strong>Email text</strong> - Enter any custom text of the notification email which informs the user that the form is saved. You can insert values of form fields by pressing <strong><a href="../form-options/email-options.html#using-placeholders">Add Placeholder</a></strong> button.</li>
+</ul>
 
-<p>Login to your WordPress site using administrator credentials. Navigate to <strong>Form Maker &gt; Manager &gt; Your Form.</strong> Hit <strong>Form Options</strong> button. Find <strong>Save Progress</strong> tab. Activate the option and fill in further details. Finalize the changes pressing Save button.</p>
-
-<p><strong>Allow users to save progress?</strong> Enable this option to allow your users to save filled in data and return for further editing.</p>
-
-<p><strong>Display clear button?</strong> If you want your user to be able to delete previously entered data and start filling in the form from scratch enable this option.</p>
-
-<p><strong>Save data for.</strong> Specify number of days to keep drafted data in Saved entries. If not submitted, data will be completely erased after provided time period. Leave it to 0, if you don’t want to erase data in general.</p>
-
-<p><strong>Save message.</strong> Provide a message, which will be displayed to users when they press Save button after filling the form.</p>
-
-<p><strong>Send email.</strong> Choose whether to send email to user when form is submitted or not.</p>
-
-<p><strong>Send to.</strong> Choose the email field which will receive an email informing that form entry is saved.</p>
-
-<p><strong>Email text.</strong> Provide custom text which will be sent to user when form entry is saved.</p>
-
-<p><img src="https://docsimages.10web.io/form-maker/46.png" alt="Save Form Progress" /></p>
-<p class="product_version">v.1.12.30</p></main>
+<p><img src="https://docsimages.10web.io/form-maker/109.png" alt="Save Form Progress" /></p>
+<p class="product_version">v.1.12.31</p></main>
 		
 		
       </div>

@@ -14,10 +14,10 @@
 <meta name="google-site-verification" content="bU33Rd709RLTNobw9w3j4puG_-28Mmi2bPxdi3UQiN0" />
 <meta charset="UTF-8">
 
-<meta name="description" content="MailChimp Integration add-on allows to connect MailChimp with Form Maker plugin and  add contacts to your subscription lists from submitted forms."/>
+<meta name="description" content="MailChimp Integration extension allows to connect MailChimp with Form Maker plugin and  add contacts to your subscription lists from submitted forms."/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#157878">
-<title>Form Maker MailChimp Integration Add-on | 10Web</title>
+<title>Form Maker MailChimp Integration Extension | 10Web</title>
 <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/assets/css/minima.css">
@@ -135,6 +135,9 @@
             </a></li><li>
             <a href="/docs/form-maker/form-options/mysql-mapping.html">
               MySQL Mapping
+            </a></li><li>
+            <a href="/docs/form-maker/form-options/privacy.html">
+              Privacy
             </a></li></ul>
     </div><div class="clear bd-toc-item">
       <a class="bd-toc-link" href="/docs/form-maker/themes-options">
@@ -153,7 +156,7 @@
       <ul class="nav bd-sidenav"></ul>
     </div><div class="clear bd-toc-item active has_child">
       <a class="bd-toc-link" href="/docs/form-maker/add-ons">
-        <span class="parent-title">Form Maker Add-ons </span><span class="parent-icon"> </span></a>
+        <span class="parent-title">Form Maker Extensions </span><span class="parent-icon"> </span></a>
 
       <ul class="nav bd-sidenav"><li>
             <a href="/docs/form-maker/add-ons/export-import.html">
@@ -197,7 +200,7 @@
         <span class="parent-title"> </span></a>
 
       <ul class="nav bd-sidenav"></ul>
-    </div></div>
+    </div><a href="https://wordpress.org/support/plugin/form-maker" target="_blank" class="free_support btn">Free Plugin Support</a></div>
         </div>
 		
         <main class="tenweb-content" role="main">
@@ -213,32 +216,24 @@
 		</div>
           <h1 id="mailchimp-integration">MailChimp Integration</h1>
 
-<p>Description of MailChimp Integration add-on of <a href="https://10web.io/plugins/wordpress-form-maker/">WordPress Form Maker plugin</a>.</p>
-
-<p>This add-on is an integration of the Form Maker with MailChimp that allows to add contacts to your subscription lists from submitted forms. If you use various lists with Mailchimp, you will be able to create multiple forms and match each form with a corresponding list.</p>
+<p><a href="https://10web.io/addons/wordpress-form-maker/">MailChimp Integration extension</a> allows you to integrate <a href="https://10web.io/plugins/wordpress-form-maker/">WordPress Form Maker plugin</a> with MailChimp service. This lets you add contacts to your subscription lists from the submitted forms. If you use various lists with Mailchimp, you will be able to create multiple forms and match each form with a corresponding list.</p>
 
 <blockquote>
-  <p><strong>Attention:</strong> Mailchimp Integration Add-On requires <strong>Form Maker</strong> version <strong>1.7.61/2.7.61</strong> and higher: if you are using an older version, please update your plugin.</p>
+  <p><strong>Attention:</strong> Mailchimp Integration extension requires <strong>Form Maker</strong> version <strong>1.7.61/2.7.61</strong> and higher. If you are using an older version, please update your plugin.</p>
 </blockquote>
 
-<p>After installing, the add-on will appear in <strong>Form Maker &gt; Forms &gt; Form Options &gt; MailChimp.</strong></p>
+<p>To begin configuring MailChimp, <a href="https://docs.10web.io/tutorial/managing-products#installing-extensions">install the extension</a>, then access WordPress administrative dashboard of your website. The settings that let you integrate Form Maker with MailChimp, can be found in <strong>Form Options &gt; MailChimp</strong> tab of your form. <strong>Enable</strong> MailChimp Integration and let’s get started with its settings.</p>
 
-<h3 id="options">Options</h3>
+<p>To send requests and receive responses from MailChimp, the extension requires <strong>MailChimp API Key.</strong> This allows to add a subscription to the list or delete from it upon to your form submission. You can get an API key from your MailChimp account. Sign in to your account, then create and copy an API key from <a href="https://admin.mailchimp.com/account/api/">MailChimp API dashboard</a>. Afterwards, press <strong>Confirm.</strong></p>
 
-<p><strong>MailChimp Integration?</strong> Enable or disable MailChimp registration.</p>
+<p><img src="https://docsimages.10web.io/form-maker/112.png" alt="MailChimp Integration" /></p>
 
-<p><strong>MailChimp API key.</strong> Fill in the API key and press load button. To get an API key you should press on the link below the Action. This option allows to add a subscription to the list or delete from it upon to your form submission.</p>
+<p>Use <strong>Action</strong> option to allow users to <strong>subscribe</strong> to your mailing list or to <strong>unsubscribe</strong> from it. Additionally, with <strong>Email Type</strong> setting, you can specify the format of the content for subscription confirmation email. It can be set to <strong>HTML</strong> or just <strong>plain text.</strong></p>
 
-<p><strong>List ID.</strong> Select the list you want to integrate with a form.</p>
+<p><strong>MailChimp List</strong> setting lets you select the mailing list, which the submitter will be subscribed to or unsubscribed to.</p>
 
-<p><strong>Email Type.</strong> Specify the email format which may be in HTML or just plain text.</p>
-
-<h3 id="merge-variables">Merge Variables</h3>
-
-<p>After defining the options you just need to set up the correspondence of the fields of your MailChimp list to the form’s fields. Submitted values of your form will be added in the corresponding fields of the MailChimp.</p>
-
-<p><img src="https://docsimages.10web.io/form-maker/53.png" alt="MailChimp Integration" /></p>
-<p class="product_version">v.1.12.30</p></main>
+<p>As you set up these options, make sure to press <strong>Update</strong> to save the changes. After saving, a few more options will appear at the bottom of MailChimp integration settings. These options will allow you to configure the fields on your form to correspond your MailChimp list fields.</p>
+<p class="product_version">v.1.12.31</p></main>
 		
 		
       </div>
