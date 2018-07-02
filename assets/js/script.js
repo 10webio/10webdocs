@@ -7,6 +7,19 @@ jQuery(window).resize(function(){
 });
 
 var click = false;
+
+var TimerDateDiff = {
+	inSeconds: function(d1, d2) {
+		var t2 = d2.getTime();
+		var t1 = d1.getTime();
+		return parseInt((t1 - t2)/60*1000);
+	},
+}
+
+var currentDate = new Date();
+var date = new Date('Mar 25 2017 14:47:00 GMT+0400 (Caucasus Standard Time)');
+var megaSaleOpened = false;
+var baseDomain = '10web.io';
 jQuery( document ).ready(function() {
   jQuery(".parent-icon").each(function(){
 	if(jQuery(this).closest(".has_child").find(".nav.bd-sidenav:visible").length){
@@ -103,6 +116,96 @@ jQuery( document ).ready(function() {
 		});
 
 	}
+	
+	/*Mega Sale*/
+	if(location.href != "https://docs.10web.io/"){
+		if( typeof jQuery.cookie( "var_opened" ) === 'undefined' ) {
+			jQuery.cookie( "var_opened", "1", { expires: 1, path: '/', domain: baseDomain } );
+		}
+		if( typeof jQuery.cookie( "currentDate" ) === 'undefined' ) {
+			jQuery.cookie( "currentDate", new Date(), { expires: 1, path: '/', domain: baseDomain } );
+		}
+
+		if( typeof jQuery.cookie( "rand_num" ) === 'undefined' ) { 
+		/* from 5 to 8 */
+			jQuery.cookie( "rand_num", Math.floor( Math.random() * ((8 - 5) + 1) + 21 ), { expires: 1, path: '/', domain: baseDomain } ); 
+		} 
+
+		if( TimerDateDiff.inSeconds( currentDate, new Date(jQuery.cookie( "currentDate" )) ) > -40000){
+			date.setTime( new Date(jQuery.cookie("currentDate")).getTime() + jQuery.cookie("rand_num") * 3600000 );
+			jQuery.cookie("var_first_time", "1", { expires: 1, path: '/', domain: baseDomain });
+		}
+
+		if( TimerDateDiff.inSeconds( currentDate, new Date(jQuery.cookie( "currentDate" )) ) > 1440844100 && jQuery.cookie("var_first_time") == "1" ){		
+			jQuery.removeCookie( "currentDate" );
+			jQuery.removeCookie( "rand_num" );
+			jQuery.cookie( "currentDate", new Date(), { expires: 1, path: '/', domain: baseDomain } );
+			jQuery.cookie( "rand_num", Math.floor( Math.random() * ((8-5)+1) + 21 ), { expires: 1, path: '/', domain: baseDomain } ); 
+			date.setTime( new Date(jQuery.cookie("currentDate")).getTime() + jQuery.cookie("rand_num") * 3600000 );
+		}
+
+		if( typeof jQuery.cookie( "dateInDomains" ) === 'undefined' ) {
+			jQuery.cookie( "dateInDomains", new Date( date ), { expires: 1, path: '/', domain: baseDomain } );
+			date = jQuery.cookie( "dateInDomains" );		
+		}	
+
+		jQuery('#wd-counter-sale, #wd-counter-sale-small').timeTo({
+			timeTo: new Date(date),
+			displayDays: false
+		});
+
+
+		if ( (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) || navigator.appVersion.indexOf("Mac")!=-1) {
+			jQuery("body").addClass("ios_device");
+		}
+		
+		if(jQuery.cookie("var_opened") == "1"){
+			jQuery( ".mega_deal.small" ).removeClass("show_bigsale");
+			jQuery( ".mega_deal.big" ).addClass("show_bigsale");
+		}
+		else{
+			jQuery( ".mega_deal.big" ).removeClass("show_bigsale");
+			jQuery( ".mega_deal.small" ).addClass("show_bigsale");
+		} 
+
+		if( new Date() < new Date(date) && !megaSaleOpened){
+			setTimeout(function(){
+				if(jQuery(window).width() > 768){
+					jQuery( ".show_bigsale" ).animate({
+						bottom: '0px'
+					}, 1000);
+					megaSaleOpened = true;
+				}
+			}, 3000);
+		}
+
+
+		jQuery( ".general_mega_salex" ).click(function() {
+			jQuery.cookie("var_opened", "0", { expires: 1, path: '/', domain: baseDomain });
+			jQuery( ".mega_deal.big" ).animate({
+				bottom: '-501px'
+			}, 250, function() {
+				jQuery( ".mega_deal.small" ).animate({
+					bottom: '0px'
+				}, 250)
+			});
+			jQuery( ".mega_deal.big" ).removeClass("show_bigsale");
+			jQuery( ".mega_deal.small" ).addClass("show_bigsale");
+		});
+
+		jQuery( ".mega_deal.small" ).click(function() {
+			jQuery.cookie("var_opened", "1", { expires: 1, path: '/', domain: baseDomain });
+			jQuery( ".mega_deal.small" ).animate({
+				bottom: '-96px'
+			}, 250, function() {
+					jQuery( ".mega_deal.big" ).animate({
+					bottom: '0px'
+				}, 250)
+			});
+			jQuery( ".mega_deal.small" ).removeClass("show_bigsale");
+			jQuery( ".mega_deal.big" ).addClass("show_bigsale");
+		});   
+	}
 });
 jQuery(window).scroll(function () {
 	var sTop = jQuery(window).scrollTop();
@@ -120,6 +223,16 @@ jQuery(window).scroll(function () {
 	
 	if (jQuery(".bd-toc li.toc-entry").length) {		
 		highlightActive(sTop,jQuery(".tenweb-content h4,.tenweb-content h3,.tenweb-content h2"));
+	}
+	if(location.href != "https://docs.10web.io/"){
+		if (jQuery(window).scrollTop() > 400 && !megaSaleOpened) {
+			if(jQuery(window).width() > 768){
+				jQuery( ".show_bigsale" ).animate({
+					bottom: '0px'
+				}, 1000);
+				megaSaleOpened = true;
+			}
+		}
 	}
 });
 
