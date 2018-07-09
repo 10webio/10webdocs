@@ -751,7 +751,8 @@ font-size: 29px;
     text-align: center;
     padding: 0;
     margin: 0 auto;
-    max-width: 193px;
+    max-width: 193px;  
+	color: #323a45;
 }
 
 .ms_premium_content{
