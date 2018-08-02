@@ -408,7 +408,7 @@ a#plugins_reset {
 a.free_support.btn,
 a.trial_but.btn {
     background: #367bf2;
-    margin: 0 0 0 7px !important;
+    margin: -2px 0 0 7px !important;
     border: 1px solid #367bf2;
 	line-height: 33px;
 	color:#fff !important;

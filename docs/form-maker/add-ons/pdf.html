@@ -47,15 +47,14 @@
 		  <li class="nav-item">
 			<a class="nav-link " href="/tutorial">Services</a>
 		  </li>
-		  <li class="nav-item"><a href="https://10web.io/plugins/wordpress-form-maker/" class="login_but btn">See All Features</a><a href="https://10web.io/pricing/" class="trial_but btn">GET STARTED</a>
-		  </li>
+		  <li class="nav-item"><a href="https://demo.10web.io/" class="login_but btn">Live Demo</a><a href="https://10web.io/plugins/wordpress-form-maker/" class="trial_but btn">BUY NOW</a></li>
 		</ul>
 		
 	</div>
 </nav>
 	</div>
     <div class="container-fluid">
-      <div class="row flex-xl-nowrap">
+      <div class="row flex-xl-nowrap toc_doc">
         <div class="tenweb-sidebar">
           <div class="mobile-nav"><h4 class="plugin-name-mobile">Form Maker</h4>
 <span  id="trigram-for-heaven">  <span></span></span>
@@ -218,45 +217,60 @@
 		</div>
           <h1 id="form-maker-pdf-integration-extension">Form Maker PDF Integration Extension</h1>
 
-<p>Description of PDF Integration extension of <a href="https://10web.io/plugins/wordpress-form-maker/">WordPress Form Maker plugin</a>.</p>
+<p>Do you want to have elegant submissions layout for your WordPress forms? Would you rather have individual submissions customized and designed as documents? What is the best format for that? Well, a PDF is a great choice - it’s convenient in use and can be viewed with free software applications. 10Web introduces <a href="https://10web.io/addons/wordpress-form-maker/">PDF Integration extension</a> of <a href="https://10web.io/plugins/wordpress-form-maker/">WordPress Form Maker plugin</a> as a game changer for the layout of form submissions.</p>
 
-<p>Generate files in PDF format with the data captured through submitted forms. Get the Form Maker PDF Integration extension today to enhance the functionality of your forms and make data sharing and archiving easier.</p>
+<p>PDF Integration extension allows to send the submitted information within PDF attachments. You can select values of form fields to add to the PDF files, as well as insert additional content. Get PDF Integration extension today to enhance the functionality of your forms.</p>
 
 <blockquote>
-  <p><strong>Attention:</strong> PDF Integration extension requires <strong>Form Maker</strong> Pro version <strong>1.7.84/2.7.84</strong> and higher: if you are using an older version, please update your plugin.</p>
+  <p><strong>Attention:</strong> PDF Integration extension requires <strong>Form Maker</strong>  version <strong>1.7.84/2.7.84</strong> or higher. If you are using an older version, please update your plugin.</p>
 </blockquote>
 
-<h3 id="general-information">General information</h3>
+<h3 id="configuring-pdf-integration">Configuring PDF Integration</h3>
 
-<p>Do you want to have more elegant submissions view for forms? Would you rather have individual submissions customized and designed as a document? What is the best format for that? Well, PDF format is a good choice - it’s convenient in use and can be opened and viewed with any software. That’s why we introduce the Form Maker PDF Integration as a game changer for the submissions display.</p>
+<p>To begin setting up PDF Integration extension, <a href="https://docs.10web.io/tutorial/managing-products#installing-extensions">install</a> it from 10Web Dashboard first. Then access WordPress administrative panel of your website and navigate to <strong>Form Maker &gt; Forms</strong> page. Go to F<strong>orm Options</strong> and open <strong>PDF Integration</strong> tab. Enable the feature and begin setting up the following options.</p>
 
-<p>The Form Maker PDF Integration extension allows sending submitted forms in PDF format.You can choose the fields you want to add to PDF file, as well as to insert additional content. The extension uses the standard Custom text editor previously available with Email Options and Custom text after Submission.</p>
+<ul>
+  <li><strong>Send Email To.</strong> Use this option to select the recipients of PDF submissions of this form, <strong>Administrator</strong> or <strong>User</strong> emails. In this case, the PDF files will be sent to all addresses added to <strong>Email to administrator</strong> and <strong>Email to user</strong> sections of <strong>Email Options,</strong> including <strong>BCC</strong> and <strong>CC.</strong></li>
+  <li><strong>Folder Path.</strong> This setting defines the path of the folder, where the created PDF files will be uploaded to. By default, the files are sent to <code class="highlighter-rouge">wp-content/uploads/form-maker/pdf</code> directory.</li>
+  <li><strong>Custom Text.</strong> With this editor box, you can enter the content of the PDF submissions. It allows you to add custom text and include the values of form fields using <strong><a href="../form-options/email-options.html#using-placeholders">Add Placeholder</a></strong> button.</li>
+</ul>
 
-<h3 id="form-maker-pdf-integration">Form Maker PDF Integration</h3>
+<p><img src="https://docsimages.10web.io/form-maker/126.png" alt="Form Maker PDF Integration" /></p>
 
-<p>Go to Form Maker back end and open the form.Go to Form Options and open the PDF integration Tab. Enable the option choosing “Yes”.The option can be further disabled.</p>
+<p>PDF Integration extension works the following way. Let’s assume we have a form with these 5 fields:</p>
 
-<p><strong>Send Email To.</strong> Here you can choose whom to send submissions in PDF format to. Here you will see Administrator and User emails. Please note it this case Administrator and User emails refers to all emails previously included within Administrator and User sections of Email Options, including BCC and CC.</p>
+<ul>
+  <li>Name,</li>
+  <li>Event Title,</li>
+  <li>Date,</li>
+  <li>Type of Participation,</li>
+  <li>Campaign Name.</li>
+</ul>
 
-<p><strong>Folder Path.</strong> This is the folder, where created PDF files will be uploaded to. By defaults it is Form Maker upload folder. You can change it to another location.</p>
-
-<p><strong>Custom Text.</strong> Here you can create the content which will be included within the PDF file. You can add custom text, include all or some of form fields. The fields are located above the box, when hitting the name of the field, the data of that filled will be filled within the document.</p>
-
-<p><img src="https://docsimages.10web.io/form-maker/65.png" alt="Form Maker PDF Integration" /></p>
-
-<h3 id="example">Example</h3>
-
-<p>Let’s imagine we have 5 fields- Name, Event Name, Date, Type of Participation, Campaign Name. We can create the custom document below:</p>
+<p>By inserting the values of the fields above, we can set the PDF document to have the content below:</p>
 
 <p><em>Dear Mr. Black,</em>
-<em>With this letter I, %Name%, confirm that I have read the Terms and Conditions and willing to participate in %Event Name% on %Date% as a %Type of Participation%.</em>
+<em>With this letter I, %Name%, confirm that I have read the Terms and Conditions and I am willing to participate in %Event Title% on %Date% as a %Type of Participation%.</em>
 <em>I want all proceeds from my activities to be directed to %Campaign Name%.</em>
 <em>Sincerely, %Name%</em></p>
 
-<p><strong>Download PDF.</strong> In addition to receiving the PDF file as an email attachment, you can download it from Submissions section clicking on PDF icon next to the individual submissions.</p>
+<h3 id="downloading-pdf">Downloading PDF</h3>
+
+<p>In addition to receiving the PDF files as attachments to submission emails, you can download them from <strong>Form Maker &gt; Submissions</strong> page. Select your form and hover over the submission you wish to download as PDF. Clicking on <strong>Download PDF</strong> button will provide you with the PDF submission.</p>
 <p class="product_version">v.1.12.31</p></main>
 		
 		
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#form-maker-pdf-integration-extension">Form Maker PDF Integration Extension</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#configuring-pdf-integration">Configuring PDF Integration</a></li>
+<li class="toc-entry toc-h3"><a href="#downloading-pdf">Downloading PDF</a></li>
+</ul>
+</li>
+</ul>
+          </div>
+        
       </div>
     </div>
 

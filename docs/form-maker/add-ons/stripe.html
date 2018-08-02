@@ -47,15 +47,14 @@
 		  <li class="nav-item">
 			<a class="nav-link " href="/tutorial">Services</a>
 		  </li>
-		  <li class="nav-item"><a href="https://10web.io/plugins/wordpress-form-maker/" class="login_but btn">See All Features</a><a href="https://10web.io/pricing/" class="trial_but btn">GET STARTED</a>
-		  </li>
+		  <li class="nav-item"><a href="https://demo.10web.io/" class="login_but btn">Live Demo</a><a href="https://10web.io/plugins/wordpress-form-maker/" class="trial_but btn">BUY NOW</a></li>
 		</ul>
 		
 	</div>
 </nav>
 	</div>
     <div class="container-fluid">
-      <div class="row flex-xl-nowrap">
+      <div class="row flex-xl-nowrap toc_doc">
         <div class="tenweb-sidebar">
           <div class="mobile-nav"><h4 class="plugin-name-mobile">Form Maker</h4>
 <span  id="trigram-for-heaven">  <span></span></span>
@@ -218,45 +217,89 @@
 		</div>
           <h1 id="form-maker-stripe-payment-gateway-extension">Form Maker Stripe Payment Gateway Extension</h1>
 
-<p>Description of Stripe Payment Gateway extension of <a href="https://10web.io/plugins/wordpress-form-maker/">WordPress Form Maker plugin</a>.</p>
+<p><a href="https://10web.io/addons/wordpress-form-maker/">Stripe extension</a> of <a href="https://10web.io/plugins/wordpress-form-maker/">WordPress Form Maker plugin</a> allows you to integrate Stripe payment method with your forms and let the submitter pay using credit card. Stripe is a popular payment method in United States, Canada, Australia, United Kingdom, and <a href="https://stripe.com/global">many other countries</a>. In these countries, Stripe allows you to <strong>accept payments</strong> to your Stripe account, however, the payment can be submitted worldwide.</p>
 
-<p>Allow your users to quickly and easily make credit card payments via Stripe and get the payments directly in your bank account. Get the powerful Stripe extension for the Form Maker plugin today.</p>
+<p>As Stripe extension allows to accept direct credit card payments, users will remain on your website during the entire payment process. Although no sensitive data is stored on your website, it is still recommended to have SSL certificate to ensure the security of the payments.</p>
+
+<p>Allow your users to make credit card payments via Stripe quickly and easily. Receive the payments directly to your bank account. Get the powerful Stripe extension for Form Maker plugin today.</p>
 
 <blockquote>
-  <p><strong>Attention:</strong> Stripe Payment Gateway extension requires <strong>Form Maker Pro</strong> version <strong>2.8.11</strong> and higher: if you are using an older version, please update your plugin.</p>
+  <p><strong>Attention:</strong> Stripe Payment Gateway extension requires <strong>Form Maker Pro</strong> version <strong>2.8.11</strong> or higher. If you are using an older version, please update your plugin.</p>
 </blockquote>
 
-<h3 id="general-description">General Description</h3>
+<h3 id="integrating-stripe-with-form-maker">Integrating Stripe with Form Maker</h3>
 
-<p>Form Maker Stripe is convenient extension if you have plans to integrate Stripe payment method as an addition to default PayPal Payments method. Stripe is a popular payment method for United States, Canada, Australia and United Kingdom. These are the countries which can accept payments, whereas payment can be sent from any country. It has appealing rates compared to other methods (https://stripe.com/us/pricing).</p>
+<p>After <a href="https://docs.10web.io/tutorial/managing-products#installing-extensions">installing Stripe extension</a> to your website, access its WordPress administrative dashboard and go to <strong>Form Maker &gt; Forms</strong> page. Edit the form you would like to integrate with Stripe, then press <strong>Form Options</strong> button. From this page, navigate to <strong>Payment Options</strong> tab to begin configuring Stripe settings.</p>
 
-<p>Stripe allows to accept direct payments made by Credit Cards. Users will remain on your website during the entire process. Though no sensitive data is transferred to or being stored on your website, it is still recommended to have SSL certificate for the payment process security.</p>
+<p><img src="https://docsimages.10web.io/form-maker/127.png" alt="Stripe Integration" /></p>
 
-<h3 id="stripe-integration">Stripe Integration</h3>
+<p>As the first step, select <strong>Stripe</strong> as the <strong>payment method</strong> of your form. The required options for integrating Stripe with your form will appear below. With <strong>Checkout Mode,</strong> you can choose to <strong>test</strong> Stripe integration or go <strong>live</strong> as soon as you are ready to receive payments.</p>
 
-<p>Login to your WordPress site back end. Go to <strong>Form Maker &gt; Manager,</strong> choose your form and press <strong>Form Options</strong> button. Here navigate to <strong>Payment Options</strong> and select <strong>Stripe.</strong> Fill in the details below and press Save button. To use Stripe do not forget to add Payment fields going to <strong>Add new Fields &gt; Payments</strong> and adding <strong>Stripe Fields.</strong></p>
+<p>Both <strong>Test</strong> and <strong>Live</strong> modes require API keys to incorporate Stripe payment gateway with your form. Get the keys from <a href="https://dashboard.stripe.com/account/apikeys">Stripe.com</a> and copy them to the corresponding pair of input boxes:</p>
 
-<p><img src="https://docsimages.10web.io/form-maker/66-1.png" alt="Stripe Integration" /></p>
+<ul>
+  <li><strong>Live publishable key</strong> and <strong>Live secret key,</strong></li>
+  <li><strong>Test publishable key</strong> and <strong>Test secret key.</strong></li>
+</ul>
 
-<p><img src="https://docsimages.10web.io/form-maker/68.png" alt="Stripe Integration" /></p>
+<h3 id="managing-stripe-fields">Managing Stripe Fields</h3>
 
-<p><strong>Payment Currency.</strong> Select the payment currency. The list of all supported currencies can be found in drop-down.</p>
+<p>As you configure the settings above, make sure to press <strong>Update</strong> to save the changes. The extension afterwards lets you add <strong>Stripe Fields</strong> to your form. To add them, go back to the form editing page and click <strong>New Field</strong> button. Expand <strong>Payment Fields</strong> section, choose <strong>Stripe</strong> option and press <strong>Add</strong> button.</p>
 
-<p><strong>Tax.</strong> Set the percentage per purchase which will be used as tax.</p>
+<p><img src="https://docsimages.10web.io/form-maker/128-1.png" alt="Stripe Fields" /></p>
 
-<p><strong>Checkout mode.</strong> Choose to have Stripe set in test or live (production) mode to set the options.
-Fill in <strong>Live</strong> or <strong>Test API</strong> keys, based on the checkout mode selected. More details on how to find the API keys can be found <a href="https://support.stripe.com/questions/where-do-i-find-my-api-keys">here</a>.</p>
+<p>To select the Stripe fields to include in your form, go back to <strong>Form Options &gt; Payment Options</strong> tab. The following options cannot be disabled, since they are mandatory:</p>
 
-<p>Below this line you will find the list of fields which are required for Stripe and some fields which are not required but can be asked from the users. Please choose the fields you want to display and make them required upon necessity. The collected data will be stored on your site, except Credit Card related data (pre-required fields).</p>
+<ul>
+  <li>Card number,</li>
+  <li>CVC,</li>
+  <li>Expiration month,</li>
+  <li>Expiration year.</li>
+</ul>
 
-<p><img src="https://docsimages.10web.io/form-maker/67.png" alt="Stripe Integration" /></p>
+<p>However, you can choose to enable or disable the fields below based on your requirements. In addition, you can set them to be required.</p>
 
-<p>The fields are the following: Card number (required), CVC (required), Expiration month (required), Expiration year (required), Name, Address Line 1, Address Line 2, City, State, Address Country, Zip code.</p>
+<ul>
+  <li>Name,</li>
+  <li>Address line 1,</li>
+  <li>Address line 2,</li>
+  <li>City,</li>
+  <li>State,</li>
+  <li>Country,</li>
+  <li>Zip code.</li>
+</ul>
 
-<p><img src="https://docsimages.10web.io/form-maker/69.png" alt="Stripe Integration" /></p>
+<p><img src="https://docsimages.10web.io/form-maker/129.png" alt="Stripe Fields" /></p>
+
+<h3 id="configuring-payment-settings">Configuring Payment Settings</h3>
+
+<p>In addition to payment fields and Stripe settings, you can modify a the following additional options:</p>
+
+<ul>
+  <li><strong>Payment Currency,</strong></li>
+  <li><strong>Tax.</strong></li>
+</ul>
+
+<p>However, these settings can be changed by selecting <strong>PayPal</strong> payment method. Temporarily switch the payment method to PayPal and select the necessary <strong>currency</strong> from the corresponding list. You can also specify the percentage of the <strong>tax,</strong> which will be calculated from the total payment amount of your form.</p>
+
+<p><img src="https://docsimages.10web.io/form-maker/130.png" alt="Stripe Fields" /></p>
+
+<p>After configuring these options, switch back to <strong>Stripe</strong> payment method and <strong>Update</strong> Form Options.</p>
 <p class="product_version">v.1.12.31</p></main>
 		
 		
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#form-maker-stripe-payment-gateway-extension">Form Maker Stripe Payment Gateway Extension</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#integrating-stripe-with-form-maker">Integrating Stripe with Form Maker</a></li>
+<li class="toc-entry toc-h3"><a href="#managing-stripe-fields">Managing Stripe Fields</a></li>
+<li class="toc-entry toc-h3"><a href="#configuring-payment-settings">Configuring Payment Settings</a></li>
+</ul>
+</li>
+</ul>
+          </div>
+        
       </div>
     </div>
 
