@@ -897,7 +897,7 @@ font-size: 29px;
 }
 
 .mega_deal{
-	background: url(https://web-dorado.com/images/mega_sale/ms-big.png) no-repeat right top;
+	background: url(../img/mega-sale/ms-big.png) no-repeat right top;
 	width: 340px;
 	height: 442px;
 	background-position: 0 bottom;
@@ -915,7 +915,7 @@ font-size: 29px;
     box-sizing: border-box;
 }
 .mega_deal.small{
-	background: url(https://web-dorado.com/images/mega_sale/ms-small.png) no-repeat left top;
+	background: url(../img/mega-sale/ms-small.png) no-repeat left top;
 	height: 40px;
 	bottom: -95px;
 	cursor: pointer;
