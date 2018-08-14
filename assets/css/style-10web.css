@@ -257,16 +257,13 @@ img.error-image {
     width: 100%;
 }
 .tenweb-content {
-    -ms-flex: 0 0 79%;
-    flex: 0 0 79%;
-    max-width: 79%;
+  -ms-flex: 0 0 62%;
+  flex: 0 0 62%;
+  max-width: 62%;
 	padding-left: 1%;
+
 }
-.toc_doc .tenweb-content {
-    -ms-flex: 0 0 62%;
-    flex: 0 0 62%;
-    max-width: 62%;
-}
+
 .toc_doc .bd-toc {
     -ms-flex: 0 0 15%;
     flex: 0 0 15%;
@@ -529,11 +526,27 @@ a.login_but.btn{
 	display:none;
 	
 }
+
+@media only screen and (min-width: 1360px){
+  body > .container-fluid{
+    min-height:440px;
+  }
+}
+
+@media only screen and (min-width: 1420px){
+  body > .container-fluid{
+    min-height:540px;
+  }
+}
+
 @media only screen and (min-width: 1920px){
 	.home .row .col.m4 {
     margin: 0 .5% 20px;
     width: 23%;
 }
+  body > .container-fluid{
+    min-height:900px;
+  }
 }
 @media only screen and (max-width: 1024px){
 	.icon-block h5.center {
