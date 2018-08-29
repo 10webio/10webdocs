@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110398783-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+ gtag('config', 'UA-110398783-1');
+</script>
+
+<meta name="google-site-verification" content="bU33Rd709RLTNobw9w3j4puG_-28Mmi2bPxdi3UQiN0" />
+<meta charset="UTF-8">
+
+<meta name="description" content="Learn how to configure Backup service for your WordPress website using 10Web Dashboard. Follow a few simple steps to secure the files and database tables."/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<title>Configuring Backup Service | 10Web</title>
+<link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/assets/css/minima.css">
+<link rel="stylesheet" href="/assets/css/style-10web.css">
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/isotope.js"></script>
+<script src="/assets/js/script.js"></script>
+<script src="https://d22f349fau5kq1.cloudfront.net/templates/webdorado/js/countdown_timeto.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+  </head>
+  <body>
+
+    <div id="header">
+		<nav class="bright-gray" role="navigation">
+    <div class="nav-wrapper container">
+	  <a id="logo-container" class="brand-logo clear"  href="/" aria-label="Bootstrap">
+		<div class="theme_10web_logo"></div>
+		<div class="theme_10web_logo_demo">Docs</div>
+	  </a>
+
+		<ul class="right hide-on-med-and-down">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/" >Products</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/tutorial">Services</a>
+		  </li>
+		  <li class="nav-item"><a href="https://10web.io/services/" class="trial_but btn">GET STARTED</a></li>
+		</ul>
+		
+	</div>
+</nav>
+	</div>
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="tenweb-sidebar">
+          <div class="mobile-nav"><h4 class="plugin-name-mobile">10Web Services</h4>
+<span  id="trigram-for-heaven">  <span></span></span>
+</div>
+<div class="collapse bd-links" id="bd-docs-nav">
+  <h4 class="plugin-name">10Web Services</h4><div class="clear bd-toc-item has_child">
+      <a class="bd-toc-link" href="/tutorial/tenweb-dashboard">
+        <span class="parent-title">10Web Dashboard </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/tutorial/tenweb-dashboard/introducing-dashboard.html">
+              Introducing 10Web Dashboard
+            </a></li><li>
+            <a href="/tutorial/tenweb-dashboard/subscription-checkout.html">
+              Subscription Plans and Checkout
+            </a></li><li>
+            <a href="/tutorial/tenweb-dashboard/accessing-dashboard.html">
+              Accessing 10Web Dashboard
+            </a></li></ul>
+    </div><div class="clear bd-toc-item has_child">
+      <a class="bd-toc-link" href="/tutorial/managing-products">
+        <span class="parent-title">Managing 10Web Products </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/tutorial/managing-products/managing-websites.html">
+              Managing Your WordPress Sites
+            </a></li><li>
+            <a href="/tutorial/managing-products/installing-plugins.html">
+              Installing WordPress Plugins
+            </a></li><li>
+            <a href="/tutorial/managing-products/installing-extensions.html">
+              Installing Plugin Extensions
+            </a></li><li>
+            <a href="/tutorial/managing-products/installing-themes.html">
+              Installing WordPress Themes
+            </a></li></ul>
+    </div><div class="clear bd-toc-item active has_child">
+      <a class="bd-toc-link" href="/tutorial/tenweb-services">
+        <span class="parent-title">10Web Services </span><span class="parent-icon"> </span></a>
+
+      <ul class="nav bd-sidenav"><li class="active bd-sidenav-active">
+            <a href="/tutorial/tenweb-services/backup.html">
+              Configuring Backup Service
+            </a></li><li>
+            <a href="/tutorial/tenweb-services/image-optimization.html">
+              Setting Up Image Optimization
+            </a></li><li>
+            <a href="/tutorial/tenweb-services/seo.html">
+              Configuring SEO Service
+            </a></li><li>
+            <a href="/tutorial/tenweb-services/security.html">
+              Website Security by 10Web
+            </a></li><li>
+            <a href="/tutorial/tenweb-services/performance.html">
+              WordPress Performance Service
+            </a></li><li>
+            <a href="/tutorial/tenweb-services/more-services.html">
+              More 10Web Services Coming Soon
+            </a></li></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/tutorial/subscription-plans">
+        <span class="parent-title">10Web Subscription Plans </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/tutorial/billing-payments">
+        <span class="parent-title">Billing and Payments </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="clear bd-toc-item">
+      <a class="bd-toc-link" href="/tutorial/customer-care">
+        <span class="parent-title">10Web Customer Care </span></a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div></div>
+        </div>
+		
+        <main class="tenweb-content" role="main">
+		<div id="google-search">
+			<div class="google-search-container">
+				<form action='/search.html' method="get" id="search_form" autocomplete="off">
+					<div class="search clear">
+						<input name="q" id="search_searchword" alt="Search" class="inputbox" type="text" value="" placeholder="Search..."> 
+						<input type="submit" value="Search" class="button"> 
+					</div>
+				</form>
+			</div>
+		</div>
+          <h1 id="configuring-backup-service">Configuring Backup Service</h1>
+
+<p>10Web offers 5 exclusive web services, which let you have your website functioning at its best. Using 10Web Dashboard, you can add the following services to your WordPress site:</p>
+
+<ul>
+  <li><strong><a href="https://10web.io/services/backup/">Backup</a>,</strong></li>
+  <li><strong><a href="https://10web.io/services/image-optimizer/">Image Optimization</a>,</strong></li>
+  <li><strong><a href="https://10web.io/services/seo/">Search Engine Optimization</a>,</strong></li>
+  <li><strong>Website Security,</strong></li>
+  <li><strong><a href="https://10web.io/services/performance/">Performance</a></strong>.</li>
+</ul>
+
+<p>These tools take the performance of your website to a whole new level, helping you grow your community, business, or organization.</p>
+
+<hr />
+
+<p>Let’s begin by setting up the <strong>Backup</strong> service offered by 10Web. Navigate to <strong>Backups</strong> toolbox to enable and manage the backup operations on your WordPress site. Press <strong>Enable Now</strong> to activate the service. After just a few seconds, the setup will be finished and you will be provided with the necessary backup tools.</p>
+
+<p>Before initiating a backup process, navigate to <strong>Settings</strong> tab and select website components to backup:</p>
+
+<ul>
+  <li><strong>Files</strong> - the backup service will copy all files of your website and create an archive,</li>
+  <li><strong>Database</strong> - the MySQL tables of your WordPress database will be backed up.</li>
+</ul>
+
+<p>As the preferred options are selected, run your very first backup by pressing <strong>Backup Now</strong> button. Depending on the size of your website files and/or database, the process can take a few minutes. After each backup operation is completed, 10Web Dashboard provides respective data under <strong>Backup</strong> tab. This allows you to:</p>
+
+<ul>
+  <li>review the <strong>backup time</strong> and its <strong>size,</strong></li>
+  <li><strong>restore</strong> the backed up files and/or databases,</li>
+  <li><strong>download</strong> the backup file.</li>
+</ul>
+
+<p><img src="https://docsimages.10web.io/tutorial/tutorial-26.png" alt="10Web Backup" /></p>
+
+<p>Additionally, 10Web Dashboard provides you with a quick calendar tool, letting you check the dates of all backup processes that have run on your website.</p>
+
+<h2 id="setting-up-backup-schedule">Setting Up Backup Schedule</h2>
+
+<p>10Web Backup service lets you configure automated backups based on any preferred schedule. To begin the setup, click <strong>Scheduling</strong> tab and enable this feature. By default, the automated backups are set to occur on a <strong>weekly</strong> basis. While this is a preferable option for static websites with low traffic, you may wish to consider switching to one of the following instead:</p>
+
+<ul>
+  <li><strong>Monthly</strong> - perfect for small websites,</li>
+  <li><strong>Daily</strong> - usually used for websites which are updated at least once a week,</li>
+  <li><strong>Every 12 hours</strong> - great for sensitive websites with daily content updates,</li>
+  <li><strong>Every 6 hours</strong> - for high-traffic websites with multiple changes during the day,</li>
+  <li><strong>Real Time</strong> - best for critical websites with hourly content updates.</li>
+</ul>
+
+<p>After choosing the best automated backup schedule for your website, make sure to press <strong>Save.</strong></p>
+
+<p><img src="https://docsimages.10web.io/tutorial/tutorial-27.png" alt="Backup Scheduling" /></p>
+</main>
+		
+		
+      </div>
+    </div>
+
+      <footer class="page-footer bright-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+         <div class="theme_10web_logo"></div>
+        </div>
+        <div class="col l9 s12">
+          <ul class="footer-links row">
+              <li><a href="https://10web.io/">Home</a></li>
+              <li><a href="https://10web.io/about-us/">About</a></li>
+			  <li><a href="https://10web.io/contact-us/">Contact Us</a></li>
+			  <li><a href="https://10web.io/privacy-policy/">Privacy Policy</a></li>
+			  <li><a href="https://10web.io/terms-of-services/">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+	  <!--Mega Sale-->
+	  <div class="general_mega_sale notranslate left"  translate="no">
+		<div class="mega_deal big show_bigsale">
+			<p class="ms_special_offer">SPECIAL OFFER</p>
+			<p class="ms_product_count">PREMIUM BUNDLE</p>
+			<p class="ms_premium_plugins">OUR ALL-IN-ONE SOLUTION HAS YOUR WEBSITE COVERED</p>
+			<p class="ms_premium_content"> Photo Gallery, Form Maker, Slider, 60 other plugins/extensions and tech support, along with all the crucial services for just</p>
+			<p class="ms_product_price"><span class="plan_price_simbol_blue"></span>100</p>
+			<span class="general_mega_salex"><img src="https://docs.10web.io/assets/img/mega-sale/ms-close.png" /></span>
+			<p class="ms_deal_ends">DEAL ENDS IN</p>
+			<div class="big_sale">
+				<div id="wd-counter-sale"></div>
+				<div class="ms_hms">
+					<p>HOURS</p>
+					<p>MINUTES</p>
+					<p>SECONDS</p>
+				</div>
+				
+				<img src="https://docs.10web.io/assets/img/mega-sale/ms_counter_big.png" class="ms_shadow">
+			</div>
+			<p class="general_mega_sale_coupon get_now_this" ><a href="https://10web.io/pricing/"  target="_blank">Get Now</a></p>
+		</div>
+		<div class="mega_deal small">
+			<div class="ms_spec">
+				<p class="ms_special_offer">Special Offer</p>
+				<p class="ms_deal_ends">DEAL ENDS IN</p>
+			</div>
+			<div class="big_sale">
+				<div id="wd-counter-sale-small"></div>
+				<img src="https://docs.10web.io/assets/img/mega-sale/ms_counter_small.png" class="ms_shadow">
+			</div>
+		</div>
+	</div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                <span>
+                Copyright © 2018 TenWeb, Inc. All rights reserved 
+                </span>
+            </div>
+        </div>
+    </div>
+</footer> 
+  </body>
+</html>
